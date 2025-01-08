@@ -1,0 +1,1250 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<project ver="10" name="AutoGenerateReport" libEmbed="true" icon="res\myApp.ico" ui="win" output="AutoGenerateReport.exe" CompanyName="博鼎实华（北京）技术有限公司" FileDescription="可以根据定制化的原始记录EXCEL文件，自动化生成符合要求的进网报告" LegalCopyright="Copyright (C) liugang@caict.ac.cn 2023" ProductName="报告自动生成工具" InternalName="报告自动生成工具" FileVersion="2023.6.6.01" ProductVersion="2023.6.6.01" publishDir="/dist/" dstrip="false" local="false" ignored="false">
+	<file name="main.aardio" path="main.aardio" comment="main.aardio"/>
+	<folder name="资源文件" path="res" embed="true" local="false" ignored="false"/>
+	<folder name="窗体文件" path="dlg" comment="目录" embed="true" local="false" ignored="false"/>
+	<folder name="安装模块" path="tools" embed="false" comment="目录" local="false" ignored="true">
+		<file name="pip" path="tools\pip.aardio" comment="tools\pip.aardio"/>
+	</folder>
+	<folder name="Python" path="py" embed="false" comment="目录" local="false" ignored="false">
+		<folder name="site-packages" path="py\site-packages" comment="py\site-packages">
+			<file name="distutils-precedence.pth" path="py\site-packages\distutils-precedence.pth" comment="py\site-packages\distutils-precedence.pth"/>
+			<file name="reportAardio.py" path="py\site-packages\reportAardio.py" comment="py\site-packages\reportAardio.py"/>
+			<file name="six.py" path="py\site-packages\six.py" comment="py\site-packages\six.py"/>
+			<folder name="docx" path="py\site-packages\docx" comment="py\site-packages\docx">
+				<file name="api.py" path="py\site-packages\docx\api.py" comment="py\site-packages\docx\api.py"/>
+				<file name="blkcntnr.py" path="py\site-packages\docx\blkcntnr.py" comment="py\site-packages\docx\blkcntnr.py"/>
+				<file name="compat.py" path="py\site-packages\docx\compat.py" comment="py\site-packages\docx\compat.py"/>
+				<file name="document.py" path="py\site-packages\docx\document.py" comment="py\site-packages\docx\document.py"/>
+				<file name="exceptions.py" path="py\site-packages\docx\exceptions.py" comment="py\site-packages\docx\exceptions.py"/>
+				<file name="package.py" path="py\site-packages\docx\package.py" comment="py\site-packages\docx\package.py"/>
+				<file name="section.py" path="py\site-packages\docx\section.py" comment="py\site-packages\docx\section.py"/>
+				<file name="settings.py" path="py\site-packages\docx\settings.py" comment="py\site-packages\docx\settings.py"/>
+				<file name="shape.py" path="py\site-packages\docx\shape.py" comment="py\site-packages\docx\shape.py"/>
+				<file name="shared.py" path="py\site-packages\docx\shared.py" comment="py\site-packages\docx\shared.py"/>
+				<file name="table.py" path="py\site-packages\docx\table.py" comment="py\site-packages\docx\table.py"/>
+				<file name="__init__.py" path="py\site-packages\docx\__init__.py" comment="py\site-packages\docx\__init__.py"/>
+				<folder name="dml" path="py\site-packages\docx\dml" comment="py\site-packages\docx\dml">
+					<file name="color.py" path="py\site-packages\docx\dml\color.py" comment="py\site-packages\docx\dml\color.py"/>
+					<file name="__init__.py" path="py\site-packages\docx\dml\__init__.py" comment="py\site-packages\docx\dml\__init__.py"/>
+					<folder name="__pycache__" path="py\site-packages\docx\dml\__pycache__" comment="py\site-packages\docx\dml\__pycache__">
+						<file name="color.cpython-38.pyc" path="py\site-packages\docx\dml\__pycache__\color.cpython-38.pyc" comment="py\site-packages\docx\dml\__pycache__\color.cpython-38.pyc"/>
+						<file name="__init__.cpython-38.pyc" path="py\site-packages\docx\dml\__pycache__\__init__.cpython-38.pyc" comment="py\site-packages\docx\dml\__pycache__\__init__.cpython-38.pyc"/>
+					</folder>
+				</folder>
+				<folder name="enum" path="py\site-packages\docx\enum" comment="py\site-packages\docx\enum">
+					<file name="base.py" path="py\site-packages\docx\enum\base.py" comment="py\site-packages\docx\enum\base.py"/>
+					<file name="dml.py" path="py\site-packages\docx\enum\dml.py" comment="py\site-packages\docx\enum\dml.py"/>
+					<file name="section.py" path="py\site-packages\docx\enum\section.py" comment="py\site-packages\docx\enum\section.py"/>
+					<file name="shape.py" path="py\site-packages\docx\enum\shape.py" comment="py\site-packages\docx\enum\shape.py"/>
+					<file name="style.py" path="py\site-packages\docx\enum\style.py" comment="py\site-packages\docx\enum\style.py"/>
+					<file name="table.py" path="py\site-packages\docx\enum\table.py" comment="py\site-packages\docx\enum\table.py"/>
+					<file name="text.py" path="py\site-packages\docx\enum\text.py" comment="py\site-packages\docx\enum\text.py"/>
+					<file name="__init__.py" path="py\site-packages\docx\enum\__init__.py" comment="py\site-packages\docx\enum\__init__.py"/>
+					<folder name="__pycache__" path="py\site-packages\docx\enum\__pycache__" comment="py\site-packages\docx\enum\__pycache__">
+						<file name="base.cpython-38.pyc" path="py\site-packages\docx\enum\__pycache__\base.cpython-38.pyc" comment="py\site-packages\docx\enum\__pycache__\base.cpython-38.pyc"/>
+						<file name="dml.cpython-38.pyc" path="py\site-packages\docx\enum\__pycache__\dml.cpython-38.pyc" comment="py\site-packages\docx\enum\__pycache__\dml.cpython-38.pyc"/>
+						<file name="section.cpython-38.pyc" path="py\site-packages\docx\enum\__pycache__\section.cpython-38.pyc" comment="py\site-packages\docx\enum\__pycache__\section.cpython-38.pyc"/>
+						<file name="shape.cpython-38.pyc" path="py\site-packages\docx\enum\__pycache__\shape.cpython-38.pyc" comment="py\site-packages\docx\enum\__pycache__\shape.cpython-38.pyc"/>
+						<file name="style.cpython-38.pyc" path="py\site-packages\docx\enum\__pycache__\style.cpython-38.pyc" comment="py\site-packages\docx\enum\__pycache__\style.cpython-38.pyc"/>
+						<file name="table.cpython-38.pyc" path="py\site-packages\docx\enum\__pycache__\table.cpython-38.pyc" comment="py\site-packages\docx\enum\__pycache__\table.cpython-38.pyc"/>
+						<file name="text.cpython-38.pyc" path="py\site-packages\docx\enum\__pycache__\text.cpython-38.pyc" comment="py\site-packages\docx\enum\__pycache__\text.cpython-38.pyc"/>
+						<file name="__init__.cpython-38.pyc" path="py\site-packages\docx\enum\__pycache__\__init__.cpython-38.pyc" comment="py\site-packages\docx\enum\__pycache__\__init__.cpython-38.pyc"/>
+					</folder>
+				</folder>
+				<folder name="image" path="py\site-packages\docx\image" comment="py\site-packages\docx\image">
+					<file name="bmp.py" path="py\site-packages\docx\image\bmp.py" comment="py\site-packages\docx\image\bmp.py"/>
+					<file name="constants.py" path="py\site-packages\docx\image\constants.py" comment="py\site-packages\docx\image\constants.py"/>
+					<file name="exceptions.py" path="py\site-packages\docx\image\exceptions.py" comment="py\site-packages\docx\image\exceptions.py"/>
+					<file name="gif.py" path="py\site-packages\docx\image\gif.py" comment="py\site-packages\docx\image\gif.py"/>
+					<file name="helpers.py" path="py\site-packages\docx\image\helpers.py" comment="py\site-packages\docx\image\helpers.py"/>
+					<file name="image.py" path="py\site-packages\docx\image\image.py" comment="py\site-packages\docx\image\image.py"/>
+					<file name="jpeg.py" path="py\site-packages\docx\image\jpeg.py" comment="py\site-packages\docx\image\jpeg.py"/>
+					<file name="png.py" path="py\site-packages\docx\image\png.py" comment="py\site-packages\docx\image\png.py"/>
+					<file name="tiff.py" path="py\site-packages\docx\image\tiff.py" comment="py\site-packages\docx\image\tiff.py"/>
+					<file name="__init__.py" path="py\site-packages\docx\image\__init__.py" comment="py\site-packages\docx\image\__init__.py"/>
+					<folder name="__pycache__" path="py\site-packages\docx\image\__pycache__" comment="py\site-packages\docx\image\__pycache__">
+						<file name="bmp.cpython-38.pyc" path="py\site-packages\docx\image\__pycache__\bmp.cpython-38.pyc" comment="py\site-packages\docx\image\__pycache__\bmp.cpython-38.pyc"/>
+						<file name="constants.cpython-38.pyc" path="py\site-packages\docx\image\__pycache__\constants.cpython-38.pyc" comment="py\site-packages\docx\image\__pycache__\constants.cpython-38.pyc"/>
+						<file name="exceptions.cpython-38.pyc" path="py\site-packages\docx\image\__pycache__\exceptions.cpython-38.pyc" comment="py\site-packages\docx\image\__pycache__\exceptions.cpython-38.pyc"/>
+						<file name="gif.cpython-38.pyc" path="py\site-packages\docx\image\__pycache__\gif.cpython-38.pyc" comment="py\site-packages\docx\image\__pycache__\gif.cpython-38.pyc"/>
+						<file name="helpers.cpython-38.pyc" path="py\site-packages\docx\image\__pycache__\helpers.cpython-38.pyc" comment="py\site-packages\docx\image\__pycache__\helpers.cpython-38.pyc"/>
+						<file name="image.cpython-38.pyc" path="py\site-packages\docx\image\__pycache__\image.cpython-38.pyc" comment="py\site-packages\docx\image\__pycache__\image.cpython-38.pyc"/>
+						<file name="jpeg.cpython-38.pyc" path="py\site-packages\docx\image\__pycache__\jpeg.cpython-38.pyc" comment="py\site-packages\docx\image\__pycache__\jpeg.cpython-38.pyc"/>
+						<file name="png.cpython-38.pyc" path="py\site-packages\docx\image\__pycache__\png.cpython-38.pyc" comment="py\site-packages\docx\image\__pycache__\png.cpython-38.pyc"/>
+						<file name="tiff.cpython-38.pyc" path="py\site-packages\docx\image\__pycache__\tiff.cpython-38.pyc" comment="py\site-packages\docx\image\__pycache__\tiff.cpython-38.pyc"/>
+						<file name="__init__.cpython-38.pyc" path="py\site-packages\docx\image\__pycache__\__init__.cpython-38.pyc" comment="py\site-packages\docx\image\__pycache__\__init__.cpython-38.pyc"/>
+					</folder>
+				</folder>
+				<folder name="opc" path="py\site-packages\docx\opc" comment="py\site-packages\docx\opc">
+					<file name="compat.py" path="py\site-packages\docx\opc\compat.py" comment="py\site-packages\docx\opc\compat.py"/>
+					<file name="constants.py" path="py\site-packages\docx\opc\constants.py" comment="py\site-packages\docx\opc\constants.py"/>
+					<file name="coreprops.py" path="py\site-packages\docx\opc\coreprops.py" comment="py\site-packages\docx\opc\coreprops.py"/>
+					<file name="exceptions.py" path="py\site-packages\docx\opc\exceptions.py" comment="py\site-packages\docx\opc\exceptions.py"/>
+					<file name="oxml.py" path="py\site-packages\docx\opc\oxml.py" comment="py\site-packages\docx\opc\oxml.py"/>
+					<file name="package.py" path="py\site-packages\docx\opc\package.py" comment="py\site-packages\docx\opc\package.py"/>
+					<file name="packuri.py" path="py\site-packages\docx\opc\packuri.py" comment="py\site-packages\docx\opc\packuri.py"/>
+					<file name="part.py" path="py\site-packages\docx\opc\part.py" comment="py\site-packages\docx\opc\part.py"/>
+					<file name="phys_pkg.py" path="py\site-packages\docx\opc\phys_pkg.py" comment="py\site-packages\docx\opc\phys_pkg.py"/>
+					<file name="pkgreader.py" path="py\site-packages\docx\opc\pkgreader.py" comment="py\site-packages\docx\opc\pkgreader.py"/>
+					<file name="pkgwriter.py" path="py\site-packages\docx\opc\pkgwriter.py" comment="py\site-packages\docx\opc\pkgwriter.py"/>
+					<file name="rel.py" path="py\site-packages\docx\opc\rel.py" comment="py\site-packages\docx\opc\rel.py"/>
+					<file name="shared.py" path="py\site-packages\docx\opc\shared.py" comment="py\site-packages\docx\opc\shared.py"/>
+					<file name="spec.py" path="py\site-packages\docx\opc\spec.py" comment="py\site-packages\docx\opc\spec.py"/>
+					<file name="__init__.py" path="py\site-packages\docx\opc\__init__.py" comment="py\site-packages\docx\opc\__init__.py"/>
+					<folder name="parts" path="py\site-packages\docx\opc\parts" comment="py\site-packages\docx\opc\parts">
+						<file name="coreprops.py" path="py\site-packages\docx\opc\parts\coreprops.py" comment="py\site-packages\docx\opc\parts\coreprops.py"/>
+						<file name="__init__.py" path="py\site-packages\docx\opc\parts\__init__.py" comment="py\site-packages\docx\opc\parts\__init__.py"/>
+						<folder name="__pycache__" path="py\site-packages\docx\opc\parts\__pycache__" comment="py\site-packages\docx\opc\parts\__pycache__">
+							<file name="coreprops.cpython-38.pyc" path="py\site-packages\docx\opc\parts\__pycache__\coreprops.cpython-38.pyc" comment="py\site-packages\docx\opc\parts\__pycache__\coreprops.cpython-38.pyc"/>
+							<file name="__init__.cpython-38.pyc" path="py\site-packages\docx\opc\parts\__pycache__\__init__.cpython-38.pyc" comment="py\site-packages\docx\opc\parts\__pycache__\__init__.cpython-38.pyc"/>
+						</folder>
+					</folder>
+					<folder name="__pycache__" path="py\site-packages\docx\opc\__pycache__" comment="py\site-packages\docx\opc\__pycache__">
+						<file name="compat.cpython-38.pyc" path="py\site-packages\docx\opc\__pycache__\compat.cpython-38.pyc" comment="py\site-packages\docx\opc\__pycache__\compat.cpython-38.pyc"/>
+						<file name="constants.cpython-38.pyc" path="py\site-packages\docx\opc\__pycache__\constants.cpython-38.pyc" comment="py\site-packages\docx\opc\__pycache__\constants.cpython-38.pyc"/>
+						<file name="coreprops.cpython-38.pyc" path="py\site-packages\docx\opc\__pycache__\coreprops.cpython-38.pyc" comment="py\site-packages\docx\opc\__pycache__\coreprops.cpython-38.pyc"/>
+						<file name="exceptions.cpython-38.pyc" path="py\site-packages\docx\opc\__pycache__\exceptions.cpython-38.pyc" comment="py\site-packages\docx\opc\__pycache__\exceptions.cpython-38.pyc"/>
+						<file name="oxml.cpython-38.pyc" path="py\site-packages\docx\opc\__pycache__\oxml.cpython-38.pyc" comment="py\site-packages\docx\opc\__pycache__\oxml.cpython-38.pyc"/>
+						<file name="package.cpython-38.pyc" path="py\site-packages\docx\opc\__pycache__\package.cpython-38.pyc" comment="py\site-packages\docx\opc\__pycache__\package.cpython-38.pyc"/>
+						<file name="packuri.cpython-38.pyc" path="py\site-packages\docx\opc\__pycache__\packuri.cpython-38.pyc" comment="py\site-packages\docx\opc\__pycache__\packuri.cpython-38.pyc"/>
+						<file name="part.cpython-38.pyc" path="py\site-packages\docx\opc\__pycache__\part.cpython-38.pyc" comment="py\site-packages\docx\opc\__pycache__\part.cpython-38.pyc"/>
+						<file name="phys_pkg.cpython-38.pyc" path="py\site-packages\docx\opc\__pycache__\phys_pkg.cpython-38.pyc" comment="py\site-packages\docx\opc\__pycache__\phys_pkg.cpython-38.pyc"/>
+						<file name="pkgreader.cpython-38.pyc" path="py\site-packages\docx\opc\__pycache__\pkgreader.cpython-38.pyc" comment="py\site-packages\docx\opc\__pycache__\pkgreader.cpython-38.pyc"/>
+						<file name="pkgwriter.cpython-38.pyc" path="py\site-packages\docx\opc\__pycache__\pkgwriter.cpython-38.pyc" comment="py\site-packages\docx\opc\__pycache__\pkgwriter.cpython-38.pyc"/>
+						<file name="rel.cpython-38.pyc" path="py\site-packages\docx\opc\__pycache__\rel.cpython-38.pyc" comment="py\site-packages\docx\opc\__pycache__\rel.cpython-38.pyc"/>
+						<file name="shared.cpython-38.pyc" path="py\site-packages\docx\opc\__pycache__\shared.cpython-38.pyc" comment="py\site-packages\docx\opc\__pycache__\shared.cpython-38.pyc"/>
+						<file name="spec.cpython-38.pyc" path="py\site-packages\docx\opc\__pycache__\spec.cpython-38.pyc" comment="py\site-packages\docx\opc\__pycache__\spec.cpython-38.pyc"/>
+						<file name="__init__.cpython-38.pyc" path="py\site-packages\docx\opc\__pycache__\__init__.cpython-38.pyc" comment="py\site-packages\docx\opc\__pycache__\__init__.cpython-38.pyc"/>
+					</folder>
+				</folder>
+				<folder name="oxml" path="py\site-packages\docx\oxml" comment="py\site-packages\docx\oxml">
+					<file name="coreprops.py" path="py\site-packages\docx\oxml\coreprops.py" comment="py\site-packages\docx\oxml\coreprops.py"/>
+					<file name="document.py" path="py\site-packages\docx\oxml\document.py" comment="py\site-packages\docx\oxml\document.py"/>
+					<file name="exceptions.py" path="py\site-packages\docx\oxml\exceptions.py" comment="py\site-packages\docx\oxml\exceptions.py"/>
+					<file name="ns.py" path="py\site-packages\docx\oxml\ns.py" comment="py\site-packages\docx\oxml\ns.py"/>
+					<file name="numbering.py" path="py\site-packages\docx\oxml\numbering.py" comment="py\site-packages\docx\oxml\numbering.py"/>
+					<file name="section.py" path="py\site-packages\docx\oxml\section.py" comment="py\site-packages\docx\oxml\section.py"/>
+					<file name="settings.py" path="py\site-packages\docx\oxml\settings.py" comment="py\site-packages\docx\oxml\settings.py"/>
+					<file name="shape.py" path="py\site-packages\docx\oxml\shape.py" comment="py\site-packages\docx\oxml\shape.py"/>
+					<file name="shared.py" path="py\site-packages\docx\oxml\shared.py" comment="py\site-packages\docx\oxml\shared.py"/>
+					<file name="simpletypes.py" path="py\site-packages\docx\oxml\simpletypes.py" comment="py\site-packages\docx\oxml\simpletypes.py"/>
+					<file name="styles.py" path="py\site-packages\docx\oxml\styles.py" comment="py\site-packages\docx\oxml\styles.py"/>
+					<file name="table.py" path="py\site-packages\docx\oxml\table.py" comment="py\site-packages\docx\oxml\table.py"/>
+					<file name="xmlchemy.py" path="py\site-packages\docx\oxml\xmlchemy.py" comment="py\site-packages\docx\oxml\xmlchemy.py"/>
+					<file name="__init__.py" path="py\site-packages\docx\oxml\__init__.py" comment="py\site-packages\docx\oxml\__init__.py"/>
+					<folder name="text" path="py\site-packages\docx\oxml\text" comment="py\site-packages\docx\oxml\text">
+						<file name="font.py" path="py\site-packages\docx\oxml\text\font.py" comment="py\site-packages\docx\oxml\text\font.py"/>
+						<file name="paragraph.py" path="py\site-packages\docx\oxml\text\paragraph.py" comment="py\site-packages\docx\oxml\text\paragraph.py"/>
+						<file name="parfmt.py" path="py\site-packages\docx\oxml\text\parfmt.py" comment="py\site-packages\docx\oxml\text\parfmt.py"/>
+						<file name="run.py" path="py\site-packages\docx\oxml\text\run.py" comment="py\site-packages\docx\oxml\text\run.py"/>
+						<file name="__init__.py" path="py\site-packages\docx\oxml\text\__init__.py" comment="py\site-packages\docx\oxml\text\__init__.py"/>
+						<folder name="__pycache__" path="py\site-packages\docx\oxml\text\__pycache__" comment="py\site-packages\docx\oxml\text\__pycache__">
+							<file name="font.cpython-38.pyc" path="py\site-packages\docx\oxml\text\__pycache__\font.cpython-38.pyc" comment="py\site-packages\docx\oxml\text\__pycache__\font.cpython-38.pyc"/>
+							<file name="paragraph.cpython-38.pyc" path="py\site-packages\docx\oxml\text\__pycache__\paragraph.cpython-38.pyc" comment="py\site-packages\docx\oxml\text\__pycache__\paragraph.cpython-38.pyc"/>
+							<file name="parfmt.cpython-38.pyc" path="py\site-packages\docx\oxml\text\__pycache__\parfmt.cpython-38.pyc" comment="py\site-packages\docx\oxml\text\__pycache__\parfmt.cpython-38.pyc"/>
+							<file name="run.cpython-38.pyc" path="py\site-packages\docx\oxml\text\__pycache__\run.cpython-38.pyc" comment="py\site-packages\docx\oxml\text\__pycache__\run.cpython-38.pyc"/>
+							<file name="__init__.cpython-38.pyc" path="py\site-packages\docx\oxml\text\__pycache__\__init__.cpython-38.pyc" comment="py\site-packages\docx\oxml\text\__pycache__\__init__.cpython-38.pyc"/>
+						</folder>
+					</folder>
+					<folder name="__pycache__" path="py\site-packages\docx\oxml\__pycache__" comment="py\site-packages\docx\oxml\__pycache__">
+						<file name="coreprops.cpython-38.pyc" path="py\site-packages\docx\oxml\__pycache__\coreprops.cpython-38.pyc" comment="py\site-packages\docx\oxml\__pycache__\coreprops.cpython-38.pyc"/>
+						<file name="document.cpython-38.pyc" path="py\site-packages\docx\oxml\__pycache__\document.cpython-38.pyc" comment="py\site-packages\docx\oxml\__pycache__\document.cpython-38.pyc"/>
+						<file name="exceptions.cpython-38.pyc" path="py\site-packages\docx\oxml\__pycache__\exceptions.cpython-38.pyc" comment="py\site-packages\docx\oxml\__pycache__\exceptions.cpython-38.pyc"/>
+						<file name="ns.cpython-38.pyc" path="py\site-packages\docx\oxml\__pycache__\ns.cpython-38.pyc" comment="py\site-packages\docx\oxml\__pycache__\ns.cpython-38.pyc"/>
+						<file name="numbering.cpython-38.pyc" path="py\site-packages\docx\oxml\__pycache__\numbering.cpython-38.pyc" comment="py\site-packages\docx\oxml\__pycache__\numbering.cpython-38.pyc"/>
+						<file name="section.cpython-38.pyc" path="py\site-packages\docx\oxml\__pycache__\section.cpython-38.pyc" comment="py\site-packages\docx\oxml\__pycache__\section.cpython-38.pyc"/>
+						<file name="settings.cpython-38.pyc" path="py\site-packages\docx\oxml\__pycache__\settings.cpython-38.pyc" comment="py\site-packages\docx\oxml\__pycache__\settings.cpython-38.pyc"/>
+						<file name="shape.cpython-38.pyc" path="py\site-packages\docx\oxml\__pycache__\shape.cpython-38.pyc" comment="py\site-packages\docx\oxml\__pycache__\shape.cpython-38.pyc"/>
+						<file name="shared.cpython-38.pyc" path="py\site-packages\docx\oxml\__pycache__\shared.cpython-38.pyc" comment="py\site-packages\docx\oxml\__pycache__\shared.cpython-38.pyc"/>
+						<file name="simpletypes.cpython-38.pyc" path="py\site-packages\docx\oxml\__pycache__\simpletypes.cpython-38.pyc" comment="py\site-packages\docx\oxml\__pycache__\simpletypes.cpython-38.pyc"/>
+						<file name="styles.cpython-38.pyc" path="py\site-packages\docx\oxml\__pycache__\styles.cpython-38.pyc" comment="py\site-packages\docx\oxml\__pycache__\styles.cpython-38.pyc"/>
+						<file name="table.cpython-38.pyc" path="py\site-packages\docx\oxml\__pycache__\table.cpython-38.pyc" comment="py\site-packages\docx\oxml\__pycache__\table.cpython-38.pyc"/>
+						<file name="xmlchemy.cpython-38.pyc" path="py\site-packages\docx\oxml\__pycache__\xmlchemy.cpython-38.pyc" comment="py\site-packages\docx\oxml\__pycache__\xmlchemy.cpython-38.pyc"/>
+						<file name="__init__.cpython-38.pyc" path="py\site-packages\docx\oxml\__pycache__\__init__.cpython-38.pyc" comment="py\site-packages\docx\oxml\__pycache__\__init__.cpython-38.pyc"/>
+					</folder>
+				</folder>
+				<folder name="parts" path="py\site-packages\docx\parts" comment="py\site-packages\docx\parts">
+					<file name="document.py" path="py\site-packages\docx\parts\document.py" comment="py\site-packages\docx\parts\document.py"/>
+					<file name="hdrftr.py" path="py\site-packages\docx\parts\hdrftr.py" comment="py\site-packages\docx\parts\hdrftr.py"/>
+					<file name="image.py" path="py\site-packages\docx\parts\image.py" comment="py\site-packages\docx\parts\image.py"/>
+					<file name="numbering.py" path="py\site-packages\docx\parts\numbering.py" comment="py\site-packages\docx\parts\numbering.py"/>
+					<file name="settings.py" path="py\site-packages\docx\parts\settings.py" comment="py\site-packages\docx\parts\settings.py"/>
+					<file name="story.py" path="py\site-packages\docx\parts\story.py" comment="py\site-packages\docx\parts\story.py"/>
+					<file name="styles.py" path="py\site-packages\docx\parts\styles.py" comment="py\site-packages\docx\parts\styles.py"/>
+					<file name="__init__.py" path="py\site-packages\docx\parts\__init__.py" comment="py\site-packages\docx\parts\__init__.py"/>
+					<folder name="__pycache__" path="py\site-packages\docx\parts\__pycache__" comment="py\site-packages\docx\parts\__pycache__">
+						<file name="document.cpython-38.pyc" path="py\site-packages\docx\parts\__pycache__\document.cpython-38.pyc" comment="py\site-packages\docx\parts\__pycache__\document.cpython-38.pyc"/>
+						<file name="hdrftr.cpython-38.pyc" path="py\site-packages\docx\parts\__pycache__\hdrftr.cpython-38.pyc" comment="py\site-packages\docx\parts\__pycache__\hdrftr.cpython-38.pyc"/>
+						<file name="image.cpython-38.pyc" path="py\site-packages\docx\parts\__pycache__\image.cpython-38.pyc" comment="py\site-packages\docx\parts\__pycache__\image.cpython-38.pyc"/>
+						<file name="numbering.cpython-38.pyc" path="py\site-packages\docx\parts\__pycache__\numbering.cpython-38.pyc" comment="py\site-packages\docx\parts\__pycache__\numbering.cpython-38.pyc"/>
+						<file name="settings.cpython-38.pyc" path="py\site-packages\docx\parts\__pycache__\settings.cpython-38.pyc" comment="py\site-packages\docx\parts\__pycache__\settings.cpython-38.pyc"/>
+						<file name="story.cpython-38.pyc" path="py\site-packages\docx\parts\__pycache__\story.cpython-38.pyc" comment="py\site-packages\docx\parts\__pycache__\story.cpython-38.pyc"/>
+						<file name="styles.cpython-38.pyc" path="py\site-packages\docx\parts\__pycache__\styles.cpython-38.pyc" comment="py\site-packages\docx\parts\__pycache__\styles.cpython-38.pyc"/>
+						<file name="__init__.cpython-38.pyc" path="py\site-packages\docx\parts\__pycache__\__init__.cpython-38.pyc" comment="py\site-packages\docx\parts\__pycache__\__init__.cpython-38.pyc"/>
+					</folder>
+				</folder>
+				<folder name="styles" path="py\site-packages\docx\styles" comment="py\site-packages\docx\styles">
+					<file name="latent.py" path="py\site-packages\docx\styles\latent.py" comment="py\site-packages\docx\styles\latent.py"/>
+					<file name="style.py" path="py\site-packages\docx\styles\style.py" comment="py\site-packages\docx\styles\style.py"/>
+					<file name="styles.py" path="py\site-packages\docx\styles\styles.py" comment="py\site-packages\docx\styles\styles.py"/>
+					<file name="__init__.py" path="py\site-packages\docx\styles\__init__.py" comment="py\site-packages\docx\styles\__init__.py"/>
+					<folder name="__pycache__" path="py\site-packages\docx\styles\__pycache__" comment="py\site-packages\docx\styles\__pycache__">
+						<file name="latent.cpython-38.pyc" path="py\site-packages\docx\styles\__pycache__\latent.cpython-38.pyc" comment="py\site-packages\docx\styles\__pycache__\latent.cpython-38.pyc"/>
+						<file name="style.cpython-38.pyc" path="py\site-packages\docx\styles\__pycache__\style.cpython-38.pyc" comment="py\site-packages\docx\styles\__pycache__\style.cpython-38.pyc"/>
+						<file name="styles.cpython-38.pyc" path="py\site-packages\docx\styles\__pycache__\styles.cpython-38.pyc" comment="py\site-packages\docx\styles\__pycache__\styles.cpython-38.pyc"/>
+						<file name="__init__.cpython-38.pyc" path="py\site-packages\docx\styles\__pycache__\__init__.cpython-38.pyc" comment="py\site-packages\docx\styles\__pycache__\__init__.cpython-38.pyc"/>
+					</folder>
+				</folder>
+				<folder name="templates" path="py\site-packages\docx\templates" comment="py\site-packages\docx\templates">
+					<file name="default-footer.xml" path="py\site-packages\docx\templates\default-footer.xml" comment="py\site-packages\docx\templates\default-footer.xml"/>
+					<file name="default-header.xml" path="py\site-packages\docx\templates\default-header.xml" comment="py\site-packages\docx\templates\default-header.xml"/>
+					<file name="default-settings.xml" path="py\site-packages\docx\templates\default-settings.xml" comment="py\site-packages\docx\templates\default-settings.xml"/>
+					<file name="default-styles.xml" path="py\site-packages\docx\templates\default-styles.xml" comment="py\site-packages\docx\templates\default-styles.xml"/>
+					<file name="default.docx" path="py\site-packages\docx\templates\default.docx" comment="py\site-packages\docx\templates\default.docx"/>
+				</folder>
+				<folder name="text" path="py\site-packages\docx\text" comment="py\site-packages\docx\text">
+					<file name="font.py" path="py\site-packages\docx\text\font.py" comment="py\site-packages\docx\text\font.py"/>
+					<file name="paragraph.py" path="py\site-packages\docx\text\paragraph.py" comment="py\site-packages\docx\text\paragraph.py"/>
+					<file name="parfmt.py" path="py\site-packages\docx\text\parfmt.py" comment="py\site-packages\docx\text\parfmt.py"/>
+					<file name="run.py" path="py\site-packages\docx\text\run.py" comment="py\site-packages\docx\text\run.py"/>
+					<file name="tabstops.py" path="py\site-packages\docx\text\tabstops.py" comment="py\site-packages\docx\text\tabstops.py"/>
+					<file name="__init__.py" path="py\site-packages\docx\text\__init__.py" comment="py\site-packages\docx\text\__init__.py"/>
+					<folder name="__pycache__" path="py\site-packages\docx\text\__pycache__" comment="py\site-packages\docx\text\__pycache__">
+						<file name="font.cpython-38.pyc" path="py\site-packages\docx\text\__pycache__\font.cpython-38.pyc" comment="py\site-packages\docx\text\__pycache__\font.cpython-38.pyc"/>
+						<file name="paragraph.cpython-38.pyc" path="py\site-packages\docx\text\__pycache__\paragraph.cpython-38.pyc" comment="py\site-packages\docx\text\__pycache__\paragraph.cpython-38.pyc"/>
+						<file name="parfmt.cpython-38.pyc" path="py\site-packages\docx\text\__pycache__\parfmt.cpython-38.pyc" comment="py\site-packages\docx\text\__pycache__\parfmt.cpython-38.pyc"/>
+						<file name="run.cpython-38.pyc" path="py\site-packages\docx\text\__pycache__\run.cpython-38.pyc" comment="py\site-packages\docx\text\__pycache__\run.cpython-38.pyc"/>
+						<file name="tabstops.cpython-38.pyc" path="py\site-packages\docx\text\__pycache__\tabstops.cpython-38.pyc" comment="py\site-packages\docx\text\__pycache__\tabstops.cpython-38.pyc"/>
+						<file name="__init__.cpython-38.pyc" path="py\site-packages\docx\text\__pycache__\__init__.cpython-38.pyc" comment="py\site-packages\docx\text\__pycache__\__init__.cpython-38.pyc"/>
+					</folder>
+				</folder>
+				<folder name="__pycache__" path="py\site-packages\docx\__pycache__" comment="py\site-packages\docx\__pycache__">
+					<file name="api.cpython-38.pyc" path="py\site-packages\docx\__pycache__\api.cpython-38.pyc" comment="py\site-packages\docx\__pycache__\api.cpython-38.pyc"/>
+					<file name="blkcntnr.cpython-38.pyc" path="py\site-packages\docx\__pycache__\blkcntnr.cpython-38.pyc" comment="py\site-packages\docx\__pycache__\blkcntnr.cpython-38.pyc"/>
+					<file name="compat.cpython-38.pyc" path="py\site-packages\docx\__pycache__\compat.cpython-38.pyc" comment="py\site-packages\docx\__pycache__\compat.cpython-38.pyc"/>
+					<file name="document.cpython-38.pyc" path="py\site-packages\docx\__pycache__\document.cpython-38.pyc" comment="py\site-packages\docx\__pycache__\document.cpython-38.pyc"/>
+					<file name="exceptions.cpython-38.pyc" path="py\site-packages\docx\__pycache__\exceptions.cpython-38.pyc" comment="py\site-packages\docx\__pycache__\exceptions.cpython-38.pyc"/>
+					<file name="package.cpython-38.pyc" path="py\site-packages\docx\__pycache__\package.cpython-38.pyc" comment="py\site-packages\docx\__pycache__\package.cpython-38.pyc"/>
+					<file name="section.cpython-38.pyc" path="py\site-packages\docx\__pycache__\section.cpython-38.pyc" comment="py\site-packages\docx\__pycache__\section.cpython-38.pyc"/>
+					<file name="settings.cpython-38.pyc" path="py\site-packages\docx\__pycache__\settings.cpython-38.pyc" comment="py\site-packages\docx\__pycache__\settings.cpython-38.pyc"/>
+					<file name="shape.cpython-38.pyc" path="py\site-packages\docx\__pycache__\shape.cpython-38.pyc" comment="py\site-packages\docx\__pycache__\shape.cpython-38.pyc"/>
+					<file name="shared.cpython-38.pyc" path="py\site-packages\docx\__pycache__\shared.cpython-38.pyc" comment="py\site-packages\docx\__pycache__\shared.cpython-38.pyc"/>
+					<file name="__init__.cpython-38.pyc" path="py\site-packages\docx\__pycache__\__init__.cpython-38.pyc" comment="py\site-packages\docx\__pycache__\__init__.cpython-38.pyc"/>
+				</folder>
+			</folder>
+			<folder name="docxcompose" path="py\site-packages\docxcompose" comment="py\site-packages\docxcompose">
+				<file name="command.py" path="py\site-packages\docxcompose\command.py" comment="py\site-packages\docxcompose\command.py"/>
+				<file name="composer.py" path="py\site-packages\docxcompose\composer.py" comment="py\site-packages\docxcompose\composer.py"/>
+				<file name="image.py" path="py\site-packages\docxcompose\image.py" comment="py\site-packages\docxcompose\image.py"/>
+				<file name="properties.py" path="py\site-packages\docxcompose\properties.py" comment="py\site-packages\docxcompose\properties.py"/>
+				<file name="sdt.py" path="py\site-packages\docxcompose\sdt.py" comment="py\site-packages\docxcompose\sdt.py"/>
+				<file name="utils.py" path="py\site-packages\docxcompose\utils.py" comment="py\site-packages\docxcompose\utils.py"/>
+				<file name="__init__.py" path="py\site-packages\docxcompose\__init__.py" comment="py\site-packages\docxcompose\__init__.py"/>
+				<folder name="templates" path="py\site-packages\docxcompose\templates" comment="py\site-packages\docxcompose\templates">
+					<file name="custom.xml" path="py\site-packages\docxcompose\templates\custom.xml" comment="py\site-packages\docxcompose\templates\custom.xml"/>
+					<file name="footer.xml" path="py\site-packages\docxcompose\templates\footer.xml" comment="py\site-packages\docxcompose\templates\footer.xml"/>
+					<file name="footnotes.xml" path="py\site-packages\docxcompose\templates\footnotes.xml" comment="py\site-packages\docxcompose\templates\footnotes.xml"/>
+					<file name="header.xml" path="py\site-packages\docxcompose\templates\header.xml" comment="py\site-packages\docxcompose\templates\header.xml"/>
+					<file name="numbering.xml" path="py\site-packages\docxcompose\templates\numbering.xml" comment="py\site-packages\docxcompose\templates\numbering.xml"/>
+				</folder>
+				<folder name="__pycache__" path="py\site-packages\docxcompose\__pycache__" comment="py\site-packages\docxcompose\__pycache__">
+					<file name="composer.cpython-38.pyc" path="py\site-packages\docxcompose\__pycache__\composer.cpython-38.pyc" comment="py\site-packages\docxcompose\__pycache__\composer.cpython-38.pyc"/>
+					<file name="image.cpython-38.pyc" path="py\site-packages\docxcompose\__pycache__\image.cpython-38.pyc" comment="py\site-packages\docxcompose\__pycache__\image.cpython-38.pyc"/>
+					<file name="properties.cpython-38.pyc" path="py\site-packages\docxcompose\__pycache__\properties.cpython-38.pyc" comment="py\site-packages\docxcompose\__pycache__\properties.cpython-38.pyc"/>
+					<file name="utils.cpython-38.pyc" path="py\site-packages\docxcompose\__pycache__\utils.cpython-38.pyc" comment="py\site-packages\docxcompose\__pycache__\utils.cpython-38.pyc"/>
+					<file name="__init__.cpython-38.pyc" path="py\site-packages\docxcompose\__pycache__\__init__.cpython-38.pyc" comment="py\site-packages\docxcompose\__pycache__\__init__.cpython-38.pyc"/>
+				</folder>
+			</folder>
+			<folder name="docxcompose-1.3.5-py3.8.egg-info" path="py\site-packages\docxcompose-1.3.5-py3.8.egg-info" comment="py\site-packages\docxcompose-1.3.5-py3.8.egg-info">
+				<file name="dependency_links.txt" path="py\site-packages\docxcompose-1.3.5-py3.8.egg-info\dependency_links.txt" comment="py\site-packages\docxcompose-1.3.5-py3.8.egg-info\dependency_links.txt"/>
+				<file name="entry_points.txt" path="py\site-packages\docxcompose-1.3.5-py3.8.egg-info\entry_points.txt" comment="py\site-packages\docxcompose-1.3.5-py3.8.egg-info\entry_points.txt"/>
+				<file name="installed-files.txt" path="py\site-packages\docxcompose-1.3.5-py3.8.egg-info\installed-files.txt" comment="py\site-packages\docxcompose-1.3.5-py3.8.egg-info\installed-files.txt"/>
+				<file name="PKG-INFO" path="py\site-packages\docxcompose-1.3.5-py3.8.egg-info\PKG-INFO" comment="py\site-packages\docxcompose-1.3.5-py3.8.egg-info\PKG-INFO"/>
+				<file name="requires.txt" path="py\site-packages\docxcompose-1.3.5-py3.8.egg-info\requires.txt" comment="py\site-packages\docxcompose-1.3.5-py3.8.egg-info\requires.txt"/>
+				<file name="SOURCES.txt" path="py\site-packages\docxcompose-1.3.5-py3.8.egg-info\SOURCES.txt" comment="py\site-packages\docxcompose-1.3.5-py3.8.egg-info\SOURCES.txt"/>
+				<file name="top_level.txt" path="py\site-packages\docxcompose-1.3.5-py3.8.egg-info\top_level.txt" comment="py\site-packages\docxcompose-1.3.5-py3.8.egg-info\top_level.txt"/>
+				<file name="zip-safe" path="py\site-packages\docxcompose-1.3.5-py3.8.egg-info\zip-safe" comment="py\site-packages\docxcompose-1.3.5-py3.8.egg-info\zip-safe"/>
+			</folder>
+			<folder name="docxtpl" path="py\site-packages\docxtpl" comment="py\site-packages\docxtpl">
+				<file name="inline_image.py" path="py\site-packages\docxtpl\inline_image.py" comment="py\site-packages\docxtpl\inline_image.py"/>
+				<file name="listing.py" path="py\site-packages\docxtpl\listing.py" comment="py\site-packages\docxtpl\listing.py"/>
+				<file name="richtext.py" path="py\site-packages\docxtpl\richtext.py" comment="py\site-packages\docxtpl\richtext.py"/>
+				<file name="subdoc.py" path="py\site-packages\docxtpl\subdoc.py" comment="py\site-packages\docxtpl\subdoc.py"/>
+				<file name="template.py" path="py\site-packages\docxtpl\template.py" comment="py\site-packages\docxtpl\template.py"/>
+				<file name="__init__.py" path="py\site-packages\docxtpl\__init__.py" comment="py\site-packages\docxtpl\__init__.py"/>
+				<file name="__main__.py" path="py\site-packages\docxtpl\__main__.py" comment="py\site-packages\docxtpl\__main__.py"/>
+				<folder name="__pycache__" path="py\site-packages\docxtpl\__pycache__" comment="py\site-packages\docxtpl\__pycache__">
+					<file name="inline_image.cpython-38.pyc" path="py\site-packages\docxtpl\__pycache__\inline_image.cpython-38.pyc" comment="py\site-packages\docxtpl\__pycache__\inline_image.cpython-38.pyc"/>
+					<file name="listing.cpython-38.pyc" path="py\site-packages\docxtpl\__pycache__\listing.cpython-38.pyc" comment="py\site-packages\docxtpl\__pycache__\listing.cpython-38.pyc"/>
+					<file name="richtext.cpython-38.pyc" path="py\site-packages\docxtpl\__pycache__\richtext.cpython-38.pyc" comment="py\site-packages\docxtpl\__pycache__\richtext.cpython-38.pyc"/>
+					<file name="subdoc.cpython-38.pyc" path="py\site-packages\docxtpl\__pycache__\subdoc.cpython-38.pyc" comment="py\site-packages\docxtpl\__pycache__\subdoc.cpython-38.pyc"/>
+					<file name="template.cpython-38.pyc" path="py\site-packages\docxtpl\__pycache__\template.cpython-38.pyc" comment="py\site-packages\docxtpl\__pycache__\template.cpython-38.pyc"/>
+					<file name="__init__.cpython-38.pyc" path="py\site-packages\docxtpl\__pycache__\__init__.cpython-38.pyc" comment="py\site-packages\docxtpl\__pycache__\__init__.cpython-38.pyc"/>
+					<file name="__main__.cpython-38.pyc" path="py\site-packages\docxtpl\__pycache__\__main__.cpython-38.pyc" comment="py\site-packages\docxtpl\__pycache__\__main__.cpython-38.pyc"/>
+				</folder>
+			</folder>
+			<folder name="docxtpl-0.16.4.dist-info" path="py\site-packages\docxtpl-0.16.4.dist-info" comment="py\site-packages\docxtpl-0.16.4.dist-info">
+				<file name="eager_resources.txt" path="py\site-packages\docxtpl-0.16.4.dist-info\eager_resources.txt" comment="py\site-packages\docxtpl-0.16.4.dist-info\eager_resources.txt"/>
+				<file name="INSTALLER" path="py\site-packages\docxtpl-0.16.4.dist-info\INSTALLER" comment="py\site-packages\docxtpl-0.16.4.dist-info\INSTALLER"/>
+				<file name="LICENSE.txt" path="py\site-packages\docxtpl-0.16.4.dist-info\LICENSE.txt" comment="py\site-packages\docxtpl-0.16.4.dist-info\LICENSE.txt"/>
+				<file name="METADATA" path="py\site-packages\docxtpl-0.16.4.dist-info\METADATA" comment="py\site-packages\docxtpl-0.16.4.dist-info\METADATA"/>
+				<file name="RECORD" path="py\site-packages\docxtpl-0.16.4.dist-info\RECORD" comment="py\site-packages\docxtpl-0.16.4.dist-info\RECORD"/>
+				<file name="REQUESTED" path="py\site-packages\docxtpl-0.16.4.dist-info\REQUESTED" comment="py\site-packages\docxtpl-0.16.4.dist-info\REQUESTED"/>
+				<file name="top_level.txt" path="py\site-packages\docxtpl-0.16.4.dist-info\top_level.txt" comment="py\site-packages\docxtpl-0.16.4.dist-info\top_level.txt"/>
+				<file name="WHEEL" path="py\site-packages\docxtpl-0.16.4.dist-info\WHEEL" comment="py\site-packages\docxtpl-0.16.4.dist-info\WHEEL"/>
+			</folder>
+			<folder name="et_xmlfile" path="py\site-packages\et_xmlfile" comment="py\site-packages\et_xmlfile">
+				<file name="xmlfile.py" path="py\site-packages\et_xmlfile\xmlfile.py" comment="py\site-packages\et_xmlfile\xmlfile.py"/>
+				<file name="__init__.py" path="py\site-packages\et_xmlfile\__init__.py" comment="py\site-packages\et_xmlfile\__init__.py"/>
+				<folder name="__pycache__" path="py\site-packages\et_xmlfile\__pycache__" comment="py\site-packages\et_xmlfile\__pycache__">
+					<file name="xmlfile.cpython-38.pyc" path="py\site-packages\et_xmlfile\__pycache__\xmlfile.cpython-38.pyc" comment="py\site-packages\et_xmlfile\__pycache__\xmlfile.cpython-38.pyc"/>
+					<file name="__init__.cpython-38.pyc" path="py\site-packages\et_xmlfile\__pycache__\__init__.cpython-38.pyc" comment="py\site-packages\et_xmlfile\__pycache__\__init__.cpython-38.pyc"/>
+				</folder>
+			</folder>
+			<folder name="et_xmlfile-1.1.0.dist-info" path="py\site-packages\et_xmlfile-1.1.0.dist-info" comment="py\site-packages\et_xmlfile-1.1.0.dist-info">
+				<file name="AUTHORS.txt" path="py\site-packages\et_xmlfile-1.1.0.dist-info\AUTHORS.txt" comment="py\site-packages\et_xmlfile-1.1.0.dist-info\AUTHORS.txt"/>
+				<file name="INSTALLER" path="py\site-packages\et_xmlfile-1.1.0.dist-info\INSTALLER" comment="py\site-packages\et_xmlfile-1.1.0.dist-info\INSTALLER"/>
+				<file name="LICENCE.rst" path="py\site-packages\et_xmlfile-1.1.0.dist-info\LICENCE.rst" comment="py\site-packages\et_xmlfile-1.1.0.dist-info\LICENCE.rst"/>
+				<file name="METADATA" path="py\site-packages\et_xmlfile-1.1.0.dist-info\METADATA" comment="py\site-packages\et_xmlfile-1.1.0.dist-info\METADATA"/>
+				<file name="RECORD" path="py\site-packages\et_xmlfile-1.1.0.dist-info\RECORD" comment="py\site-packages\et_xmlfile-1.1.0.dist-info\RECORD"/>
+				<file name="top_level.txt" path="py\site-packages\et_xmlfile-1.1.0.dist-info\top_level.txt" comment="py\site-packages\et_xmlfile-1.1.0.dist-info\top_level.txt"/>
+				<file name="WHEEL" path="py\site-packages\et_xmlfile-1.1.0.dist-info\WHEEL" comment="py\site-packages\et_xmlfile-1.1.0.dist-info\WHEEL"/>
+			</folder>
+			<folder name="jinja2" path="py\site-packages\jinja2" comment="py\site-packages\jinja2">
+				<file name="async_utils.py" path="py\site-packages\jinja2\async_utils.py" comment="py\site-packages\jinja2\async_utils.py"/>
+				<file name="bccache.py" path="py\site-packages\jinja2\bccache.py" comment="py\site-packages\jinja2\bccache.py"/>
+				<file name="compiler.py" path="py\site-packages\jinja2\compiler.py" comment="py\site-packages\jinja2\compiler.py"/>
+				<file name="constants.py" path="py\site-packages\jinja2\constants.py" comment="py\site-packages\jinja2\constants.py"/>
+				<file name="debug.py" path="py\site-packages\jinja2\debug.py" comment="py\site-packages\jinja2\debug.py"/>
+				<file name="defaults.py" path="py\site-packages\jinja2\defaults.py" comment="py\site-packages\jinja2\defaults.py"/>
+				<file name="environment.py" path="py\site-packages\jinja2\environment.py" comment="py\site-packages\jinja2\environment.py"/>
+				<file name="exceptions.py" path="py\site-packages\jinja2\exceptions.py" comment="py\site-packages\jinja2\exceptions.py"/>
+				<file name="ext.py" path="py\site-packages\jinja2\ext.py" comment="py\site-packages\jinja2\ext.py"/>
+				<file name="filters.py" path="py\site-packages\jinja2\filters.py" comment="py\site-packages\jinja2\filters.py"/>
+				<file name="idtracking.py" path="py\site-packages\jinja2\idtracking.py" comment="py\site-packages\jinja2\idtracking.py"/>
+				<file name="lexer.py" path="py\site-packages\jinja2\lexer.py" comment="py\site-packages\jinja2\lexer.py"/>
+				<file name="loaders.py" path="py\site-packages\jinja2\loaders.py" comment="py\site-packages\jinja2\loaders.py"/>
+				<file name="meta.py" path="py\site-packages\jinja2\meta.py" comment="py\site-packages\jinja2\meta.py"/>
+				<file name="nativetypes.py" path="py\site-packages\jinja2\nativetypes.py" comment="py\site-packages\jinja2\nativetypes.py"/>
+				<file name="nodes.py" path="py\site-packages\jinja2\nodes.py" comment="py\site-packages\jinja2\nodes.py"/>
+				<file name="optimizer.py" path="py\site-packages\jinja2\optimizer.py" comment="py\site-packages\jinja2\optimizer.py"/>
+				<file name="parser.py" path="py\site-packages\jinja2\parser.py" comment="py\site-packages\jinja2\parser.py"/>
+				<file name="py.typed" path="py\site-packages\jinja2\py.typed" comment="py\site-packages\jinja2\py.typed"/>
+				<file name="runtime.py" path="py\site-packages\jinja2\runtime.py" comment="py\site-packages\jinja2\runtime.py"/>
+				<file name="sandbox.py" path="py\site-packages\jinja2\sandbox.py" comment="py\site-packages\jinja2\sandbox.py"/>
+				<file name="tests.py" path="py\site-packages\jinja2\tests.py" comment="py\site-packages\jinja2\tests.py"/>
+				<file name="utils.py" path="py\site-packages\jinja2\utils.py" comment="py\site-packages\jinja2\utils.py"/>
+				<file name="visitor.py" path="py\site-packages\jinja2\visitor.py" comment="py\site-packages\jinja2\visitor.py"/>
+				<file name="_identifier.py" path="py\site-packages\jinja2\_identifier.py" comment="py\site-packages\jinja2\_identifier.py"/>
+				<file name="__init__.py" path="py\site-packages\jinja2\__init__.py" comment="py\site-packages\jinja2\__init__.py"/>
+				<folder name="__pycache__" path="py\site-packages\jinja2\__pycache__" comment="py\site-packages\jinja2\__pycache__">
+					<file name="async_utils.cpython-38.pyc" path="py\site-packages\jinja2\__pycache__\async_utils.cpython-38.pyc" comment="py\site-packages\jinja2\__pycache__\async_utils.cpython-38.pyc"/>
+					<file name="bccache.cpython-38.pyc" path="py\site-packages\jinja2\__pycache__\bccache.cpython-38.pyc" comment="py\site-packages\jinja2\__pycache__\bccache.cpython-38.pyc"/>
+					<file name="compiler.cpython-38.pyc" path="py\site-packages\jinja2\__pycache__\compiler.cpython-38.pyc" comment="py\site-packages\jinja2\__pycache__\compiler.cpython-38.pyc"/>
+					<file name="constants.cpython-38.pyc" path="py\site-packages\jinja2\__pycache__\constants.cpython-38.pyc" comment="py\site-packages\jinja2\__pycache__\constants.cpython-38.pyc"/>
+					<file name="debug.cpython-38.pyc" path="py\site-packages\jinja2\__pycache__\debug.cpython-38.pyc" comment="py\site-packages\jinja2\__pycache__\debug.cpython-38.pyc"/>
+					<file name="defaults.cpython-38.pyc" path="py\site-packages\jinja2\__pycache__\defaults.cpython-38.pyc" comment="py\site-packages\jinja2\__pycache__\defaults.cpython-38.pyc"/>
+					<file name="environment.cpython-38.pyc" path="py\site-packages\jinja2\__pycache__\environment.cpython-38.pyc" comment="py\site-packages\jinja2\__pycache__\environment.cpython-38.pyc"/>
+					<file name="exceptions.cpython-38.pyc" path="py\site-packages\jinja2\__pycache__\exceptions.cpython-38.pyc" comment="py\site-packages\jinja2\__pycache__\exceptions.cpython-38.pyc"/>
+					<file name="ext.cpython-38.pyc" path="py\site-packages\jinja2\__pycache__\ext.cpython-38.pyc" comment="py\site-packages\jinja2\__pycache__\ext.cpython-38.pyc"/>
+					<file name="filters.cpython-38.pyc" path="py\site-packages\jinja2\__pycache__\filters.cpython-38.pyc" comment="py\site-packages\jinja2\__pycache__\filters.cpython-38.pyc"/>
+					<file name="idtracking.cpython-38.pyc" path="py\site-packages\jinja2\__pycache__\idtracking.cpython-38.pyc" comment="py\site-packages\jinja2\__pycache__\idtracking.cpython-38.pyc"/>
+					<file name="lexer.cpython-38.pyc" path="py\site-packages\jinja2\__pycache__\lexer.cpython-38.pyc" comment="py\site-packages\jinja2\__pycache__\lexer.cpython-38.pyc"/>
+					<file name="loaders.cpython-38.pyc" path="py\site-packages\jinja2\__pycache__\loaders.cpython-38.pyc" comment="py\site-packages\jinja2\__pycache__\loaders.cpython-38.pyc"/>
+					<file name="meta.cpython-38.pyc" path="py\site-packages\jinja2\__pycache__\meta.cpython-38.pyc" comment="py\site-packages\jinja2\__pycache__\meta.cpython-38.pyc"/>
+					<file name="nativetypes.cpython-38.pyc" path="py\site-packages\jinja2\__pycache__\nativetypes.cpython-38.pyc" comment="py\site-packages\jinja2\__pycache__\nativetypes.cpython-38.pyc"/>
+					<file name="nodes.cpython-38.pyc" path="py\site-packages\jinja2\__pycache__\nodes.cpython-38.pyc" comment="py\site-packages\jinja2\__pycache__\nodes.cpython-38.pyc"/>
+					<file name="optimizer.cpython-38.pyc" path="py\site-packages\jinja2\__pycache__\optimizer.cpython-38.pyc" comment="py\site-packages\jinja2\__pycache__\optimizer.cpython-38.pyc"/>
+					<file name="parser.cpython-38.pyc" path="py\site-packages\jinja2\__pycache__\parser.cpython-38.pyc" comment="py\site-packages\jinja2\__pycache__\parser.cpython-38.pyc"/>
+					<file name="runtime.cpython-38.pyc" path="py\site-packages\jinja2\__pycache__\runtime.cpython-38.pyc" comment="py\site-packages\jinja2\__pycache__\runtime.cpython-38.pyc"/>
+					<file name="sandbox.cpython-38.pyc" path="py\site-packages\jinja2\__pycache__\sandbox.cpython-38.pyc" comment="py\site-packages\jinja2\__pycache__\sandbox.cpython-38.pyc"/>
+					<file name="tests.cpython-38.pyc" path="py\site-packages\jinja2\__pycache__\tests.cpython-38.pyc" comment="py\site-packages\jinja2\__pycache__\tests.cpython-38.pyc"/>
+					<file name="utils.cpython-38.pyc" path="py\site-packages\jinja2\__pycache__\utils.cpython-38.pyc" comment="py\site-packages\jinja2\__pycache__\utils.cpython-38.pyc"/>
+					<file name="visitor.cpython-38.pyc" path="py\site-packages\jinja2\__pycache__\visitor.cpython-38.pyc" comment="py\site-packages\jinja2\__pycache__\visitor.cpython-38.pyc"/>
+					<file name="_identifier.cpython-38.pyc" path="py\site-packages\jinja2\__pycache__\_identifier.cpython-38.pyc" comment="py\site-packages\jinja2\__pycache__\_identifier.cpython-38.pyc"/>
+					<file name="__init__.cpython-38.pyc" path="py\site-packages\jinja2\__pycache__\__init__.cpython-38.pyc" comment="py\site-packages\jinja2\__pycache__\__init__.cpython-38.pyc"/>
+				</folder>
+			</folder>
+			<folder name="Jinja2-3.1.2.dist-info" path="py\site-packages\Jinja2-3.1.2.dist-info" comment="py\site-packages\Jinja2-3.1.2.dist-info">
+				<file name="entry_points.txt" path="py\site-packages\Jinja2-3.1.2.dist-info\entry_points.txt" comment="py\site-packages\Jinja2-3.1.2.dist-info\entry_points.txt"/>
+				<file name="INSTALLER" path="py\site-packages\Jinja2-3.1.2.dist-info\INSTALLER" comment="py\site-packages\Jinja2-3.1.2.dist-info\INSTALLER"/>
+				<file name="LICENSE.rst" path="py\site-packages\Jinja2-3.1.2.dist-info\LICENSE.rst" comment="py\site-packages\Jinja2-3.1.2.dist-info\LICENSE.rst"/>
+				<file name="METADATA" path="py\site-packages\Jinja2-3.1.2.dist-info\METADATA" comment="py\site-packages\Jinja2-3.1.2.dist-info\METADATA"/>
+				<file name="RECORD" path="py\site-packages\Jinja2-3.1.2.dist-info\RECORD" comment="py\site-packages\Jinja2-3.1.2.dist-info\RECORD"/>
+				<file name="top_level.txt" path="py\site-packages\Jinja2-3.1.2.dist-info\top_level.txt" comment="py\site-packages\Jinja2-3.1.2.dist-info\top_level.txt"/>
+				<file name="WHEEL" path="py\site-packages\Jinja2-3.1.2.dist-info\WHEEL" comment="py\site-packages\Jinja2-3.1.2.dist-info\WHEEL"/>
+			</folder>
+			<folder name="lxml" path="py\site-packages\lxml" comment="py\site-packages\lxml">
+				<file name="builder.cp38-win32.pyd" path="py\site-packages\lxml\builder.cp38-win32.pyd" comment="py\site-packages\lxml\builder.cp38-win32.pyd"/>
+				<file name="builder.py" path="py\site-packages\lxml\builder.py" comment="py\site-packages\lxml\builder.py"/>
+				<file name="cssselect.py" path="py\site-packages\lxml\cssselect.py" comment="py\site-packages\lxml\cssselect.py"/>
+				<file name="doctestcompare.py" path="py\site-packages\lxml\doctestcompare.py" comment="py\site-packages\lxml\doctestcompare.py"/>
+				<file name="ElementInclude.py" path="py\site-packages\lxml\ElementInclude.py" comment="py\site-packages\lxml\ElementInclude.py"/>
+				<file name="etree.cp38-win32.pyd" path="py\site-packages\lxml\etree.cp38-win32.pyd" comment="py\site-packages\lxml\etree.cp38-win32.pyd"/>
+				<file name="etree.h" path="py\site-packages\lxml\etree.h" comment="py\site-packages\lxml\etree.h"/>
+				<file name="etree_api.h" path="py\site-packages\lxml\etree_api.h" comment="py\site-packages\lxml\etree_api.h"/>
+				<file name="lxml.etree.h" path="py\site-packages\lxml\lxml.etree.h" comment="py\site-packages\lxml\lxml.etree.h"/>
+				<file name="lxml.etree_api.h" path="py\site-packages\lxml\lxml.etree_api.h" comment="py\site-packages\lxml\lxml.etree_api.h"/>
+				<file name="objectify.cp38-win32.pyd" path="py\site-packages\lxml\objectify.cp38-win32.pyd" comment="py\site-packages\lxml\objectify.cp38-win32.pyd"/>
+				<file name="pyclasslookup.py" path="py\site-packages\lxml\pyclasslookup.py" comment="py\site-packages\lxml\pyclasslookup.py"/>
+				<file name="sax.cp38-win32.pyd" path="py\site-packages\lxml\sax.cp38-win32.pyd" comment="py\site-packages\lxml\sax.cp38-win32.pyd"/>
+				<file name="sax.py" path="py\site-packages\lxml\sax.py" comment="py\site-packages\lxml\sax.py"/>
+				<file name="usedoctest.py" path="py\site-packages\lxml\usedoctest.py" comment="py\site-packages\lxml\usedoctest.py"/>
+				<file name="_elementpath.cp38-win32.pyd" path="py\site-packages\lxml\_elementpath.cp38-win32.pyd" comment="py\site-packages\lxml\_elementpath.cp38-win32.pyd"/>
+				<file name="_elementpath.py" path="py\site-packages\lxml\_elementpath.py" comment="py\site-packages\lxml\_elementpath.py"/>
+				<file name="__init__.py" path="py\site-packages\lxml\__init__.py" comment="py\site-packages\lxml\__init__.py"/>
+				<folder name="html" path="py\site-packages\lxml\html" comment="py\site-packages\lxml\html">
+					<file name="builder.py" path="py\site-packages\lxml\html\builder.py" comment="py\site-packages\lxml\html\builder.py"/>
+					<file name="clean.cp38-win32.pyd" path="py\site-packages\lxml\html\clean.cp38-win32.pyd" comment="py\site-packages\lxml\html\clean.cp38-win32.pyd"/>
+					<file name="clean.py" path="py\site-packages\lxml\html\clean.py" comment="py\site-packages\lxml\html\clean.py"/>
+					<file name="defs.py" path="py\site-packages\lxml\html\defs.py" comment="py\site-packages\lxml\html\defs.py"/>
+					<file name="diff.cp38-win32.pyd" path="py\site-packages\lxml\html\diff.cp38-win32.pyd" comment="py\site-packages\lxml\html\diff.cp38-win32.pyd"/>
+					<file name="diff.py" path="py\site-packages\lxml\html\diff.py" comment="py\site-packages\lxml\html\diff.py"/>
+					<file name="ElementSoup.py" path="py\site-packages\lxml\html\ElementSoup.py" comment="py\site-packages\lxml\html\ElementSoup.py"/>
+					<file name="formfill.py" path="py\site-packages\lxml\html\formfill.py" comment="py\site-packages\lxml\html\formfill.py"/>
+					<file name="html5parser.py" path="py\site-packages\lxml\html\html5parser.py" comment="py\site-packages\lxml\html\html5parser.py"/>
+					<file name="soupparser.py" path="py\site-packages\lxml\html\soupparser.py" comment="py\site-packages\lxml\html\soupparser.py"/>
+					<file name="usedoctest.py" path="py\site-packages\lxml\html\usedoctest.py" comment="py\site-packages\lxml\html\usedoctest.py"/>
+					<file name="_diffcommand.py" path="py\site-packages\lxml\html\_diffcommand.py" comment="py\site-packages\lxml\html\_diffcommand.py"/>
+					<file name="_html5builder.py" path="py\site-packages\lxml\html\_html5builder.py" comment="py\site-packages\lxml\html\_html5builder.py"/>
+					<file name="_setmixin.py" path="py\site-packages\lxml\html\_setmixin.py" comment="py\site-packages\lxml\html\_setmixin.py"/>
+					<file name="__init__.py" path="py\site-packages\lxml\html\__init__.py" comment="py\site-packages\lxml\html\__init__.py"/>
+					<folder name="__pycache__" path="py\site-packages\lxml\html\__pycache__" comment="py\site-packages\lxml\html\__pycache__">
+						<file name="builder.cpython-38.pyc" path="py\site-packages\lxml\html\__pycache__\builder.cpython-38.pyc" comment="py\site-packages\lxml\html\__pycache__\builder.cpython-38.pyc"/>
+						<file name="clean.cpython-38.pyc" path="py\site-packages\lxml\html\__pycache__\clean.cpython-38.pyc" comment="py\site-packages\lxml\html\__pycache__\clean.cpython-38.pyc"/>
+						<file name="defs.cpython-38.pyc" path="py\site-packages\lxml\html\__pycache__\defs.cpython-38.pyc" comment="py\site-packages\lxml\html\__pycache__\defs.cpython-38.pyc"/>
+						<file name="diff.cpython-38.pyc" path="py\site-packages\lxml\html\__pycache__\diff.cpython-38.pyc" comment="py\site-packages\lxml\html\__pycache__\diff.cpython-38.pyc"/>
+						<file name="ElementSoup.cpython-38.pyc" path="py\site-packages\lxml\html\__pycache__\ElementSoup.cpython-38.pyc" comment="py\site-packages\lxml\html\__pycache__\ElementSoup.cpython-38.pyc"/>
+						<file name="formfill.cpython-38.pyc" path="py\site-packages\lxml\html\__pycache__\formfill.cpython-38.pyc" comment="py\site-packages\lxml\html\__pycache__\formfill.cpython-38.pyc"/>
+						<file name="html5parser.cpython-38.pyc" path="py\site-packages\lxml\html\__pycache__\html5parser.cpython-38.pyc" comment="py\site-packages\lxml\html\__pycache__\html5parser.cpython-38.pyc"/>
+						<file name="soupparser.cpython-38.pyc" path="py\site-packages\lxml\html\__pycache__\soupparser.cpython-38.pyc" comment="py\site-packages\lxml\html\__pycache__\soupparser.cpython-38.pyc"/>
+						<file name="usedoctest.cpython-38.pyc" path="py\site-packages\lxml\html\__pycache__\usedoctest.cpython-38.pyc" comment="py\site-packages\lxml\html\__pycache__\usedoctest.cpython-38.pyc"/>
+						<file name="_diffcommand.cpython-38.pyc" path="py\site-packages\lxml\html\__pycache__\_diffcommand.cpython-38.pyc" comment="py\site-packages\lxml\html\__pycache__\_diffcommand.cpython-38.pyc"/>
+						<file name="_html5builder.cpython-38.pyc" path="py\site-packages\lxml\html\__pycache__\_html5builder.cpython-38.pyc" comment="py\site-packages\lxml\html\__pycache__\_html5builder.cpython-38.pyc"/>
+						<file name="_setmixin.cpython-38.pyc" path="py\site-packages\lxml\html\__pycache__\_setmixin.cpython-38.pyc" comment="py\site-packages\lxml\html\__pycache__\_setmixin.cpython-38.pyc"/>
+						<file name="__init__.cpython-38.pyc" path="py\site-packages\lxml\html\__pycache__\__init__.cpython-38.pyc" comment="py\site-packages\lxml\html\__pycache__\__init__.cpython-38.pyc"/>
+					</folder>
+				</folder>
+				<folder name="includes" path="py\site-packages\lxml\includes" comment="py\site-packages\lxml\includes">
+					<file name="c14n.pxd" path="py\site-packages\lxml\includes\c14n.pxd" comment="py\site-packages\lxml\includes\c14n.pxd"/>
+					<file name="config.pxd" path="py\site-packages\lxml\includes\config.pxd" comment="py\site-packages\lxml\includes\config.pxd"/>
+					<file name="dtdvalid.pxd" path="py\site-packages\lxml\includes\dtdvalid.pxd" comment="py\site-packages\lxml\includes\dtdvalid.pxd"/>
+					<file name="etreepublic.pxd" path="py\site-packages\lxml\includes\etreepublic.pxd" comment="py\site-packages\lxml\includes\etreepublic.pxd"/>
+					<file name="etree_defs.h" path="py\site-packages\lxml\includes\etree_defs.h" comment="py\site-packages\lxml\includes\etree_defs.h"/>
+					<file name="htmlparser.pxd" path="py\site-packages\lxml\includes\htmlparser.pxd" comment="py\site-packages\lxml\includes\htmlparser.pxd"/>
+					<file name="lxml-version.h" path="py\site-packages\lxml\includes\lxml-version.h" comment="py\site-packages\lxml\includes\lxml-version.h"/>
+					<file name="relaxng.pxd" path="py\site-packages\lxml\includes\relaxng.pxd" comment="py\site-packages\lxml\includes\relaxng.pxd"/>
+					<file name="schematron.pxd" path="py\site-packages\lxml\includes\schematron.pxd" comment="py\site-packages\lxml\includes\schematron.pxd"/>
+					<file name="tree.pxd" path="py\site-packages\lxml\includes\tree.pxd" comment="py\site-packages\lxml\includes\tree.pxd"/>
+					<file name="uri.pxd" path="py\site-packages\lxml\includes\uri.pxd" comment="py\site-packages\lxml\includes\uri.pxd"/>
+					<file name="xinclude.pxd" path="py\site-packages\lxml\includes\xinclude.pxd" comment="py\site-packages\lxml\includes\xinclude.pxd"/>
+					<file name="xmlerror.pxd" path="py\site-packages\lxml\includes\xmlerror.pxd" comment="py\site-packages\lxml\includes\xmlerror.pxd"/>
+					<file name="xmlparser.pxd" path="py\site-packages\lxml\includes\xmlparser.pxd" comment="py\site-packages\lxml\includes\xmlparser.pxd"/>
+					<file name="xmlschema.pxd" path="py\site-packages\lxml\includes\xmlschema.pxd" comment="py\site-packages\lxml\includes\xmlschema.pxd"/>
+					<file name="xpath.pxd" path="py\site-packages\lxml\includes\xpath.pxd" comment="py\site-packages\lxml\includes\xpath.pxd"/>
+					<file name="xslt.pxd" path="py\site-packages\lxml\includes\xslt.pxd" comment="py\site-packages\lxml\includes\xslt.pxd"/>
+					<file name="__init__.pxd" path="py\site-packages\lxml\includes\__init__.pxd" comment="py\site-packages\lxml\includes\__init__.pxd"/>
+					<file name="__init__.py" path="py\site-packages\lxml\includes\__init__.py" comment="py\site-packages\lxml\includes\__init__.py"/>
+					<folder name="extlibs" path="py\site-packages\lxml\includes\extlibs" comment="py\site-packages\lxml\includes\extlibs">
+						<file name="zconf.h" path="py\site-packages\lxml\includes\extlibs\zconf.h" comment="py\site-packages\lxml\includes\extlibs\zconf.h"/>
+						<file name="zlib.h" path="py\site-packages\lxml\includes\extlibs\zlib.h" comment="py\site-packages\lxml\includes\extlibs\zlib.h"/>
+						<file name="__init__.py" path="py\site-packages\lxml\includes\extlibs\__init__.py" comment="py\site-packages\lxml\includes\extlibs\__init__.py"/>
+						<folder name="__pycache__" path="py\site-packages\lxml\includes\extlibs\__pycache__" comment="py\site-packages\lxml\includes\extlibs\__pycache__">
+							<file name="__init__.cpython-38.pyc" path="py\site-packages\lxml\includes\extlibs\__pycache__\__init__.cpython-38.pyc" comment="py\site-packages\lxml\includes\extlibs\__pycache__\__init__.cpython-38.pyc"/>
+						</folder>
+					</folder>
+					<folder name="libexslt" path="py\site-packages\lxml\includes\libexslt" comment="py\site-packages\lxml\includes\libexslt">
+						<file name="exslt.h" path="py\site-packages\lxml\includes\libexslt\exslt.h" comment="py\site-packages\lxml\includes\libexslt\exslt.h"/>
+						<file name="exsltconfig.h" path="py\site-packages\lxml\includes\libexslt\exsltconfig.h" comment="py\site-packages\lxml\includes\libexslt\exsltconfig.h"/>
+						<file name="exsltexports.h" path="py\site-packages\lxml\includes\libexslt\exsltexports.h" comment="py\site-packages\lxml\includes\libexslt\exsltexports.h"/>
+						<file name="libexslt.h" path="py\site-packages\lxml\includes\libexslt\libexslt.h" comment="py\site-packages\lxml\includes\libexslt\libexslt.h"/>
+						<file name="__init__.py" path="py\site-packages\lxml\includes\libexslt\__init__.py" comment="py\site-packages\lxml\includes\libexslt\__init__.py"/>
+						<folder name="__pycache__" path="py\site-packages\lxml\includes\libexslt\__pycache__" comment="py\site-packages\lxml\includes\libexslt\__pycache__">
+							<file name="__init__.cpython-38.pyc" path="py\site-packages\lxml\includes\libexslt\__pycache__\__init__.cpython-38.pyc" comment="py\site-packages\lxml\includes\libexslt\__pycache__\__init__.cpython-38.pyc"/>
+						</folder>
+					</folder>
+					<folder name="libxml" path="py\site-packages\lxml\includes\libxml" comment="py\site-packages\lxml\includes\libxml">
+						<file name="c14n.h" path="py\site-packages\lxml\includes\libxml\c14n.h" comment="py\site-packages\lxml\includes\libxml\c14n.h"/>
+						<file name="catalog.h" path="py\site-packages\lxml\includes\libxml\catalog.h" comment="py\site-packages\lxml\includes\libxml\catalog.h"/>
+						<file name="chvalid.h" path="py\site-packages\lxml\includes\libxml\chvalid.h" comment="py\site-packages\lxml\includes\libxml\chvalid.h"/>
+						<file name="debugXML.h" path="py\site-packages\lxml\includes\libxml\debugXML.h" comment="py\site-packages\lxml\includes\libxml\debugXML.h"/>
+						<file name="dict.h" path="py\site-packages\lxml\includes\libxml\dict.h" comment="py\site-packages\lxml\includes\libxml\dict.h"/>
+						<file name="DOCBparser.h" path="py\site-packages\lxml\includes\libxml\DOCBparser.h" comment="py\site-packages\lxml\includes\libxml\DOCBparser.h"/>
+						<file name="encoding.h" path="py\site-packages\lxml\includes\libxml\encoding.h" comment="py\site-packages\lxml\includes\libxml\encoding.h"/>
+						<file name="entities.h" path="py\site-packages\lxml\includes\libxml\entities.h" comment="py\site-packages\lxml\includes\libxml\entities.h"/>
+						<file name="globals.h" path="py\site-packages\lxml\includes\libxml\globals.h" comment="py\site-packages\lxml\includes\libxml\globals.h"/>
+						<file name="hash.h" path="py\site-packages\lxml\includes\libxml\hash.h" comment="py\site-packages\lxml\includes\libxml\hash.h"/>
+						<file name="HTMLparser.h" path="py\site-packages\lxml\includes\libxml\HTMLparser.h" comment="py\site-packages\lxml\includes\libxml\HTMLparser.h"/>
+						<file name="HTMLtree.h" path="py\site-packages\lxml\includes\libxml\HTMLtree.h" comment="py\site-packages\lxml\includes\libxml\HTMLtree.h"/>
+						<file name="list.h" path="py\site-packages\lxml\includes\libxml\list.h" comment="py\site-packages\lxml\includes\libxml\list.h"/>
+						<file name="nanoftp.h" path="py\site-packages\lxml\includes\libxml\nanoftp.h" comment="py\site-packages\lxml\includes\libxml\nanoftp.h"/>
+						<file name="nanohttp.h" path="py\site-packages\lxml\includes\libxml\nanohttp.h" comment="py\site-packages\lxml\includes\libxml\nanohttp.h"/>
+						<file name="parser.h" path="py\site-packages\lxml\includes\libxml\parser.h" comment="py\site-packages\lxml\includes\libxml\parser.h"/>
+						<file name="parserInternals.h" path="py\site-packages\lxml\includes\libxml\parserInternals.h" comment="py\site-packages\lxml\includes\libxml\parserInternals.h"/>
+						<file name="pattern.h" path="py\site-packages\lxml\includes\libxml\pattern.h" comment="py\site-packages\lxml\includes\libxml\pattern.h"/>
+						<file name="relaxng.h" path="py\site-packages\lxml\includes\libxml\relaxng.h" comment="py\site-packages\lxml\includes\libxml\relaxng.h"/>
+						<file name="SAX.h" path="py\site-packages\lxml\includes\libxml\SAX.h" comment="py\site-packages\lxml\includes\libxml\SAX.h"/>
+						<file name="SAX2.h" path="py\site-packages\lxml\includes\libxml\SAX2.h" comment="py\site-packages\lxml\includes\libxml\SAX2.h"/>
+						<file name="schemasInternals.h" path="py\site-packages\lxml\includes\libxml\schemasInternals.h" comment="py\site-packages\lxml\includes\libxml\schemasInternals.h"/>
+						<file name="schematron.h" path="py\site-packages\lxml\includes\libxml\schematron.h" comment="py\site-packages\lxml\includes\libxml\schematron.h"/>
+						<file name="threads.h" path="py\site-packages\lxml\includes\libxml\threads.h" comment="py\site-packages\lxml\includes\libxml\threads.h"/>
+						<file name="tree.h" path="py\site-packages\lxml\includes\libxml\tree.h" comment="py\site-packages\lxml\includes\libxml\tree.h"/>
+						<file name="uri.h" path="py\site-packages\lxml\includes\libxml\uri.h" comment="py\site-packages\lxml\includes\libxml\uri.h"/>
+						<file name="valid.h" path="py\site-packages\lxml\includes\libxml\valid.h" comment="py\site-packages\lxml\includes\libxml\valid.h"/>
+						<file name="xinclude.h" path="py\site-packages\lxml\includes\libxml\xinclude.h" comment="py\site-packages\lxml\includes\libxml\xinclude.h"/>
+						<file name="xlink.h" path="py\site-packages\lxml\includes\libxml\xlink.h" comment="py\site-packages\lxml\includes\libxml\xlink.h"/>
+						<file name="xmlautomata.h" path="py\site-packages\lxml\includes\libxml\xmlautomata.h" comment="py\site-packages\lxml\includes\libxml\xmlautomata.h"/>
+						<file name="xmlerror.h" path="py\site-packages\lxml\includes\libxml\xmlerror.h" comment="py\site-packages\lxml\includes\libxml\xmlerror.h"/>
+						<file name="xmlexports.h" path="py\site-packages\lxml\includes\libxml\xmlexports.h" comment="py\site-packages\lxml\includes\libxml\xmlexports.h"/>
+						<file name="xmlIO.h" path="py\site-packages\lxml\includes\libxml\xmlIO.h" comment="py\site-packages\lxml\includes\libxml\xmlIO.h"/>
+						<file name="xmlmemory.h" path="py\site-packages\lxml\includes\libxml\xmlmemory.h" comment="py\site-packages\lxml\includes\libxml\xmlmemory.h"/>
+						<file name="xmlmodule.h" path="py\site-packages\lxml\includes\libxml\xmlmodule.h" comment="py\site-packages\lxml\includes\libxml\xmlmodule.h"/>
+						<file name="xmlreader.h" path="py\site-packages\lxml\includes\libxml\xmlreader.h" comment="py\site-packages\lxml\includes\libxml\xmlreader.h"/>
+						<file name="xmlregexp.h" path="py\site-packages\lxml\includes\libxml\xmlregexp.h" comment="py\site-packages\lxml\includes\libxml\xmlregexp.h"/>
+						<file name="xmlsave.h" path="py\site-packages\lxml\includes\libxml\xmlsave.h" comment="py\site-packages\lxml\includes\libxml\xmlsave.h"/>
+						<file name="xmlschemas.h" path="py\site-packages\lxml\includes\libxml\xmlschemas.h" comment="py\site-packages\lxml\includes\libxml\xmlschemas.h"/>
+						<file name="xmlschemastypes.h" path="py\site-packages\lxml\includes\libxml\xmlschemastypes.h" comment="py\site-packages\lxml\includes\libxml\xmlschemastypes.h"/>
+						<file name="xmlstring.h" path="py\site-packages\lxml\includes\libxml\xmlstring.h" comment="py\site-packages\lxml\includes\libxml\xmlstring.h"/>
+						<file name="xmlunicode.h" path="py\site-packages\lxml\includes\libxml\xmlunicode.h" comment="py\site-packages\lxml\includes\libxml\xmlunicode.h"/>
+						<file name="xmlversion.h" path="py\site-packages\lxml\includes\libxml\xmlversion.h" comment="py\site-packages\lxml\includes\libxml\xmlversion.h"/>
+						<file name="xmlwriter.h" path="py\site-packages\lxml\includes\libxml\xmlwriter.h" comment="py\site-packages\lxml\includes\libxml\xmlwriter.h"/>
+						<file name="xpath.h" path="py\site-packages\lxml\includes\libxml\xpath.h" comment="py\site-packages\lxml\includes\libxml\xpath.h"/>
+						<file name="xpathInternals.h" path="py\site-packages\lxml\includes\libxml\xpathInternals.h" comment="py\site-packages\lxml\includes\libxml\xpathInternals.h"/>
+						<file name="xpointer.h" path="py\site-packages\lxml\includes\libxml\xpointer.h" comment="py\site-packages\lxml\includes\libxml\xpointer.h"/>
+						<file name="__init__.py" path="py\site-packages\lxml\includes\libxml\__init__.py" comment="py\site-packages\lxml\includes\libxml\__init__.py"/>
+						<folder name="__pycache__" path="py\site-packages\lxml\includes\libxml\__pycache__" comment="py\site-packages\lxml\includes\libxml\__pycache__">
+							<file name="__init__.cpython-38.pyc" path="py\site-packages\lxml\includes\libxml\__pycache__\__init__.cpython-38.pyc" comment="py\site-packages\lxml\includes\libxml\__pycache__\__init__.cpython-38.pyc"/>
+						</folder>
+					</folder>
+					<folder name="libxslt" path="py\site-packages\lxml\includes\libxslt" comment="py\site-packages\lxml\includes\libxslt">
+						<file name="attributes.h" path="py\site-packages\lxml\includes\libxslt\attributes.h" comment="py\site-packages\lxml\includes\libxslt\attributes.h"/>
+						<file name="documents.h" path="py\site-packages\lxml\includes\libxslt\documents.h" comment="py\site-packages\lxml\includes\libxslt\documents.h"/>
+						<file name="extensions.h" path="py\site-packages\lxml\includes\libxslt\extensions.h" comment="py\site-packages\lxml\includes\libxslt\extensions.h"/>
+						<file name="extra.h" path="py\site-packages\lxml\includes\libxslt\extra.h" comment="py\site-packages\lxml\includes\libxslt\extra.h"/>
+						<file name="functions.h" path="py\site-packages\lxml\includes\libxslt\functions.h" comment="py\site-packages\lxml\includes\libxslt\functions.h"/>
+						<file name="imports.h" path="py\site-packages\lxml\includes\libxslt\imports.h" comment="py\site-packages\lxml\includes\libxslt\imports.h"/>
+						<file name="keys.h" path="py\site-packages\lxml\includes\libxslt\keys.h" comment="py\site-packages\lxml\includes\libxslt\keys.h"/>
+						<file name="libxslt.h" path="py\site-packages\lxml\includes\libxslt\libxslt.h" comment="py\site-packages\lxml\includes\libxslt\libxslt.h"/>
+						<file name="namespaces.h" path="py\site-packages\lxml\includes\libxslt\namespaces.h" comment="py\site-packages\lxml\includes\libxslt\namespaces.h"/>
+						<file name="numbersInternals.h" path="py\site-packages\lxml\includes\libxslt\numbersInternals.h" comment="py\site-packages\lxml\includes\libxslt\numbersInternals.h"/>
+						<file name="preproc.h" path="py\site-packages\lxml\includes\libxslt\preproc.h" comment="py\site-packages\lxml\includes\libxslt\preproc.h"/>
+						<file name="security.h" path="py\site-packages\lxml\includes\libxslt\security.h" comment="py\site-packages\lxml\includes\libxslt\security.h"/>
+						<file name="templates.h" path="py\site-packages\lxml\includes\libxslt\templates.h" comment="py\site-packages\lxml\includes\libxslt\templates.h"/>
+						<file name="transform.h" path="py\site-packages\lxml\includes\libxslt\transform.h" comment="py\site-packages\lxml\includes\libxslt\transform.h"/>
+						<file name="trio.h" path="py\site-packages\lxml\includes\libxslt\trio.h" comment="py\site-packages\lxml\includes\libxslt\trio.h"/>
+						<file name="triodef.h" path="py\site-packages\lxml\includes\libxslt\triodef.h" comment="py\site-packages\lxml\includes\libxslt\triodef.h"/>
+						<file name="variables.h" path="py\site-packages\lxml\includes\libxslt\variables.h" comment="py\site-packages\lxml\includes\libxslt\variables.h"/>
+						<file name="win32config.h" path="py\site-packages\lxml\includes\libxslt\win32config.h" comment="py\site-packages\lxml\includes\libxslt\win32config.h"/>
+						<file name="xslt.h" path="py\site-packages\lxml\includes\libxslt\xslt.h" comment="py\site-packages\lxml\includes\libxslt\xslt.h"/>
+						<file name="xsltconfig.h" path="py\site-packages\lxml\includes\libxslt\xsltconfig.h" comment="py\site-packages\lxml\includes\libxslt\xsltconfig.h"/>
+						<file name="xsltexports.h" path="py\site-packages\lxml\includes\libxslt\xsltexports.h" comment="py\site-packages\lxml\includes\libxslt\xsltexports.h"/>
+						<file name="xsltInternals.h" path="py\site-packages\lxml\includes\libxslt\xsltInternals.h" comment="py\site-packages\lxml\includes\libxslt\xsltInternals.h"/>
+						<file name="xsltlocale.h" path="py\site-packages\lxml\includes\libxslt\xsltlocale.h" comment="py\site-packages\lxml\includes\libxslt\xsltlocale.h"/>
+						<file name="xsltutils.h" path="py\site-packages\lxml\includes\libxslt\xsltutils.h" comment="py\site-packages\lxml\includes\libxslt\xsltutils.h"/>
+						<file name="__init__.py" path="py\site-packages\lxml\includes\libxslt\__init__.py" comment="py\site-packages\lxml\includes\libxslt\__init__.py"/>
+						<folder name="__pycache__" path="py\site-packages\lxml\includes\libxslt\__pycache__" comment="py\site-packages\lxml\includes\libxslt\__pycache__">
+							<file name="__init__.cpython-38.pyc" path="py\site-packages\lxml\includes\libxslt\__pycache__\__init__.cpython-38.pyc" comment="py\site-packages\lxml\includes\libxslt\__pycache__\__init__.cpython-38.pyc"/>
+						</folder>
+					</folder>
+					<folder name="__pycache__" path="py\site-packages\lxml\includes\__pycache__" comment="py\site-packages\lxml\includes\__pycache__">
+						<file name="__init__.cpython-38.pyc" path="py\site-packages\lxml\includes\__pycache__\__init__.cpython-38.pyc" comment="py\site-packages\lxml\includes\__pycache__\__init__.cpython-38.pyc"/>
+					</folder>
+				</folder>
+				<folder name="isoschematron" path="py\site-packages\lxml\isoschematron" comment="py\site-packages\lxml\isoschematron">
+					<file name="__init__.py" path="py\site-packages\lxml\isoschematron\__init__.py" comment="py\site-packages\lxml\isoschematron\__init__.py"/>
+					<folder name="resources" path="py\site-packages\lxml\isoschematron\resources" comment="py\site-packages\lxml\isoschematron\resources">
+						<folder name="rng" path="py\site-packages\lxml\isoschematron\resources\rng" comment="py\site-packages\lxml\isoschematron\resources\rng">
+							<file name="iso-schematron.rng" path="py\site-packages\lxml\isoschematron\resources\rng\iso-schematron.rng" comment="py\site-packages\lxml\isoschematron\resources\rng\iso-schematron.rng"/>
+						</folder>
+						<folder name="xsl" path="py\site-packages\lxml\isoschematron\resources\xsl" comment="py\site-packages\lxml\isoschematron\resources\xsl">
+							<file name="RNG2Schtrn.xsl" path="py\site-packages\lxml\isoschematron\resources\xsl\RNG2Schtrn.xsl" comment="py\site-packages\lxml\isoschematron\resources\xsl\RNG2Schtrn.xsl"/>
+							<file name="XSD2Schtrn.xsl" path="py\site-packages\lxml\isoschematron\resources\xsl\XSD2Schtrn.xsl" comment="py\site-packages\lxml\isoschematron\resources\xsl\XSD2Schtrn.xsl"/>
+							<folder name="iso-schematron-xslt1" path="py\site-packages\lxml\isoschematron\resources\xsl\iso-schematron-xslt1" comment="py\site-packages\lxml\isoschematron\resources\xsl\iso-schematron-xslt1">
+								<file name="iso_abstract_expand.xsl" path="py\site-packages\lxml\isoschematron\resources\xsl\iso-schematron-xslt1\iso_abstract_expand.xsl" comment="py\site-packages\lxml\isoschematron\resources\xsl\iso-schematron-xslt1\iso_abstract_expand.xsl"/>
+								<file name="iso_dsdl_include.xsl" path="py\site-packages\lxml\isoschematron\resources\xsl\iso-schematron-xslt1\iso_dsdl_include.xsl" comment="py\site-packages\lxml\isoschematron\resources\xsl\iso-schematron-xslt1\iso_dsdl_include.xsl"/>
+								<file name="iso_schematron_message.xsl" path="py\site-packages\lxml\isoschematron\resources\xsl\iso-schematron-xslt1\iso_schematron_message.xsl" comment="py\site-packages\lxml\isoschematron\resources\xsl\iso-schematron-xslt1\iso_schematron_message.xsl"/>
+								<file name="iso_schematron_skeleton_for_xslt1.xsl" path="py\site-packages\lxml\isoschematron\resources\xsl\iso-schematron-xslt1\iso_schematron_skeleton_for_xslt1.xsl" comment="py\site-packages\lxml\isoschematron\resources\xsl\iso-schematron-xslt1\iso_schematron_skeleton_for_xslt1.xsl"/>
+								<file name="iso_svrl_for_xslt1.xsl" path="py\site-packages\lxml\isoschematron\resources\xsl\iso-schematron-xslt1\iso_svrl_for_xslt1.xsl" comment="py\site-packages\lxml\isoschematron\resources\xsl\iso-schematron-xslt1\iso_svrl_for_xslt1.xsl"/>
+								<file name="readme.txt" path="py\site-packages\lxml\isoschematron\resources\xsl\iso-schematron-xslt1\readme.txt" comment="py\site-packages\lxml\isoschematron\resources\xsl\iso-schematron-xslt1\readme.txt"/>
+							</folder>
+						</folder>
+					</folder>
+					<folder name="__pycache__" path="py\site-packages\lxml\isoschematron\__pycache__" comment="py\site-packages\lxml\isoschematron\__pycache__">
+						<file name="__init__.cpython-38.pyc" path="py\site-packages\lxml\isoschematron\__pycache__\__init__.cpython-38.pyc" comment="py\site-packages\lxml\isoschematron\__pycache__\__init__.cpython-38.pyc"/>
+					</folder>
+				</folder>
+				<folder name="__pycache__" path="py\site-packages\lxml\__pycache__" comment="py\site-packages\lxml\__pycache__">
+					<file name="builder.cpython-38.pyc" path="py\site-packages\lxml\__pycache__\builder.cpython-38.pyc" comment="py\site-packages\lxml\__pycache__\builder.cpython-38.pyc"/>
+					<file name="cssselect.cpython-38.pyc" path="py\site-packages\lxml\__pycache__\cssselect.cpython-38.pyc" comment="py\site-packages\lxml\__pycache__\cssselect.cpython-38.pyc"/>
+					<file name="doctestcompare.cpython-38.pyc" path="py\site-packages\lxml\__pycache__\doctestcompare.cpython-38.pyc" comment="py\site-packages\lxml\__pycache__\doctestcompare.cpython-38.pyc"/>
+					<file name="ElementInclude.cpython-38.pyc" path="py\site-packages\lxml\__pycache__\ElementInclude.cpython-38.pyc" comment="py\site-packages\lxml\__pycache__\ElementInclude.cpython-38.pyc"/>
+					<file name="pyclasslookup.cpython-38.pyc" path="py\site-packages\lxml\__pycache__\pyclasslookup.cpython-38.pyc" comment="py\site-packages\lxml\__pycache__\pyclasslookup.cpython-38.pyc"/>
+					<file name="sax.cpython-38.pyc" path="py\site-packages\lxml\__pycache__\sax.cpython-38.pyc" comment="py\site-packages\lxml\__pycache__\sax.cpython-38.pyc"/>
+					<file name="usedoctest.cpython-38.pyc" path="py\site-packages\lxml\__pycache__\usedoctest.cpython-38.pyc" comment="py\site-packages\lxml\__pycache__\usedoctest.cpython-38.pyc"/>
+					<file name="_elementpath.cpython-38.pyc" path="py\site-packages\lxml\__pycache__\_elementpath.cpython-38.pyc" comment="py\site-packages\lxml\__pycache__\_elementpath.cpython-38.pyc"/>
+					<file name="__init__.cpython-38.pyc" path="py\site-packages\lxml\__pycache__\__init__.cpython-38.pyc" comment="py\site-packages\lxml\__pycache__\__init__.cpython-38.pyc"/>
+				</folder>
+			</folder>
+			<folder name="lxml-4.9.1.dist-info" path="py\site-packages\lxml-4.9.1.dist-info" comment="py\site-packages\lxml-4.9.1.dist-info">
+				<file name="INSTALLER" path="py\site-packages\lxml-4.9.1.dist-info\INSTALLER" comment="py\site-packages\lxml-4.9.1.dist-info\INSTALLER"/>
+				<file name="LICENSE.txt" path="py\site-packages\lxml-4.9.1.dist-info\LICENSE.txt" comment="py\site-packages\lxml-4.9.1.dist-info\LICENSE.txt"/>
+				<file name="LICENSES.txt" path="py\site-packages\lxml-4.9.1.dist-info\LICENSES.txt" comment="py\site-packages\lxml-4.9.1.dist-info\LICENSES.txt"/>
+				<file name="METADATA" path="py\site-packages\lxml-4.9.1.dist-info\METADATA" comment="py\site-packages\lxml-4.9.1.dist-info\METADATA"/>
+				<file name="RECORD" path="py\site-packages\lxml-4.9.1.dist-info\RECORD" comment="py\site-packages\lxml-4.9.1.dist-info\RECORD"/>
+				<file name="top_level.txt" path="py\site-packages\lxml-4.9.1.dist-info\top_level.txt" comment="py\site-packages\lxml-4.9.1.dist-info\top_level.txt"/>
+				<file name="WHEEL" path="py\site-packages\lxml-4.9.1.dist-info\WHEEL" comment="py\site-packages\lxml-4.9.1.dist-info\WHEEL"/>
+			</folder>
+			<folder name="markupsafe" path="py\site-packages\markupsafe" comment="py\site-packages\markupsafe">
+				<file name="py.typed" path="py\site-packages\markupsafe\py.typed" comment="py\site-packages\markupsafe\py.typed"/>
+				<file name="_native.py" path="py\site-packages\markupsafe\_native.py" comment="py\site-packages\markupsafe\_native.py"/>
+				<file name="_speedups.c" path="py\site-packages\markupsafe\_speedups.c" comment="py\site-packages\markupsafe\_speedups.c"/>
+				<file name="_speedups.cp38-win32.pyd" path="py\site-packages\markupsafe\_speedups.cp38-win32.pyd" comment="py\site-packages\markupsafe\_speedups.cp38-win32.pyd"/>
+				<file name="_speedups.pyi" path="py\site-packages\markupsafe\_speedups.pyi" comment="py\site-packages\markupsafe\_speedups.pyi"/>
+				<file name="__init__.py" path="py\site-packages\markupsafe\__init__.py" comment="py\site-packages\markupsafe\__init__.py"/>
+				<folder name="__pycache__" path="py\site-packages\markupsafe\__pycache__" comment="py\site-packages\markupsafe\__pycache__">
+					<file name="_native.cpython-38.pyc" path="py\site-packages\markupsafe\__pycache__\_native.cpython-38.pyc" comment="py\site-packages\markupsafe\__pycache__\_native.cpython-38.pyc"/>
+					<file name="__init__.cpython-38.pyc" path="py\site-packages\markupsafe\__pycache__\__init__.cpython-38.pyc" comment="py\site-packages\markupsafe\__pycache__\__init__.cpython-38.pyc"/>
+				</folder>
+			</folder>
+			<folder name="MarkupSafe-2.1.1.dist-info" path="py\site-packages\MarkupSafe-2.1.1.dist-info" comment="py\site-packages\MarkupSafe-2.1.1.dist-info">
+				<file name="INSTALLER" path="py\site-packages\MarkupSafe-2.1.1.dist-info\INSTALLER" comment="py\site-packages\MarkupSafe-2.1.1.dist-info\INSTALLER"/>
+				<file name="LICENSE.rst" path="py\site-packages\MarkupSafe-2.1.1.dist-info\LICENSE.rst" comment="py\site-packages\MarkupSafe-2.1.1.dist-info\LICENSE.rst"/>
+				<file name="METADATA" path="py\site-packages\MarkupSafe-2.1.1.dist-info\METADATA" comment="py\site-packages\MarkupSafe-2.1.1.dist-info\METADATA"/>
+				<file name="RECORD" path="py\site-packages\MarkupSafe-2.1.1.dist-info\RECORD" comment="py\site-packages\MarkupSafe-2.1.1.dist-info\RECORD"/>
+				<file name="top_level.txt" path="py\site-packages\MarkupSafe-2.1.1.dist-info\top_level.txt" comment="py\site-packages\MarkupSafe-2.1.1.dist-info\top_level.txt"/>
+				<file name="WHEEL" path="py\site-packages\MarkupSafe-2.1.1.dist-info\WHEEL" comment="py\site-packages\MarkupSafe-2.1.1.dist-info\WHEEL"/>
+			</folder>
+			<folder name="openpyxl" path="py\site-packages\openpyxl" comment="py\site-packages\openpyxl">
+				<file name="_constants.py" path="py\site-packages\openpyxl\_constants.py" comment="py\site-packages\openpyxl\_constants.py"/>
+				<file name="__init__.py" path="py\site-packages\openpyxl\__init__.py" comment="py\site-packages\openpyxl\__init__.py"/>
+				<folder name="cell" path="py\site-packages\openpyxl\cell" comment="py\site-packages\openpyxl\cell">
+					<file name="cell.py" path="py\site-packages\openpyxl\cell\cell.py" comment="py\site-packages\openpyxl\cell\cell.py"/>
+					<file name="read_only.py" path="py\site-packages\openpyxl\cell\read_only.py" comment="py\site-packages\openpyxl\cell\read_only.py"/>
+					<file name="text.py" path="py\site-packages\openpyxl\cell\text.py" comment="py\site-packages\openpyxl\cell\text.py"/>
+					<file name="_writer.py" path="py\site-packages\openpyxl\cell\_writer.py" comment="py\site-packages\openpyxl\cell\_writer.py"/>
+					<file name="__init__.py" path="py\site-packages\openpyxl\cell\__init__.py" comment="py\site-packages\openpyxl\cell\__init__.py"/>
+					<folder name="__pycache__" path="py\site-packages\openpyxl\cell\__pycache__" comment="py\site-packages\openpyxl\cell\__pycache__">
+						<file name="cell.cpython-38.pyc" path="py\site-packages\openpyxl\cell\__pycache__\cell.cpython-38.pyc" comment="py\site-packages\openpyxl\cell\__pycache__\cell.cpython-38.pyc"/>
+						<file name="read_only.cpython-38.pyc" path="py\site-packages\openpyxl\cell\__pycache__\read_only.cpython-38.pyc" comment="py\site-packages\openpyxl\cell\__pycache__\read_only.cpython-38.pyc"/>
+						<file name="text.cpython-38.pyc" path="py\site-packages\openpyxl\cell\__pycache__\text.cpython-38.pyc" comment="py\site-packages\openpyxl\cell\__pycache__\text.cpython-38.pyc"/>
+						<file name="_writer.cpython-38.pyc" path="py\site-packages\openpyxl\cell\__pycache__\_writer.cpython-38.pyc" comment="py\site-packages\openpyxl\cell\__pycache__\_writer.cpython-38.pyc"/>
+						<file name="__init__.cpython-38.pyc" path="py\site-packages\openpyxl\cell\__pycache__\__init__.cpython-38.pyc" comment="py\site-packages\openpyxl\cell\__pycache__\__init__.cpython-38.pyc"/>
+					</folder>
+				</folder>
+				<folder name="chart" path="py\site-packages\openpyxl\chart" comment="py\site-packages\openpyxl\chart">
+					<file name="area_chart.py" path="py\site-packages\openpyxl\chart\area_chart.py" comment="py\site-packages\openpyxl\chart\area_chart.py"/>
+					<file name="axis.py" path="py\site-packages\openpyxl\chart\axis.py" comment="py\site-packages\openpyxl\chart\axis.py"/>
+					<file name="bar_chart.py" path="py\site-packages\openpyxl\chart\bar_chart.py" comment="py\site-packages\openpyxl\chart\bar_chart.py"/>
+					<file name="bubble_chart.py" path="py\site-packages\openpyxl\chart\bubble_chart.py" comment="py\site-packages\openpyxl\chart\bubble_chart.py"/>
+					<file name="chartspace.py" path="py\site-packages\openpyxl\chart\chartspace.py" comment="py\site-packages\openpyxl\chart\chartspace.py"/>
+					<file name="data_source.py" path="py\site-packages\openpyxl\chart\data_source.py" comment="py\site-packages\openpyxl\chart\data_source.py"/>
+					<file name="descriptors.py" path="py\site-packages\openpyxl\chart\descriptors.py" comment="py\site-packages\openpyxl\chart\descriptors.py"/>
+					<file name="error_bar.py" path="py\site-packages\openpyxl\chart\error_bar.py" comment="py\site-packages\openpyxl\chart\error_bar.py"/>
+					<file name="label.py" path="py\site-packages\openpyxl\chart\label.py" comment="py\site-packages\openpyxl\chart\label.py"/>
+					<file name="layout.py" path="py\site-packages\openpyxl\chart\layout.py" comment="py\site-packages\openpyxl\chart\layout.py"/>
+					<file name="legend.py" path="py\site-packages\openpyxl\chart\legend.py" comment="py\site-packages\openpyxl\chart\legend.py"/>
+					<file name="line_chart.py" path="py\site-packages\openpyxl\chart\line_chart.py" comment="py\site-packages\openpyxl\chart\line_chart.py"/>
+					<file name="marker.py" path="py\site-packages\openpyxl\chart\marker.py" comment="py\site-packages\openpyxl\chart\marker.py"/>
+					<file name="picture.py" path="py\site-packages\openpyxl\chart\picture.py" comment="py\site-packages\openpyxl\chart\picture.py"/>
+					<file name="pie_chart.py" path="py\site-packages\openpyxl\chart\pie_chart.py" comment="py\site-packages\openpyxl\chart\pie_chart.py"/>
+					<file name="pivot.py" path="py\site-packages\openpyxl\chart\pivot.py" comment="py\site-packages\openpyxl\chart\pivot.py"/>
+					<file name="plotarea.py" path="py\site-packages\openpyxl\chart\plotarea.py" comment="py\site-packages\openpyxl\chart\plotarea.py"/>
+					<file name="print_settings.py" path="py\site-packages\openpyxl\chart\print_settings.py" comment="py\site-packages\openpyxl\chart\print_settings.py"/>
+					<file name="radar_chart.py" path="py\site-packages\openpyxl\chart\radar_chart.py" comment="py\site-packages\openpyxl\chart\radar_chart.py"/>
+					<file name="reader.py" path="py\site-packages\openpyxl\chart\reader.py" comment="py\site-packages\openpyxl\chart\reader.py"/>
+					<file name="reference.py" path="py\site-packages\openpyxl\chart\reference.py" comment="py\site-packages\openpyxl\chart\reference.py"/>
+					<file name="scatter_chart.py" path="py\site-packages\openpyxl\chart\scatter_chart.py" comment="py\site-packages\openpyxl\chart\scatter_chart.py"/>
+					<file name="series.py" path="py\site-packages\openpyxl\chart\series.py" comment="py\site-packages\openpyxl\chart\series.py"/>
+					<file name="series_factory.py" path="py\site-packages\openpyxl\chart\series_factory.py" comment="py\site-packages\openpyxl\chart\series_factory.py"/>
+					<file name="shapes.py" path="py\site-packages\openpyxl\chart\shapes.py" comment="py\site-packages\openpyxl\chart\shapes.py"/>
+					<file name="stock_chart.py" path="py\site-packages\openpyxl\chart\stock_chart.py" comment="py\site-packages\openpyxl\chart\stock_chart.py"/>
+					<file name="surface_chart.py" path="py\site-packages\openpyxl\chart\surface_chart.py" comment="py\site-packages\openpyxl\chart\surface_chart.py"/>
+					<file name="text.py" path="py\site-packages\openpyxl\chart\text.py" comment="py\site-packages\openpyxl\chart\text.py"/>
+					<file name="title.py" path="py\site-packages\openpyxl\chart\title.py" comment="py\site-packages\openpyxl\chart\title.py"/>
+					<file name="trendline.py" path="py\site-packages\openpyxl\chart\trendline.py" comment="py\site-packages\openpyxl\chart\trendline.py"/>
+					<file name="updown_bars.py" path="py\site-packages\openpyxl\chart\updown_bars.py" comment="py\site-packages\openpyxl\chart\updown_bars.py"/>
+					<file name="_3d.py" path="py\site-packages\openpyxl\chart\_3d.py" comment="py\site-packages\openpyxl\chart\_3d.py"/>
+					<file name="_chart.py" path="py\site-packages\openpyxl\chart\_chart.py" comment="py\site-packages\openpyxl\chart\_chart.py"/>
+					<file name="__init__.py" path="py\site-packages\openpyxl\chart\__init__.py" comment="py\site-packages\openpyxl\chart\__init__.py"/>
+					<folder name="__pycache__" path="py\site-packages\openpyxl\chart\__pycache__" comment="py\site-packages\openpyxl\chart\__pycache__">
+						<file name="area_chart.cpython-38.pyc" path="py\site-packages\openpyxl\chart\__pycache__\area_chart.cpython-38.pyc" comment="py\site-packages\openpyxl\chart\__pycache__\area_chart.cpython-38.pyc"/>
+						<file name="axis.cpython-38.pyc" path="py\site-packages\openpyxl\chart\__pycache__\axis.cpython-38.pyc" comment="py\site-packages\openpyxl\chart\__pycache__\axis.cpython-38.pyc"/>
+						<file name="bar_chart.cpython-38.pyc" path="py\site-packages\openpyxl\chart\__pycache__\bar_chart.cpython-38.pyc" comment="py\site-packages\openpyxl\chart\__pycache__\bar_chart.cpython-38.pyc"/>
+						<file name="bubble_chart.cpython-38.pyc" path="py\site-packages\openpyxl\chart\__pycache__\bubble_chart.cpython-38.pyc" comment="py\site-packages\openpyxl\chart\__pycache__\bubble_chart.cpython-38.pyc"/>
+						<file name="chartspace.cpython-38.pyc" path="py\site-packages\openpyxl\chart\__pycache__\chartspace.cpython-38.pyc" comment="py\site-packages\openpyxl\chart\__pycache__\chartspace.cpython-38.pyc"/>
+						<file name="data_source.cpython-38.pyc" path="py\site-packages\openpyxl\chart\__pycache__\data_source.cpython-38.pyc" comment="py\site-packages\openpyxl\chart\__pycache__\data_source.cpython-38.pyc"/>
+						<file name="descriptors.cpython-38.pyc" path="py\site-packages\openpyxl\chart\__pycache__\descriptors.cpython-38.pyc" comment="py\site-packages\openpyxl\chart\__pycache__\descriptors.cpython-38.pyc"/>
+						<file name="error_bar.cpython-38.pyc" path="py\site-packages\openpyxl\chart\__pycache__\error_bar.cpython-38.pyc" comment="py\site-packages\openpyxl\chart\__pycache__\error_bar.cpython-38.pyc"/>
+						<file name="label.cpython-38.pyc" path="py\site-packages\openpyxl\chart\__pycache__\label.cpython-38.pyc" comment="py\site-packages\openpyxl\chart\__pycache__\label.cpython-38.pyc"/>
+						<file name="layout.cpython-38.pyc" path="py\site-packages\openpyxl\chart\__pycache__\layout.cpython-38.pyc" comment="py\site-packages\openpyxl\chart\__pycache__\layout.cpython-38.pyc"/>
+						<file name="legend.cpython-38.pyc" path="py\site-packages\openpyxl\chart\__pycache__\legend.cpython-38.pyc" comment="py\site-packages\openpyxl\chart\__pycache__\legend.cpython-38.pyc"/>
+						<file name="line_chart.cpython-38.pyc" path="py\site-packages\openpyxl\chart\__pycache__\line_chart.cpython-38.pyc" comment="py\site-packages\openpyxl\chart\__pycache__\line_chart.cpython-38.pyc"/>
+						<file name="marker.cpython-38.pyc" path="py\site-packages\openpyxl\chart\__pycache__\marker.cpython-38.pyc" comment="py\site-packages\openpyxl\chart\__pycache__\marker.cpython-38.pyc"/>
+						<file name="picture.cpython-38.pyc" path="py\site-packages\openpyxl\chart\__pycache__\picture.cpython-38.pyc" comment="py\site-packages\openpyxl\chart\__pycache__\picture.cpython-38.pyc"/>
+						<file name="pie_chart.cpython-38.pyc" path="py\site-packages\openpyxl\chart\__pycache__\pie_chart.cpython-38.pyc" comment="py\site-packages\openpyxl\chart\__pycache__\pie_chart.cpython-38.pyc"/>
+						<file name="pivot.cpython-38.pyc" path="py\site-packages\openpyxl\chart\__pycache__\pivot.cpython-38.pyc" comment="py\site-packages\openpyxl\chart\__pycache__\pivot.cpython-38.pyc"/>
+						<file name="plotarea.cpython-38.pyc" path="py\site-packages\openpyxl\chart\__pycache__\plotarea.cpython-38.pyc" comment="py\site-packages\openpyxl\chart\__pycache__\plotarea.cpython-38.pyc"/>
+						<file name="print_settings.cpython-38.pyc" path="py\site-packages\openpyxl\chart\__pycache__\print_settings.cpython-38.pyc" comment="py\site-packages\openpyxl\chart\__pycache__\print_settings.cpython-38.pyc"/>
+						<file name="radar_chart.cpython-38.pyc" path="py\site-packages\openpyxl\chart\__pycache__\radar_chart.cpython-38.pyc" comment="py\site-packages\openpyxl\chart\__pycache__\radar_chart.cpython-38.pyc"/>
+						<file name="reader.cpython-38.pyc" path="py\site-packages\openpyxl\chart\__pycache__\reader.cpython-38.pyc" comment="py\site-packages\openpyxl\chart\__pycache__\reader.cpython-38.pyc"/>
+						<file name="reference.cpython-38.pyc" path="py\site-packages\openpyxl\chart\__pycache__\reference.cpython-38.pyc" comment="py\site-packages\openpyxl\chart\__pycache__\reference.cpython-38.pyc"/>
+						<file name="scatter_chart.cpython-38.pyc" path="py\site-packages\openpyxl\chart\__pycache__\scatter_chart.cpython-38.pyc" comment="py\site-packages\openpyxl\chart\__pycache__\scatter_chart.cpython-38.pyc"/>
+						<file name="series.cpython-38.pyc" path="py\site-packages\openpyxl\chart\__pycache__\series.cpython-38.pyc" comment="py\site-packages\openpyxl\chart\__pycache__\series.cpython-38.pyc"/>
+						<file name="series_factory.cpython-38.pyc" path="py\site-packages\openpyxl\chart\__pycache__\series_factory.cpython-38.pyc" comment="py\site-packages\openpyxl\chart\__pycache__\series_factory.cpython-38.pyc"/>
+						<file name="shapes.cpython-38.pyc" path="py\site-packages\openpyxl\chart\__pycache__\shapes.cpython-38.pyc" comment="py\site-packages\openpyxl\chart\__pycache__\shapes.cpython-38.pyc"/>
+						<file name="stock_chart.cpython-38.pyc" path="py\site-packages\openpyxl\chart\__pycache__\stock_chart.cpython-38.pyc" comment="py\site-packages\openpyxl\chart\__pycache__\stock_chart.cpython-38.pyc"/>
+						<file name="surface_chart.cpython-38.pyc" path="py\site-packages\openpyxl\chart\__pycache__\surface_chart.cpython-38.pyc" comment="py\site-packages\openpyxl\chart\__pycache__\surface_chart.cpython-38.pyc"/>
+						<file name="text.cpython-38.pyc" path="py\site-packages\openpyxl\chart\__pycache__\text.cpython-38.pyc" comment="py\site-packages\openpyxl\chart\__pycache__\text.cpython-38.pyc"/>
+						<file name="title.cpython-38.pyc" path="py\site-packages\openpyxl\chart\__pycache__\title.cpython-38.pyc" comment="py\site-packages\openpyxl\chart\__pycache__\title.cpython-38.pyc"/>
+						<file name="trendline.cpython-38.pyc" path="py\site-packages\openpyxl\chart\__pycache__\trendline.cpython-38.pyc" comment="py\site-packages\openpyxl\chart\__pycache__\trendline.cpython-38.pyc"/>
+						<file name="updown_bars.cpython-38.pyc" path="py\site-packages\openpyxl\chart\__pycache__\updown_bars.cpython-38.pyc" comment="py\site-packages\openpyxl\chart\__pycache__\updown_bars.cpython-38.pyc"/>
+						<file name="_3d.cpython-38.pyc" path="py\site-packages\openpyxl\chart\__pycache__\_3d.cpython-38.pyc" comment="py\site-packages\openpyxl\chart\__pycache__\_3d.cpython-38.pyc"/>
+						<file name="_chart.cpython-38.pyc" path="py\site-packages\openpyxl\chart\__pycache__\_chart.cpython-38.pyc" comment="py\site-packages\openpyxl\chart\__pycache__\_chart.cpython-38.pyc"/>
+						<file name="__init__.cpython-38.pyc" path="py\site-packages\openpyxl\chart\__pycache__\__init__.cpython-38.pyc" comment="py\site-packages\openpyxl\chart\__pycache__\__init__.cpython-38.pyc"/>
+					</folder>
+				</folder>
+				<folder name="chartsheet" path="py\site-packages\openpyxl\chartsheet" comment="py\site-packages\openpyxl\chartsheet">
+					<file name="chartsheet.py" path="py\site-packages\openpyxl\chartsheet\chartsheet.py" comment="py\site-packages\openpyxl\chartsheet\chartsheet.py"/>
+					<file name="custom.py" path="py\site-packages\openpyxl\chartsheet\custom.py" comment="py\site-packages\openpyxl\chartsheet\custom.py"/>
+					<file name="properties.py" path="py\site-packages\openpyxl\chartsheet\properties.py" comment="py\site-packages\openpyxl\chartsheet\properties.py"/>
+					<file name="protection.py" path="py\site-packages\openpyxl\chartsheet\protection.py" comment="py\site-packages\openpyxl\chartsheet\protection.py"/>
+					<file name="publish.py" path="py\site-packages\openpyxl\chartsheet\publish.py" comment="py\site-packages\openpyxl\chartsheet\publish.py"/>
+					<file name="relation.py" path="py\site-packages\openpyxl\chartsheet\relation.py" comment="py\site-packages\openpyxl\chartsheet\relation.py"/>
+					<file name="views.py" path="py\site-packages\openpyxl\chartsheet\views.py" comment="py\site-packages\openpyxl\chartsheet\views.py"/>
+					<file name="__init__.py" path="py\site-packages\openpyxl\chartsheet\__init__.py" comment="py\site-packages\openpyxl\chartsheet\__init__.py"/>
+					<folder name="__pycache__" path="py\site-packages\openpyxl\chartsheet\__pycache__" comment="py\site-packages\openpyxl\chartsheet\__pycache__">
+						<file name="chartsheet.cpython-38.pyc" path="py\site-packages\openpyxl\chartsheet\__pycache__\chartsheet.cpython-38.pyc" comment="py\site-packages\openpyxl\chartsheet\__pycache__\chartsheet.cpython-38.pyc"/>
+						<file name="custom.cpython-38.pyc" path="py\site-packages\openpyxl\chartsheet\__pycache__\custom.cpython-38.pyc" comment="py\site-packages\openpyxl\chartsheet\__pycache__\custom.cpython-38.pyc"/>
+						<file name="properties.cpython-38.pyc" path="py\site-packages\openpyxl\chartsheet\__pycache__\properties.cpython-38.pyc" comment="py\site-packages\openpyxl\chartsheet\__pycache__\properties.cpython-38.pyc"/>
+						<file name="protection.cpython-38.pyc" path="py\site-packages\openpyxl\chartsheet\__pycache__\protection.cpython-38.pyc" comment="py\site-packages\openpyxl\chartsheet\__pycache__\protection.cpython-38.pyc"/>
+						<file name="publish.cpython-38.pyc" path="py\site-packages\openpyxl\chartsheet\__pycache__\publish.cpython-38.pyc" comment="py\site-packages\openpyxl\chartsheet\__pycache__\publish.cpython-38.pyc"/>
+						<file name="relation.cpython-38.pyc" path="py\site-packages\openpyxl\chartsheet\__pycache__\relation.cpython-38.pyc" comment="py\site-packages\openpyxl\chartsheet\__pycache__\relation.cpython-38.pyc"/>
+						<file name="views.cpython-38.pyc" path="py\site-packages\openpyxl\chartsheet\__pycache__\views.cpython-38.pyc" comment="py\site-packages\openpyxl\chartsheet\__pycache__\views.cpython-38.pyc"/>
+						<file name="__init__.cpython-38.pyc" path="py\site-packages\openpyxl\chartsheet\__pycache__\__init__.cpython-38.pyc" comment="py\site-packages\openpyxl\chartsheet\__pycache__\__init__.cpython-38.pyc"/>
+					</folder>
+				</folder>
+				<folder name="comments" path="py\site-packages\openpyxl\comments" comment="py\site-packages\openpyxl\comments">
+					<file name="author.py" path="py\site-packages\openpyxl\comments\author.py" comment="py\site-packages\openpyxl\comments\author.py"/>
+					<file name="comments.py" path="py\site-packages\openpyxl\comments\comments.py" comment="py\site-packages\openpyxl\comments\comments.py"/>
+					<file name="comment_sheet.py" path="py\site-packages\openpyxl\comments\comment_sheet.py" comment="py\site-packages\openpyxl\comments\comment_sheet.py"/>
+					<file name="shape_writer.py" path="py\site-packages\openpyxl\comments\shape_writer.py" comment="py\site-packages\openpyxl\comments\shape_writer.py"/>
+					<file name="__init__.py" path="py\site-packages\openpyxl\comments\__init__.py" comment="py\site-packages\openpyxl\comments\__init__.py"/>
+					<folder name="__pycache__" path="py\site-packages\openpyxl\comments\__pycache__" comment="py\site-packages\openpyxl\comments\__pycache__">
+						<file name="author.cpython-38.pyc" path="py\site-packages\openpyxl\comments\__pycache__\author.cpython-38.pyc" comment="py\site-packages\openpyxl\comments\__pycache__\author.cpython-38.pyc"/>
+						<file name="comments.cpython-38.pyc" path="py\site-packages\openpyxl\comments\__pycache__\comments.cpython-38.pyc" comment="py\site-packages\openpyxl\comments\__pycache__\comments.cpython-38.pyc"/>
+						<file name="comment_sheet.cpython-38.pyc" path="py\site-packages\openpyxl\comments\__pycache__\comment_sheet.cpython-38.pyc" comment="py\site-packages\openpyxl\comments\__pycache__\comment_sheet.cpython-38.pyc"/>
+						<file name="shape_writer.cpython-38.pyc" path="py\site-packages\openpyxl\comments\__pycache__\shape_writer.cpython-38.pyc" comment="py\site-packages\openpyxl\comments\__pycache__\shape_writer.cpython-38.pyc"/>
+						<file name="__init__.cpython-38.pyc" path="py\site-packages\openpyxl\comments\__pycache__\__init__.cpython-38.pyc" comment="py\site-packages\openpyxl\comments\__pycache__\__init__.cpython-38.pyc"/>
+					</folder>
+				</folder>
+				<folder name="compat" path="py\site-packages\openpyxl\compat" comment="py\site-packages\openpyxl\compat">
+					<file name="abc.py" path="py\site-packages\openpyxl\compat\abc.py" comment="py\site-packages\openpyxl\compat\abc.py"/>
+					<file name="numbers.py" path="py\site-packages\openpyxl\compat\numbers.py" comment="py\site-packages\openpyxl\compat\numbers.py"/>
+					<file name="product.py" path="py\site-packages\openpyxl\compat\product.py" comment="py\site-packages\openpyxl\compat\product.py"/>
+					<file name="singleton.py" path="py\site-packages\openpyxl\compat\singleton.py" comment="py\site-packages\openpyxl\compat\singleton.py"/>
+					<file name="strings.py" path="py\site-packages\openpyxl\compat\strings.py" comment="py\site-packages\openpyxl\compat\strings.py"/>
+					<file name="__init__.py" path="py\site-packages\openpyxl\compat\__init__.py" comment="py\site-packages\openpyxl\compat\__init__.py"/>
+					<folder name="__pycache__" path="py\site-packages\openpyxl\compat\__pycache__" comment="py\site-packages\openpyxl\compat\__pycache__">
+						<file name="abc.cpython-38.pyc" path="py\site-packages\openpyxl\compat\__pycache__\abc.cpython-38.pyc" comment="py\site-packages\openpyxl\compat\__pycache__\abc.cpython-38.pyc"/>
+						<file name="numbers.cpython-38.pyc" path="py\site-packages\openpyxl\compat\__pycache__\numbers.cpython-38.pyc" comment="py\site-packages\openpyxl\compat\__pycache__\numbers.cpython-38.pyc"/>
+						<file name="product.cpython-38.pyc" path="py\site-packages\openpyxl\compat\__pycache__\product.cpython-38.pyc" comment="py\site-packages\openpyxl\compat\__pycache__\product.cpython-38.pyc"/>
+						<file name="singleton.cpython-38.pyc" path="py\site-packages\openpyxl\compat\__pycache__\singleton.cpython-38.pyc" comment="py\site-packages\openpyxl\compat\__pycache__\singleton.cpython-38.pyc"/>
+						<file name="strings.cpython-38.pyc" path="py\site-packages\openpyxl\compat\__pycache__\strings.cpython-38.pyc" comment="py\site-packages\openpyxl\compat\__pycache__\strings.cpython-38.pyc"/>
+						<file name="__init__.cpython-38.pyc" path="py\site-packages\openpyxl\compat\__pycache__\__init__.cpython-38.pyc" comment="py\site-packages\openpyxl\compat\__pycache__\__init__.cpython-38.pyc"/>
+					</folder>
+				</folder>
+				<folder name="descriptors" path="py\site-packages\openpyxl\descriptors" comment="py\site-packages\openpyxl\descriptors">
+					<file name="base.py" path="py\site-packages\openpyxl\descriptors\base.py" comment="py\site-packages\openpyxl\descriptors\base.py"/>
+					<file name="excel.py" path="py\site-packages\openpyxl\descriptors\excel.py" comment="py\site-packages\openpyxl\descriptors\excel.py"/>
+					<file name="namespace.py" path="py\site-packages\openpyxl\descriptors\namespace.py" comment="py\site-packages\openpyxl\descriptors\namespace.py"/>
+					<file name="nested.py" path="py\site-packages\openpyxl\descriptors\nested.py" comment="py\site-packages\openpyxl\descriptors\nested.py"/>
+					<file name="sequence.py" path="py\site-packages\openpyxl\descriptors\sequence.py" comment="py\site-packages\openpyxl\descriptors\sequence.py"/>
+					<file name="serialisable.py" path="py\site-packages\openpyxl\descriptors\serialisable.py" comment="py\site-packages\openpyxl\descriptors\serialisable.py"/>
+					<file name="slots.py" path="py\site-packages\openpyxl\descriptors\slots.py" comment="py\site-packages\openpyxl\descriptors\slots.py"/>
+					<file name="__init__.py" path="py\site-packages\openpyxl\descriptors\__init__.py" comment="py\site-packages\openpyxl\descriptors\__init__.py"/>
+					<folder name="__pycache__" path="py\site-packages\openpyxl\descriptors\__pycache__" comment="py\site-packages\openpyxl\descriptors\__pycache__">
+						<file name="base.cpython-38.pyc" path="py\site-packages\openpyxl\descriptors\__pycache__\base.cpython-38.pyc" comment="py\site-packages\openpyxl\descriptors\__pycache__\base.cpython-38.pyc"/>
+						<file name="excel.cpython-38.pyc" path="py\site-packages\openpyxl\descriptors\__pycache__\excel.cpython-38.pyc" comment="py\site-packages\openpyxl\descriptors\__pycache__\excel.cpython-38.pyc"/>
+						<file name="namespace.cpython-38.pyc" path="py\site-packages\openpyxl\descriptors\__pycache__\namespace.cpython-38.pyc" comment="py\site-packages\openpyxl\descriptors\__pycache__\namespace.cpython-38.pyc"/>
+						<file name="nested.cpython-38.pyc" path="py\site-packages\openpyxl\descriptors\__pycache__\nested.cpython-38.pyc" comment="py\site-packages\openpyxl\descriptors\__pycache__\nested.cpython-38.pyc"/>
+						<file name="sequence.cpython-38.pyc" path="py\site-packages\openpyxl\descriptors\__pycache__\sequence.cpython-38.pyc" comment="py\site-packages\openpyxl\descriptors\__pycache__\sequence.cpython-38.pyc"/>
+						<file name="serialisable.cpython-38.pyc" path="py\site-packages\openpyxl\descriptors\__pycache__\serialisable.cpython-38.pyc" comment="py\site-packages\openpyxl\descriptors\__pycache__\serialisable.cpython-38.pyc"/>
+						<file name="slots.cpython-38.pyc" path="py\site-packages\openpyxl\descriptors\__pycache__\slots.cpython-38.pyc" comment="py\site-packages\openpyxl\descriptors\__pycache__\slots.cpython-38.pyc"/>
+						<file name="__init__.cpython-38.pyc" path="py\site-packages\openpyxl\descriptors\__pycache__\__init__.cpython-38.pyc" comment="py\site-packages\openpyxl\descriptors\__pycache__\__init__.cpython-38.pyc"/>
+					</folder>
+				</folder>
+				<folder name="drawing" path="py\site-packages\openpyxl\drawing" comment="py\site-packages\openpyxl\drawing">
+					<file name="colors.py" path="py\site-packages\openpyxl\drawing\colors.py" comment="py\site-packages\openpyxl\drawing\colors.py"/>
+					<file name="connector.py" path="py\site-packages\openpyxl\drawing\connector.py" comment="py\site-packages\openpyxl\drawing\connector.py"/>
+					<file name="drawing.py" path="py\site-packages\openpyxl\drawing\drawing.py" comment="py\site-packages\openpyxl\drawing\drawing.py"/>
+					<file name="effect.py" path="py\site-packages\openpyxl\drawing\effect.py" comment="py\site-packages\openpyxl\drawing\effect.py"/>
+					<file name="fill.py" path="py\site-packages\openpyxl\drawing\fill.py" comment="py\site-packages\openpyxl\drawing\fill.py"/>
+					<file name="geometry.py" path="py\site-packages\openpyxl\drawing\geometry.py" comment="py\site-packages\openpyxl\drawing\geometry.py"/>
+					<file name="graphic.py" path="py\site-packages\openpyxl\drawing\graphic.py" comment="py\site-packages\openpyxl\drawing\graphic.py"/>
+					<file name="image.py" path="py\site-packages\openpyxl\drawing\image.py" comment="py\site-packages\openpyxl\drawing\image.py"/>
+					<file name="line.py" path="py\site-packages\openpyxl\drawing\line.py" comment="py\site-packages\openpyxl\drawing\line.py"/>
+					<file name="picture.py" path="py\site-packages\openpyxl\drawing\picture.py" comment="py\site-packages\openpyxl\drawing\picture.py"/>
+					<file name="properties.py" path="py\site-packages\openpyxl\drawing\properties.py" comment="py\site-packages\openpyxl\drawing\properties.py"/>
+					<file name="relation.py" path="py\site-packages\openpyxl\drawing\relation.py" comment="py\site-packages\openpyxl\drawing\relation.py"/>
+					<file name="spreadsheet_drawing.py" path="py\site-packages\openpyxl\drawing\spreadsheet_drawing.py" comment="py\site-packages\openpyxl\drawing\spreadsheet_drawing.py"/>
+					<file name="text.py" path="py\site-packages\openpyxl\drawing\text.py" comment="py\site-packages\openpyxl\drawing\text.py"/>
+					<file name="xdr.py" path="py\site-packages\openpyxl\drawing\xdr.py" comment="py\site-packages\openpyxl\drawing\xdr.py"/>
+					<file name="__init__.py" path="py\site-packages\openpyxl\drawing\__init__.py" comment="py\site-packages\openpyxl\drawing\__init__.py"/>
+					<folder name="__pycache__" path="py\site-packages\openpyxl\drawing\__pycache__" comment="py\site-packages\openpyxl\drawing\__pycache__">
+						<file name="colors.cpython-38.pyc" path="py\site-packages\openpyxl\drawing\__pycache__\colors.cpython-38.pyc" comment="py\site-packages\openpyxl\drawing\__pycache__\colors.cpython-38.pyc"/>
+						<file name="connector.cpython-38.pyc" path="py\site-packages\openpyxl\drawing\__pycache__\connector.cpython-38.pyc" comment="py\site-packages\openpyxl\drawing\__pycache__\connector.cpython-38.pyc"/>
+						<file name="drawing.cpython-38.pyc" path="py\site-packages\openpyxl\drawing\__pycache__\drawing.cpython-38.pyc" comment="py\site-packages\openpyxl\drawing\__pycache__\drawing.cpython-38.pyc"/>
+						<file name="effect.cpython-38.pyc" path="py\site-packages\openpyxl\drawing\__pycache__\effect.cpython-38.pyc" comment="py\site-packages\openpyxl\drawing\__pycache__\effect.cpython-38.pyc"/>
+						<file name="fill.cpython-38.pyc" path="py\site-packages\openpyxl\drawing\__pycache__\fill.cpython-38.pyc" comment="py\site-packages\openpyxl\drawing\__pycache__\fill.cpython-38.pyc"/>
+						<file name="geometry.cpython-38.pyc" path="py\site-packages\openpyxl\drawing\__pycache__\geometry.cpython-38.pyc" comment="py\site-packages\openpyxl\drawing\__pycache__\geometry.cpython-38.pyc"/>
+						<file name="graphic.cpython-38.pyc" path="py\site-packages\openpyxl\drawing\__pycache__\graphic.cpython-38.pyc" comment="py\site-packages\openpyxl\drawing\__pycache__\graphic.cpython-38.pyc"/>
+						<file name="image.cpython-38.pyc" path="py\site-packages\openpyxl\drawing\__pycache__\image.cpython-38.pyc" comment="py\site-packages\openpyxl\drawing\__pycache__\image.cpython-38.pyc"/>
+						<file name="line.cpython-38.pyc" path="py\site-packages\openpyxl\drawing\__pycache__\line.cpython-38.pyc" comment="py\site-packages\openpyxl\drawing\__pycache__\line.cpython-38.pyc"/>
+						<file name="picture.cpython-38.pyc" path="py\site-packages\openpyxl\drawing\__pycache__\picture.cpython-38.pyc" comment="py\site-packages\openpyxl\drawing\__pycache__\picture.cpython-38.pyc"/>
+						<file name="properties.cpython-38.pyc" path="py\site-packages\openpyxl\drawing\__pycache__\properties.cpython-38.pyc" comment="py\site-packages\openpyxl\drawing\__pycache__\properties.cpython-38.pyc"/>
+						<file name="relation.cpython-38.pyc" path="py\site-packages\openpyxl\drawing\__pycache__\relation.cpython-38.pyc" comment="py\site-packages\openpyxl\drawing\__pycache__\relation.cpython-38.pyc"/>
+						<file name="spreadsheet_drawing.cpython-38.pyc" path="py\site-packages\openpyxl\drawing\__pycache__\spreadsheet_drawing.cpython-38.pyc" comment="py\site-packages\openpyxl\drawing\__pycache__\spreadsheet_drawing.cpython-38.pyc"/>
+						<file name="text.cpython-38.pyc" path="py\site-packages\openpyxl\drawing\__pycache__\text.cpython-38.pyc" comment="py\site-packages\openpyxl\drawing\__pycache__\text.cpython-38.pyc"/>
+						<file name="xdr.cpython-38.pyc" path="py\site-packages\openpyxl\drawing\__pycache__\xdr.cpython-38.pyc" comment="py\site-packages\openpyxl\drawing\__pycache__\xdr.cpython-38.pyc"/>
+						<file name="__init__.cpython-38.pyc" path="py\site-packages\openpyxl\drawing\__pycache__\__init__.cpython-38.pyc" comment="py\site-packages\openpyxl\drawing\__pycache__\__init__.cpython-38.pyc"/>
+					</folder>
+				</folder>
+				<folder name="formatting" path="py\site-packages\openpyxl\formatting" comment="py\site-packages\openpyxl\formatting">
+					<file name="formatting.py" path="py\site-packages\openpyxl\formatting\formatting.py" comment="py\site-packages\openpyxl\formatting\formatting.py"/>
+					<file name="rule.py" path="py\site-packages\openpyxl\formatting\rule.py" comment="py\site-packages\openpyxl\formatting\rule.py"/>
+					<file name="__init__.py" path="py\site-packages\openpyxl\formatting\__init__.py" comment="py\site-packages\openpyxl\formatting\__init__.py"/>
+					<folder name="__pycache__" path="py\site-packages\openpyxl\formatting\__pycache__" comment="py\site-packages\openpyxl\formatting\__pycache__">
+						<file name="formatting.cpython-38.pyc" path="py\site-packages\openpyxl\formatting\__pycache__\formatting.cpython-38.pyc" comment="py\site-packages\openpyxl\formatting\__pycache__\formatting.cpython-38.pyc"/>
+						<file name="rule.cpython-38.pyc" path="py\site-packages\openpyxl\formatting\__pycache__\rule.cpython-38.pyc" comment="py\site-packages\openpyxl\formatting\__pycache__\rule.cpython-38.pyc"/>
+						<file name="__init__.cpython-38.pyc" path="py\site-packages\openpyxl\formatting\__pycache__\__init__.cpython-38.pyc" comment="py\site-packages\openpyxl\formatting\__pycache__\__init__.cpython-38.pyc"/>
+					</folder>
+				</folder>
+				<folder name="formula" path="py\site-packages\openpyxl\formula" comment="py\site-packages\openpyxl\formula">
+					<file name="tokenizer.py" path="py\site-packages\openpyxl\formula\tokenizer.py" comment="py\site-packages\openpyxl\formula\tokenizer.py"/>
+					<file name="translate.py" path="py\site-packages\openpyxl\formula\translate.py" comment="py\site-packages\openpyxl\formula\translate.py"/>
+					<file name="__init__.py" path="py\site-packages\openpyxl\formula\__init__.py" comment="py\site-packages\openpyxl\formula\__init__.py"/>
+					<folder name="__pycache__" path="py\site-packages\openpyxl\formula\__pycache__" comment="py\site-packages\openpyxl\formula\__pycache__">
+						<file name="tokenizer.cpython-38.pyc" path="py\site-packages\openpyxl\formula\__pycache__\tokenizer.cpython-38.pyc" comment="py\site-packages\openpyxl\formula\__pycache__\tokenizer.cpython-38.pyc"/>
+						<file name="translate.cpython-38.pyc" path="py\site-packages\openpyxl\formula\__pycache__\translate.cpython-38.pyc" comment="py\site-packages\openpyxl\formula\__pycache__\translate.cpython-38.pyc"/>
+						<file name="__init__.cpython-38.pyc" path="py\site-packages\openpyxl\formula\__pycache__\__init__.cpython-38.pyc" comment="py\site-packages\openpyxl\formula\__pycache__\__init__.cpython-38.pyc"/>
+					</folder>
+				</folder>
+				<folder name="packaging" path="py\site-packages\openpyxl\packaging" comment="py\site-packages\openpyxl\packaging">
+					<file name="core.py" path="py\site-packages\openpyxl\packaging\core.py" comment="py\site-packages\openpyxl\packaging\core.py"/>
+					<file name="extended.py" path="py\site-packages\openpyxl\packaging\extended.py" comment="py\site-packages\openpyxl\packaging\extended.py"/>
+					<file name="interface.py" path="py\site-packages\openpyxl\packaging\interface.py" comment="py\site-packages\openpyxl\packaging\interface.py"/>
+					<file name="manifest.py" path="py\site-packages\openpyxl\packaging\manifest.py" comment="py\site-packages\openpyxl\packaging\manifest.py"/>
+					<file name="relationship.py" path="py\site-packages\openpyxl\packaging\relationship.py" comment="py\site-packages\openpyxl\packaging\relationship.py"/>
+					<file name="workbook.py" path="py\site-packages\openpyxl\packaging\workbook.py" comment="py\site-packages\openpyxl\packaging\workbook.py"/>
+					<file name="__init__.py" path="py\site-packages\openpyxl\packaging\__init__.py" comment="py\site-packages\openpyxl\packaging\__init__.py"/>
+					<folder name="__pycache__" path="py\site-packages\openpyxl\packaging\__pycache__" comment="py\site-packages\openpyxl\packaging\__pycache__">
+						<file name="core.cpython-38.pyc" path="py\site-packages\openpyxl\packaging\__pycache__\core.cpython-38.pyc" comment="py\site-packages\openpyxl\packaging\__pycache__\core.cpython-38.pyc"/>
+						<file name="extended.cpython-38.pyc" path="py\site-packages\openpyxl\packaging\__pycache__\extended.cpython-38.pyc" comment="py\site-packages\openpyxl\packaging\__pycache__\extended.cpython-38.pyc"/>
+						<file name="interface.cpython-38.pyc" path="py\site-packages\openpyxl\packaging\__pycache__\interface.cpython-38.pyc" comment="py\site-packages\openpyxl\packaging\__pycache__\interface.cpython-38.pyc"/>
+						<file name="manifest.cpython-38.pyc" path="py\site-packages\openpyxl\packaging\__pycache__\manifest.cpython-38.pyc" comment="py\site-packages\openpyxl\packaging\__pycache__\manifest.cpython-38.pyc"/>
+						<file name="relationship.cpython-38.pyc" path="py\site-packages\openpyxl\packaging\__pycache__\relationship.cpython-38.pyc" comment="py\site-packages\openpyxl\packaging\__pycache__\relationship.cpython-38.pyc"/>
+						<file name="workbook.cpython-38.pyc" path="py\site-packages\openpyxl\packaging\__pycache__\workbook.cpython-38.pyc" comment="py\site-packages\openpyxl\packaging\__pycache__\workbook.cpython-38.pyc"/>
+						<file name="__init__.cpython-38.pyc" path="py\site-packages\openpyxl\packaging\__pycache__\__init__.cpython-38.pyc" comment="py\site-packages\openpyxl\packaging\__pycache__\__init__.cpython-38.pyc"/>
+					</folder>
+				</folder>
+				<folder name="pivot" path="py\site-packages\openpyxl\pivot" comment="py\site-packages\openpyxl\pivot">
+					<file name="cache.py" path="py\site-packages\openpyxl\pivot\cache.py" comment="py\site-packages\openpyxl\pivot\cache.py"/>
+					<file name="fields.py" path="py\site-packages\openpyxl\pivot\fields.py" comment="py\site-packages\openpyxl\pivot\fields.py"/>
+					<file name="record.py" path="py\site-packages\openpyxl\pivot\record.py" comment="py\site-packages\openpyxl\pivot\record.py"/>
+					<file name="table.py" path="py\site-packages\openpyxl\pivot\table.py" comment="py\site-packages\openpyxl\pivot\table.py"/>
+					<file name="__init__.py" path="py\site-packages\openpyxl\pivot\__init__.py" comment="py\site-packages\openpyxl\pivot\__init__.py"/>
+					<folder name="__pycache__" path="py\site-packages\openpyxl\pivot\__pycache__" comment="py\site-packages\openpyxl\pivot\__pycache__">
+						<file name="cache.cpython-38.pyc" path="py\site-packages\openpyxl\pivot\__pycache__\cache.cpython-38.pyc" comment="py\site-packages\openpyxl\pivot\__pycache__\cache.cpython-38.pyc"/>
+						<file name="fields.cpython-38.pyc" path="py\site-packages\openpyxl\pivot\__pycache__\fields.cpython-38.pyc" comment="py\site-packages\openpyxl\pivot\__pycache__\fields.cpython-38.pyc"/>
+						<file name="record.cpython-38.pyc" path="py\site-packages\openpyxl\pivot\__pycache__\record.cpython-38.pyc" comment="py\site-packages\openpyxl\pivot\__pycache__\record.cpython-38.pyc"/>
+						<file name="table.cpython-38.pyc" path="py\site-packages\openpyxl\pivot\__pycache__\table.cpython-38.pyc" comment="py\site-packages\openpyxl\pivot\__pycache__\table.cpython-38.pyc"/>
+						<file name="__init__.cpython-38.pyc" path="py\site-packages\openpyxl\pivot\__pycache__\__init__.cpython-38.pyc" comment="py\site-packages\openpyxl\pivot\__pycache__\__init__.cpython-38.pyc"/>
+					</folder>
+				</folder>
+				<folder name="reader" path="py\site-packages\openpyxl\reader" comment="py\site-packages\openpyxl\reader">
+					<file name="drawings.py" path="py\site-packages\openpyxl\reader\drawings.py" comment="py\site-packages\openpyxl\reader\drawings.py"/>
+					<file name="excel.py" path="py\site-packages\openpyxl\reader\excel.py" comment="py\site-packages\openpyxl\reader\excel.py"/>
+					<file name="strings.py" path="py\site-packages\openpyxl\reader\strings.py" comment="py\site-packages\openpyxl\reader\strings.py"/>
+					<file name="workbook.py" path="py\site-packages\openpyxl\reader\workbook.py" comment="py\site-packages\openpyxl\reader\workbook.py"/>
+					<file name="__init__.py" path="py\site-packages\openpyxl\reader\__init__.py" comment="py\site-packages\openpyxl\reader\__init__.py"/>
+					<folder name="__pycache__" path="py\site-packages\openpyxl\reader\__pycache__" comment="py\site-packages\openpyxl\reader\__pycache__">
+						<file name="drawings.cpython-38.pyc" path="py\site-packages\openpyxl\reader\__pycache__\drawings.cpython-38.pyc" comment="py\site-packages\openpyxl\reader\__pycache__\drawings.cpython-38.pyc"/>
+						<file name="excel.cpython-38.pyc" path="py\site-packages\openpyxl\reader\__pycache__\excel.cpython-38.pyc" comment="py\site-packages\openpyxl\reader\__pycache__\excel.cpython-38.pyc"/>
+						<file name="strings.cpython-38.pyc" path="py\site-packages\openpyxl\reader\__pycache__\strings.cpython-38.pyc" comment="py\site-packages\openpyxl\reader\__pycache__\strings.cpython-38.pyc"/>
+						<file name="workbook.cpython-38.pyc" path="py\site-packages\openpyxl\reader\__pycache__\workbook.cpython-38.pyc" comment="py\site-packages\openpyxl\reader\__pycache__\workbook.cpython-38.pyc"/>
+						<file name="__init__.cpython-38.pyc" path="py\site-packages\openpyxl\reader\__pycache__\__init__.cpython-38.pyc" comment="py\site-packages\openpyxl\reader\__pycache__\__init__.cpython-38.pyc"/>
+					</folder>
+				</folder>
+				<folder name="styles" path="py\site-packages\openpyxl\styles" comment="py\site-packages\openpyxl\styles">
+					<file name="alignment.py" path="py\site-packages\openpyxl\styles\alignment.py" comment="py\site-packages\openpyxl\styles\alignment.py"/>
+					<file name="borders.py" path="py\site-packages\openpyxl\styles\borders.py" comment="py\site-packages\openpyxl\styles\borders.py"/>
+					<file name="builtins.py" path="py\site-packages\openpyxl\styles\builtins.py" comment="py\site-packages\openpyxl\styles\builtins.py"/>
+					<file name="cell_style.py" path="py\site-packages\openpyxl\styles\cell_style.py" comment="py\site-packages\openpyxl\styles\cell_style.py"/>
+					<file name="colors.py" path="py\site-packages\openpyxl\styles\colors.py" comment="py\site-packages\openpyxl\styles\colors.py"/>
+					<file name="differential.py" path="py\site-packages\openpyxl\styles\differential.py" comment="py\site-packages\openpyxl\styles\differential.py"/>
+					<file name="fills.py" path="py\site-packages\openpyxl\styles\fills.py" comment="py\site-packages\openpyxl\styles\fills.py"/>
+					<file name="fonts.py" path="py\site-packages\openpyxl\styles\fonts.py" comment="py\site-packages\openpyxl\styles\fonts.py"/>
+					<file name="named_styles.py" path="py\site-packages\openpyxl\styles\named_styles.py" comment="py\site-packages\openpyxl\styles\named_styles.py"/>
+					<file name="numbers.py" path="py\site-packages\openpyxl\styles\numbers.py" comment="py\site-packages\openpyxl\styles\numbers.py"/>
+					<file name="protection.py" path="py\site-packages\openpyxl\styles\protection.py" comment="py\site-packages\openpyxl\styles\protection.py"/>
+					<file name="proxy.py" path="py\site-packages\openpyxl\styles\proxy.py" comment="py\site-packages\openpyxl\styles\proxy.py"/>
+					<file name="styleable.py" path="py\site-packages\openpyxl\styles\styleable.py" comment="py\site-packages\openpyxl\styles\styleable.py"/>
+					<file name="stylesheet.py" path="py\site-packages\openpyxl\styles\stylesheet.py" comment="py\site-packages\openpyxl\styles\stylesheet.py"/>
+					<file name="table.py" path="py\site-packages\openpyxl\styles\table.py" comment="py\site-packages\openpyxl\styles\table.py"/>
+					<file name="__init__.py" path="py\site-packages\openpyxl\styles\__init__.py" comment="py\site-packages\openpyxl\styles\__init__.py"/>
+					<folder name="__pycache__" path="py\site-packages\openpyxl\styles\__pycache__" comment="py\site-packages\openpyxl\styles\__pycache__">
+						<file name="alignment.cpython-38.pyc" path="py\site-packages\openpyxl\styles\__pycache__\alignment.cpython-38.pyc" comment="py\site-packages\openpyxl\styles\__pycache__\alignment.cpython-38.pyc"/>
+						<file name="borders.cpython-38.pyc" path="py\site-packages\openpyxl\styles\__pycache__\borders.cpython-38.pyc" comment="py\site-packages\openpyxl\styles\__pycache__\borders.cpython-38.pyc"/>
+						<file name="builtins.cpython-38.pyc" path="py\site-packages\openpyxl\styles\__pycache__\builtins.cpython-38.pyc" comment="py\site-packages\openpyxl\styles\__pycache__\builtins.cpython-38.pyc"/>
+						<file name="cell_style.cpython-38.pyc" path="py\site-packages\openpyxl\styles\__pycache__\cell_style.cpython-38.pyc" comment="py\site-packages\openpyxl\styles\__pycache__\cell_style.cpython-38.pyc"/>
+						<file name="colors.cpython-38.pyc" path="py\site-packages\openpyxl\styles\__pycache__\colors.cpython-38.pyc" comment="py\site-packages\openpyxl\styles\__pycache__\colors.cpython-38.pyc"/>
+						<file name="differential.cpython-38.pyc" path="py\site-packages\openpyxl\styles\__pycache__\differential.cpython-38.pyc" comment="py\site-packages\openpyxl\styles\__pycache__\differential.cpython-38.pyc"/>
+						<file name="fills.cpython-38.pyc" path="py\site-packages\openpyxl\styles\__pycache__\fills.cpython-38.pyc" comment="py\site-packages\openpyxl\styles\__pycache__\fills.cpython-38.pyc"/>
+						<file name="fonts.cpython-38.pyc" path="py\site-packages\openpyxl\styles\__pycache__\fonts.cpython-38.pyc" comment="py\site-packages\openpyxl\styles\__pycache__\fonts.cpython-38.pyc"/>
+						<file name="named_styles.cpython-38.pyc" path="py\site-packages\openpyxl\styles\__pycache__\named_styles.cpython-38.pyc" comment="py\site-packages\openpyxl\styles\__pycache__\named_styles.cpython-38.pyc"/>
+						<file name="numbers.cpython-38.pyc" path="py\site-packages\openpyxl\styles\__pycache__\numbers.cpython-38.pyc" comment="py\site-packages\openpyxl\styles\__pycache__\numbers.cpython-38.pyc"/>
+						<file name="protection.cpython-38.pyc" path="py\site-packages\openpyxl\styles\__pycache__\protection.cpython-38.pyc" comment="py\site-packages\openpyxl\styles\__pycache__\protection.cpython-38.pyc"/>
+						<file name="proxy.cpython-38.pyc" path="py\site-packages\openpyxl\styles\__pycache__\proxy.cpython-38.pyc" comment="py\site-packages\openpyxl\styles\__pycache__\proxy.cpython-38.pyc"/>
+						<file name="styleable.cpython-38.pyc" path="py\site-packages\openpyxl\styles\__pycache__\styleable.cpython-38.pyc" comment="py\site-packages\openpyxl\styles\__pycache__\styleable.cpython-38.pyc"/>
+						<file name="stylesheet.cpython-38.pyc" path="py\site-packages\openpyxl\styles\__pycache__\stylesheet.cpython-38.pyc" comment="py\site-packages\openpyxl\styles\__pycache__\stylesheet.cpython-38.pyc"/>
+						<file name="table.cpython-38.pyc" path="py\site-packages\openpyxl\styles\__pycache__\table.cpython-38.pyc" comment="py\site-packages\openpyxl\styles\__pycache__\table.cpython-38.pyc"/>
+						<file name="__init__.cpython-38.pyc" path="py\site-packages\openpyxl\styles\__pycache__\__init__.cpython-38.pyc" comment="py\site-packages\openpyxl\styles\__pycache__\__init__.cpython-38.pyc"/>
+					</folder>
+				</folder>
+				<folder name="utils" path="py\site-packages\openpyxl\utils" comment="py\site-packages\openpyxl\utils">
+					<file name="bound_dictionary.py" path="py\site-packages\openpyxl\utils\bound_dictionary.py" comment="py\site-packages\openpyxl\utils\bound_dictionary.py"/>
+					<file name="cell.py" path="py\site-packages\openpyxl\utils\cell.py" comment="py\site-packages\openpyxl\utils\cell.py"/>
+					<file name="dataframe.py" path="py\site-packages\openpyxl\utils\dataframe.py" comment="py\site-packages\openpyxl\utils\dataframe.py"/>
+					<file name="datetime.py" path="py\site-packages\openpyxl\utils\datetime.py" comment="py\site-packages\openpyxl\utils\datetime.py"/>
+					<file name="escape.py" path="py\site-packages\openpyxl\utils\escape.py" comment="py\site-packages\openpyxl\utils\escape.py"/>
+					<file name="exceptions.py" path="py\site-packages\openpyxl\utils\exceptions.py" comment="py\site-packages\openpyxl\utils\exceptions.py"/>
+					<file name="formulas.py" path="py\site-packages\openpyxl\utils\formulas.py" comment="py\site-packages\openpyxl\utils\formulas.py"/>
+					<file name="indexed_list.py" path="py\site-packages\openpyxl\utils\indexed_list.py" comment="py\site-packages\openpyxl\utils\indexed_list.py"/>
+					<file name="inference.py" path="py\site-packages\openpyxl\utils\inference.py" comment="py\site-packages\openpyxl\utils\inference.py"/>
+					<file name="protection.py" path="py\site-packages\openpyxl\utils\protection.py" comment="py\site-packages\openpyxl\utils\protection.py"/>
+					<file name="units.py" path="py\site-packages\openpyxl\utils\units.py" comment="py\site-packages\openpyxl\utils\units.py"/>
+					<file name="__init__.py" path="py\site-packages\openpyxl\utils\__init__.py" comment="py\site-packages\openpyxl\utils\__init__.py"/>
+					<folder name="__pycache__" path="py\site-packages\openpyxl\utils\__pycache__" comment="py\site-packages\openpyxl\utils\__pycache__">
+						<file name="bound_dictionary.cpython-38.pyc" path="py\site-packages\openpyxl\utils\__pycache__\bound_dictionary.cpython-38.pyc" comment="py\site-packages\openpyxl\utils\__pycache__\bound_dictionary.cpython-38.pyc"/>
+						<file name="cell.cpython-38.pyc" path="py\site-packages\openpyxl\utils\__pycache__\cell.cpython-38.pyc" comment="py\site-packages\openpyxl\utils\__pycache__\cell.cpython-38.pyc"/>
+						<file name="dataframe.cpython-38.pyc" path="py\site-packages\openpyxl\utils\__pycache__\dataframe.cpython-38.pyc" comment="py\site-packages\openpyxl\utils\__pycache__\dataframe.cpython-38.pyc"/>
+						<file name="datetime.cpython-38.pyc" path="py\site-packages\openpyxl\utils\__pycache__\datetime.cpython-38.pyc" comment="py\site-packages\openpyxl\utils\__pycache__\datetime.cpython-38.pyc"/>
+						<file name="escape.cpython-38.pyc" path="py\site-packages\openpyxl\utils\__pycache__\escape.cpython-38.pyc" comment="py\site-packages\openpyxl\utils\__pycache__\escape.cpython-38.pyc"/>
+						<file name="exceptions.cpython-38.pyc" path="py\site-packages\openpyxl\utils\__pycache__\exceptions.cpython-38.pyc" comment="py\site-packages\openpyxl\utils\__pycache__\exceptions.cpython-38.pyc"/>
+						<file name="formulas.cpython-38.pyc" path="py\site-packages\openpyxl\utils\__pycache__\formulas.cpython-38.pyc" comment="py\site-packages\openpyxl\utils\__pycache__\formulas.cpython-38.pyc"/>
+						<file name="indexed_list.cpython-38.pyc" path="py\site-packages\openpyxl\utils\__pycache__\indexed_list.cpython-38.pyc" comment="py\site-packages\openpyxl\utils\__pycache__\indexed_list.cpython-38.pyc"/>
+						<file name="inference.cpython-38.pyc" path="py\site-packages\openpyxl\utils\__pycache__\inference.cpython-38.pyc" comment="py\site-packages\openpyxl\utils\__pycache__\inference.cpython-38.pyc"/>
+						<file name="protection.cpython-38.pyc" path="py\site-packages\openpyxl\utils\__pycache__\protection.cpython-38.pyc" comment="py\site-packages\openpyxl\utils\__pycache__\protection.cpython-38.pyc"/>
+						<file name="units.cpython-38.pyc" path="py\site-packages\openpyxl\utils\__pycache__\units.cpython-38.pyc" comment="py\site-packages\openpyxl\utils\__pycache__\units.cpython-38.pyc"/>
+						<file name="__init__.cpython-38.pyc" path="py\site-packages\openpyxl\utils\__pycache__\__init__.cpython-38.pyc" comment="py\site-packages\openpyxl\utils\__pycache__\__init__.cpython-38.pyc"/>
+					</folder>
+				</folder>
+				<folder name="workbook" path="py\site-packages\openpyxl\workbook" comment="py\site-packages\openpyxl\workbook">
+					<file name="child.py" path="py\site-packages\openpyxl\workbook\child.py" comment="py\site-packages\openpyxl\workbook\child.py"/>
+					<file name="defined_name.py" path="py\site-packages\openpyxl\workbook\defined_name.py" comment="py\site-packages\openpyxl\workbook\defined_name.py"/>
+					<file name="external_reference.py" path="py\site-packages\openpyxl\workbook\external_reference.py" comment="py\site-packages\openpyxl\workbook\external_reference.py"/>
+					<file name="function_group.py" path="py\site-packages\openpyxl\workbook\function_group.py" comment="py\site-packages\openpyxl\workbook\function_group.py"/>
+					<file name="properties.py" path="py\site-packages\openpyxl\workbook\properties.py" comment="py\site-packages\openpyxl\workbook\properties.py"/>
+					<file name="protection.py" path="py\site-packages\openpyxl\workbook\protection.py" comment="py\site-packages\openpyxl\workbook\protection.py"/>
+					<file name="smart_tags.py" path="py\site-packages\openpyxl\workbook\smart_tags.py" comment="py\site-packages\openpyxl\workbook\smart_tags.py"/>
+					<file name="views.py" path="py\site-packages\openpyxl\workbook\views.py" comment="py\site-packages\openpyxl\workbook\views.py"/>
+					<file name="web.py" path="py\site-packages\openpyxl\workbook\web.py" comment="py\site-packages\openpyxl\workbook\web.py"/>
+					<file name="workbook.py" path="py\site-packages\openpyxl\workbook\workbook.py" comment="py\site-packages\openpyxl\workbook\workbook.py"/>
+					<file name="_writer.py" path="py\site-packages\openpyxl\workbook\_writer.py" comment="py\site-packages\openpyxl\workbook\_writer.py"/>
+					<file name="__init__.py" path="py\site-packages\openpyxl\workbook\__init__.py" comment="py\site-packages\openpyxl\workbook\__init__.py"/>
+					<folder name="external_link" path="py\site-packages\openpyxl\workbook\external_link" comment="py\site-packages\openpyxl\workbook\external_link">
+						<file name="external.py" path="py\site-packages\openpyxl\workbook\external_link\external.py" comment="py\site-packages\openpyxl\workbook\external_link\external.py"/>
+						<file name="__init__.py" path="py\site-packages\openpyxl\workbook\external_link\__init__.py" comment="py\site-packages\openpyxl\workbook\external_link\__init__.py"/>
+						<folder name="__pycache__" path="py\site-packages\openpyxl\workbook\external_link\__pycache__" comment="py\site-packages\openpyxl\workbook\external_link\__pycache__">
+							<file name="external.cpython-38.pyc" path="py\site-packages\openpyxl\workbook\external_link\__pycache__\external.cpython-38.pyc" comment="py\site-packages\openpyxl\workbook\external_link\__pycache__\external.cpython-38.pyc"/>
+							<file name="__init__.cpython-38.pyc" path="py\site-packages\openpyxl\workbook\external_link\__pycache__\__init__.cpython-38.pyc" comment="py\site-packages\openpyxl\workbook\external_link\__pycache__\__init__.cpython-38.pyc"/>
+						</folder>
+					</folder>
+					<folder name="__pycache__" path="py\site-packages\openpyxl\workbook\__pycache__" comment="py\site-packages\openpyxl\workbook\__pycache__">
+						<file name="child.cpython-38.pyc" path="py\site-packages\openpyxl\workbook\__pycache__\child.cpython-38.pyc" comment="py\site-packages\openpyxl\workbook\__pycache__\child.cpython-38.pyc"/>
+						<file name="defined_name.cpython-38.pyc" path="py\site-packages\openpyxl\workbook\__pycache__\defined_name.cpython-38.pyc" comment="py\site-packages\openpyxl\workbook\__pycache__\defined_name.cpython-38.pyc"/>
+						<file name="external_reference.cpython-38.pyc" path="py\site-packages\openpyxl\workbook\__pycache__\external_reference.cpython-38.pyc" comment="py\site-packages\openpyxl\workbook\__pycache__\external_reference.cpython-38.pyc"/>
+						<file name="function_group.cpython-38.pyc" path="py\site-packages\openpyxl\workbook\__pycache__\function_group.cpython-38.pyc" comment="py\site-packages\openpyxl\workbook\__pycache__\function_group.cpython-38.pyc"/>
+						<file name="properties.cpython-38.pyc" path="py\site-packages\openpyxl\workbook\__pycache__\properties.cpython-38.pyc" comment="py\site-packages\openpyxl\workbook\__pycache__\properties.cpython-38.pyc"/>
+						<file name="protection.cpython-38.pyc" path="py\site-packages\openpyxl\workbook\__pycache__\protection.cpython-38.pyc" comment="py\site-packages\openpyxl\workbook\__pycache__\protection.cpython-38.pyc"/>
+						<file name="smart_tags.cpython-38.pyc" path="py\site-packages\openpyxl\workbook\__pycache__\smart_tags.cpython-38.pyc" comment="py\site-packages\openpyxl\workbook\__pycache__\smart_tags.cpython-38.pyc"/>
+						<file name="views.cpython-38.pyc" path="py\site-packages\openpyxl\workbook\__pycache__\views.cpython-38.pyc" comment="py\site-packages\openpyxl\workbook\__pycache__\views.cpython-38.pyc"/>
+						<file name="web.cpython-38.pyc" path="py\site-packages\openpyxl\workbook\__pycache__\web.cpython-38.pyc" comment="py\site-packages\openpyxl\workbook\__pycache__\web.cpython-38.pyc"/>
+						<file name="workbook.cpython-38.pyc" path="py\site-packages\openpyxl\workbook\__pycache__\workbook.cpython-38.pyc" comment="py\site-packages\openpyxl\workbook\__pycache__\workbook.cpython-38.pyc"/>
+						<file name="_writer.cpython-38.pyc" path="py\site-packages\openpyxl\workbook\__pycache__\_writer.cpython-38.pyc" comment="py\site-packages\openpyxl\workbook\__pycache__\_writer.cpython-38.pyc"/>
+						<file name="__init__.cpython-38.pyc" path="py\site-packages\openpyxl\workbook\__pycache__\__init__.cpython-38.pyc" comment="py\site-packages\openpyxl\workbook\__pycache__\__init__.cpython-38.pyc"/>
+					</folder>
+				</folder>
+				<folder name="worksheet" path="py\site-packages\openpyxl\worksheet" comment="py\site-packages\openpyxl\worksheet">
+					<file name="cell_range.py" path="py\site-packages\openpyxl\worksheet\cell_range.py" comment="py\site-packages\openpyxl\worksheet\cell_range.py"/>
+					<file name="cell_watch.py" path="py\site-packages\openpyxl\worksheet\cell_watch.py" comment="py\site-packages\openpyxl\worksheet\cell_watch.py"/>
+					<file name="controls.py" path="py\site-packages\openpyxl\worksheet\controls.py" comment="py\site-packages\openpyxl\worksheet\controls.py"/>
+					<file name="copier.py" path="py\site-packages\openpyxl\worksheet\copier.py" comment="py\site-packages\openpyxl\worksheet\copier.py"/>
+					<file name="custom.py" path="py\site-packages\openpyxl\worksheet\custom.py" comment="py\site-packages\openpyxl\worksheet\custom.py"/>
+					<file name="datavalidation.py" path="py\site-packages\openpyxl\worksheet\datavalidation.py" comment="py\site-packages\openpyxl\worksheet\datavalidation.py"/>
+					<file name="dimensions.py" path="py\site-packages\openpyxl\worksheet\dimensions.py" comment="py\site-packages\openpyxl\worksheet\dimensions.py"/>
+					<file name="drawing.py" path="py\site-packages\openpyxl\worksheet\drawing.py" comment="py\site-packages\openpyxl\worksheet\drawing.py"/>
+					<file name="errors.py" path="py\site-packages\openpyxl\worksheet\errors.py" comment="py\site-packages\openpyxl\worksheet\errors.py"/>
+					<file name="filters.py" path="py\site-packages\openpyxl\worksheet\filters.py" comment="py\site-packages\openpyxl\worksheet\filters.py"/>
+					<file name="header_footer.py" path="py\site-packages\openpyxl\worksheet\header_footer.py" comment="py\site-packages\openpyxl\worksheet\header_footer.py"/>
+					<file name="hyperlink.py" path="py\site-packages\openpyxl\worksheet\hyperlink.py" comment="py\site-packages\openpyxl\worksheet\hyperlink.py"/>
+					<file name="merge.py" path="py\site-packages\openpyxl\worksheet\merge.py" comment="py\site-packages\openpyxl\worksheet\merge.py"/>
+					<file name="ole.py" path="py\site-packages\openpyxl\worksheet\ole.py" comment="py\site-packages\openpyxl\worksheet\ole.py"/>
+					<file name="page.py" path="py\site-packages\openpyxl\worksheet\page.py" comment="py\site-packages\openpyxl\worksheet\page.py"/>
+					<file name="pagebreak.py" path="py\site-packages\openpyxl\worksheet\pagebreak.py" comment="py\site-packages\openpyxl\worksheet\pagebreak.py"/>
+					<file name="picture.py" path="py\site-packages\openpyxl\worksheet\picture.py" comment="py\site-packages\openpyxl\worksheet\picture.py"/>
+					<file name="properties.py" path="py\site-packages\openpyxl\worksheet\properties.py" comment="py\site-packages\openpyxl\worksheet\properties.py"/>
+					<file name="protection.py" path="py\site-packages\openpyxl\worksheet\protection.py" comment="py\site-packages\openpyxl\worksheet\protection.py"/>
+					<file name="related.py" path="py\site-packages\openpyxl\worksheet\related.py" comment="py\site-packages\openpyxl\worksheet\related.py"/>
+					<file name="scenario.py" path="py\site-packages\openpyxl\worksheet\scenario.py" comment="py\site-packages\openpyxl\worksheet\scenario.py"/>
+					<file name="smart_tag.py" path="py\site-packages\openpyxl\worksheet\smart_tag.py" comment="py\site-packages\openpyxl\worksheet\smart_tag.py"/>
+					<file name="table.py" path="py\site-packages\openpyxl\worksheet\table.py" comment="py\site-packages\openpyxl\worksheet\table.py"/>
+					<file name="views.py" path="py\site-packages\openpyxl\worksheet\views.py" comment="py\site-packages\openpyxl\worksheet\views.py"/>
+					<file name="worksheet.py" path="py\site-packages\openpyxl\worksheet\worksheet.py" comment="py\site-packages\openpyxl\worksheet\worksheet.py"/>
+					<file name="_reader.py" path="py\site-packages\openpyxl\worksheet\_reader.py" comment="py\site-packages\openpyxl\worksheet\_reader.py"/>
+					<file name="_read_only.py" path="py\site-packages\openpyxl\worksheet\_read_only.py" comment="py\site-packages\openpyxl\worksheet\_read_only.py"/>
+					<file name="_writer.py" path="py\site-packages\openpyxl\worksheet\_writer.py" comment="py\site-packages\openpyxl\worksheet\_writer.py"/>
+					<file name="_write_only.py" path="py\site-packages\openpyxl\worksheet\_write_only.py" comment="py\site-packages\openpyxl\worksheet\_write_only.py"/>
+					<file name="__init__.py" path="py\site-packages\openpyxl\worksheet\__init__.py" comment="py\site-packages\openpyxl\worksheet\__init__.py"/>
+					<folder name="__pycache__" path="py\site-packages\openpyxl\worksheet\__pycache__" comment="py\site-packages\openpyxl\worksheet\__pycache__">
+						<file name="cell_range.cpython-38.pyc" path="py\site-packages\openpyxl\worksheet\__pycache__\cell_range.cpython-38.pyc" comment="py\site-packages\openpyxl\worksheet\__pycache__\cell_range.cpython-38.pyc"/>
+						<file name="cell_watch.cpython-38.pyc" path="py\site-packages\openpyxl\worksheet\__pycache__\cell_watch.cpython-38.pyc" comment="py\site-packages\openpyxl\worksheet\__pycache__\cell_watch.cpython-38.pyc"/>
+						<file name="controls.cpython-38.pyc" path="py\site-packages\openpyxl\worksheet\__pycache__\controls.cpython-38.pyc" comment="py\site-packages\openpyxl\worksheet\__pycache__\controls.cpython-38.pyc"/>
+						<file name="copier.cpython-38.pyc" path="py\site-packages\openpyxl\worksheet\__pycache__\copier.cpython-38.pyc" comment="py\site-packages\openpyxl\worksheet\__pycache__\copier.cpython-38.pyc"/>
+						<file name="custom.cpython-38.pyc" path="py\site-packages\openpyxl\worksheet\__pycache__\custom.cpython-38.pyc" comment="py\site-packages\openpyxl\worksheet\__pycache__\custom.cpython-38.pyc"/>
+						<file name="datavalidation.cpython-38.pyc" path="py\site-packages\openpyxl\worksheet\__pycache__\datavalidation.cpython-38.pyc" comment="py\site-packages\openpyxl\worksheet\__pycache__\datavalidation.cpython-38.pyc"/>
+						<file name="dimensions.cpython-38.pyc" path="py\site-packages\openpyxl\worksheet\__pycache__\dimensions.cpython-38.pyc" comment="py\site-packages\openpyxl\worksheet\__pycache__\dimensions.cpython-38.pyc"/>
+						<file name="drawing.cpython-38.pyc" path="py\site-packages\openpyxl\worksheet\__pycache__\drawing.cpython-38.pyc" comment="py\site-packages\openpyxl\worksheet\__pycache__\drawing.cpython-38.pyc"/>
+						<file name="errors.cpython-38.pyc" path="py\site-packages\openpyxl\worksheet\__pycache__\errors.cpython-38.pyc" comment="py\site-packages\openpyxl\worksheet\__pycache__\errors.cpython-38.pyc"/>
+						<file name="filters.cpython-38.pyc" path="py\site-packages\openpyxl\worksheet\__pycache__\filters.cpython-38.pyc" comment="py\site-packages\openpyxl\worksheet\__pycache__\filters.cpython-38.pyc"/>
+						<file name="header_footer.cpython-38.pyc" path="py\site-packages\openpyxl\worksheet\__pycache__\header_footer.cpython-38.pyc" comment="py\site-packages\openpyxl\worksheet\__pycache__\header_footer.cpython-38.pyc"/>
+						<file name="hyperlink.cpython-38.pyc" path="py\site-packages\openpyxl\worksheet\__pycache__\hyperlink.cpython-38.pyc" comment="py\site-packages\openpyxl\worksheet\__pycache__\hyperlink.cpython-38.pyc"/>
+						<file name="merge.cpython-38.pyc" path="py\site-packages\openpyxl\worksheet\__pycache__\merge.cpython-38.pyc" comment="py\site-packages\openpyxl\worksheet\__pycache__\merge.cpython-38.pyc"/>
+						<file name="ole.cpython-38.pyc" path="py\site-packages\openpyxl\worksheet\__pycache__\ole.cpython-38.pyc" comment="py\site-packages\openpyxl\worksheet\__pycache__\ole.cpython-38.pyc"/>
+						<file name="page.cpython-38.pyc" path="py\site-packages\openpyxl\worksheet\__pycache__\page.cpython-38.pyc" comment="py\site-packages\openpyxl\worksheet\__pycache__\page.cpython-38.pyc"/>
+						<file name="pagebreak.cpython-38.pyc" path="py\site-packages\openpyxl\worksheet\__pycache__\pagebreak.cpython-38.pyc" comment="py\site-packages\openpyxl\worksheet\__pycache__\pagebreak.cpython-38.pyc"/>
+						<file name="picture.cpython-38.pyc" path="py\site-packages\openpyxl\worksheet\__pycache__\picture.cpython-38.pyc" comment="py\site-packages\openpyxl\worksheet\__pycache__\picture.cpython-38.pyc"/>
+						<file name="properties.cpython-38.pyc" path="py\site-packages\openpyxl\worksheet\__pycache__\properties.cpython-38.pyc" comment="py\site-packages\openpyxl\worksheet\__pycache__\properties.cpython-38.pyc"/>
+						<file name="protection.cpython-38.pyc" path="py\site-packages\openpyxl\worksheet\__pycache__\protection.cpython-38.pyc" comment="py\site-packages\openpyxl\worksheet\__pycache__\protection.cpython-38.pyc"/>
+						<file name="related.cpython-38.pyc" path="py\site-packages\openpyxl\worksheet\__pycache__\related.cpython-38.pyc" comment="py\site-packages\openpyxl\worksheet\__pycache__\related.cpython-38.pyc"/>
+						<file name="scenario.cpython-38.pyc" path="py\site-packages\openpyxl\worksheet\__pycache__\scenario.cpython-38.pyc" comment="py\site-packages\openpyxl\worksheet\__pycache__\scenario.cpython-38.pyc"/>
+						<file name="smart_tag.cpython-38.pyc" path="py\site-packages\openpyxl\worksheet\__pycache__\smart_tag.cpython-38.pyc" comment="py\site-packages\openpyxl\worksheet\__pycache__\smart_tag.cpython-38.pyc"/>
+						<file name="table.cpython-38.pyc" path="py\site-packages\openpyxl\worksheet\__pycache__\table.cpython-38.pyc" comment="py\site-packages\openpyxl\worksheet\__pycache__\table.cpython-38.pyc"/>
+						<file name="views.cpython-38.pyc" path="py\site-packages\openpyxl\worksheet\__pycache__\views.cpython-38.pyc" comment="py\site-packages\openpyxl\worksheet\__pycache__\views.cpython-38.pyc"/>
+						<file name="worksheet.cpython-38.pyc" path="py\site-packages\openpyxl\worksheet\__pycache__\worksheet.cpython-38.pyc" comment="py\site-packages\openpyxl\worksheet\__pycache__\worksheet.cpython-38.pyc"/>
+						<file name="_reader.cpython-38.pyc" path="py\site-packages\openpyxl\worksheet\__pycache__\_reader.cpython-38.pyc" comment="py\site-packages\openpyxl\worksheet\__pycache__\_reader.cpython-38.pyc"/>
+						<file name="_read_only.cpython-38.pyc" path="py\site-packages\openpyxl\worksheet\__pycache__\_read_only.cpython-38.pyc" comment="py\site-packages\openpyxl\worksheet\__pycache__\_read_only.cpython-38.pyc"/>
+						<file name="_writer.cpython-38.pyc" path="py\site-packages\openpyxl\worksheet\__pycache__\_writer.cpython-38.pyc" comment="py\site-packages\openpyxl\worksheet\__pycache__\_writer.cpython-38.pyc"/>
+						<file name="_write_only.cpython-38.pyc" path="py\site-packages\openpyxl\worksheet\__pycache__\_write_only.cpython-38.pyc" comment="py\site-packages\openpyxl\worksheet\__pycache__\_write_only.cpython-38.pyc"/>
+						<file name="__init__.cpython-38.pyc" path="py\site-packages\openpyxl\worksheet\__pycache__\__init__.cpython-38.pyc" comment="py\site-packages\openpyxl\worksheet\__pycache__\__init__.cpython-38.pyc"/>
+					</folder>
+				</folder>
+				<folder name="writer" path="py\site-packages\openpyxl\writer" comment="py\site-packages\openpyxl\writer">
+					<file name="excel.py" path="py\site-packages\openpyxl\writer\excel.py" comment="py\site-packages\openpyxl\writer\excel.py"/>
+					<file name="theme.py" path="py\site-packages\openpyxl\writer\theme.py" comment="py\site-packages\openpyxl\writer\theme.py"/>
+					<file name="__init__.py" path="py\site-packages\openpyxl\writer\__init__.py" comment="py\site-packages\openpyxl\writer\__init__.py"/>
+					<folder name="__pycache__" path="py\site-packages\openpyxl\writer\__pycache__" comment="py\site-packages\openpyxl\writer\__pycache__">
+						<file name="excel.cpython-38.pyc" path="py\site-packages\openpyxl\writer\__pycache__\excel.cpython-38.pyc" comment="py\site-packages\openpyxl\writer\__pycache__\excel.cpython-38.pyc"/>
+						<file name="theme.cpython-38.pyc" path="py\site-packages\openpyxl\writer\__pycache__\theme.cpython-38.pyc" comment="py\site-packages\openpyxl\writer\__pycache__\theme.cpython-38.pyc"/>
+						<file name="__init__.cpython-38.pyc" path="py\site-packages\openpyxl\writer\__pycache__\__init__.cpython-38.pyc" comment="py\site-packages\openpyxl\writer\__pycache__\__init__.cpython-38.pyc"/>
+					</folder>
+				</folder>
+				<folder name="xml" path="py\site-packages\openpyxl\xml" comment="py\site-packages\openpyxl\xml">
+					<file name="constants.py" path="py\site-packages\openpyxl\xml\constants.py" comment="py\site-packages\openpyxl\xml\constants.py"/>
+					<file name="functions.py" path="py\site-packages\openpyxl\xml\functions.py" comment="py\site-packages\openpyxl\xml\functions.py"/>
+					<file name="__init__.py" path="py\site-packages\openpyxl\xml\__init__.py" comment="py\site-packages\openpyxl\xml\__init__.py"/>
+					<folder name="__pycache__" path="py\site-packages\openpyxl\xml\__pycache__" comment="py\site-packages\openpyxl\xml\__pycache__">
+						<file name="constants.cpython-38.pyc" path="py\site-packages\openpyxl\xml\__pycache__\constants.cpython-38.pyc" comment="py\site-packages\openpyxl\xml\__pycache__\constants.cpython-38.pyc"/>
+						<file name="functions.cpython-38.pyc" path="py\site-packages\openpyxl\xml\__pycache__\functions.cpython-38.pyc" comment="py\site-packages\openpyxl\xml\__pycache__\functions.cpython-38.pyc"/>
+						<file name="__init__.cpython-38.pyc" path="py\site-packages\openpyxl\xml\__pycache__\__init__.cpython-38.pyc" comment="py\site-packages\openpyxl\xml\__pycache__\__init__.cpython-38.pyc"/>
+					</folder>
+				</folder>
+				<folder name="__pycache__" path="py\site-packages\openpyxl\__pycache__" comment="py\site-packages\openpyxl\__pycache__">
+					<file name="_constants.cpython-38.pyc" path="py\site-packages\openpyxl\__pycache__\_constants.cpython-38.pyc" comment="py\site-packages\openpyxl\__pycache__\_constants.cpython-38.pyc"/>
+					<file name="__init__.cpython-38.pyc" path="py\site-packages\openpyxl\__pycache__\__init__.cpython-38.pyc" comment="py\site-packages\openpyxl\__pycache__\__init__.cpython-38.pyc"/>
+				</folder>
+			</folder>
+			<folder name="openpyxl-3.0.10.dist-info" path="py\site-packages\openpyxl-3.0.10.dist-info" comment="py\site-packages\openpyxl-3.0.10.dist-info">
+				<file name="INSTALLER" path="py\site-packages\openpyxl-3.0.10.dist-info\INSTALLER" comment="py\site-packages\openpyxl-3.0.10.dist-info\INSTALLER"/>
+				<file name="LICENCE.rst" path="py\site-packages\openpyxl-3.0.10.dist-info\LICENCE.rst" comment="py\site-packages\openpyxl-3.0.10.dist-info\LICENCE.rst"/>
+				<file name="METADATA" path="py\site-packages\openpyxl-3.0.10.dist-info\METADATA" comment="py\site-packages\openpyxl-3.0.10.dist-info\METADATA"/>
+				<file name="RECORD" path="py\site-packages\openpyxl-3.0.10.dist-info\RECORD" comment="py\site-packages\openpyxl-3.0.10.dist-info\RECORD"/>
+				<file name="REQUESTED" path="py\site-packages\openpyxl-3.0.10.dist-info\REQUESTED" comment="py\site-packages\openpyxl-3.0.10.dist-info\REQUESTED"/>
+				<file name="top_level.txt" path="py\site-packages\openpyxl-3.0.10.dist-info\top_level.txt" comment="py\site-packages\openpyxl-3.0.10.dist-info\top_level.txt"/>
+				<file name="WHEEL" path="py\site-packages\openpyxl-3.0.10.dist-info\WHEEL" comment="py\site-packages\openpyxl-3.0.10.dist-info\WHEEL"/>
+			</folder>
+			<folder name="pathlib2" path="py\site-packages\pathlib2" comment="py\site-packages\pathlib2">
+				<file name="__init__.py" path="py\site-packages\pathlib2\__init__.py" comment="py\site-packages\pathlib2\__init__.py"/>
+				<folder name="__pycache__" path="py\site-packages\pathlib2\__pycache__" comment="py\site-packages\pathlib2\__pycache__">
+					<file name="__init__.cpython-38.pyc" path="py\site-packages\pathlib2\__pycache__\__init__.cpython-38.pyc" comment="py\site-packages\pathlib2\__pycache__\__init__.cpython-38.pyc"/>
+				</folder>
+			</folder>
+			<folder name="pathlib2-2.3.7.post1.dist-info" path="py\site-packages\pathlib2-2.3.7.post1.dist-info" comment="py\site-packages\pathlib2-2.3.7.post1.dist-info">
+				<file name="INSTALLER" path="py\site-packages\pathlib2-2.3.7.post1.dist-info\INSTALLER" comment="py\site-packages\pathlib2-2.3.7.post1.dist-info\INSTALLER"/>
+				<file name="LICENSE.rst" path="py\site-packages\pathlib2-2.3.7.post1.dist-info\LICENSE.rst" comment="py\site-packages\pathlib2-2.3.7.post1.dist-info\LICENSE.rst"/>
+				<file name="METADATA" path="py\site-packages\pathlib2-2.3.7.post1.dist-info\METADATA" comment="py\site-packages\pathlib2-2.3.7.post1.dist-info\METADATA"/>
+				<file name="RECORD" path="py\site-packages\pathlib2-2.3.7.post1.dist-info\RECORD" comment="py\site-packages\pathlib2-2.3.7.post1.dist-info\RECORD"/>
+				<file name="REQUESTED" path="py\site-packages\pathlib2-2.3.7.post1.dist-info\REQUESTED" comment="py\site-packages\pathlib2-2.3.7.post1.dist-info\REQUESTED"/>
+				<file name="top_level.txt" path="py\site-packages\pathlib2-2.3.7.post1.dist-info\top_level.txt" comment="py\site-packages\pathlib2-2.3.7.post1.dist-info\top_level.txt"/>
+				<file name="WHEEL" path="py\site-packages\pathlib2-2.3.7.post1.dist-info\WHEEL" comment="py\site-packages\pathlib2-2.3.7.post1.dist-info\WHEEL"/>
+			</folder>
+			<folder name="pkg_resources" path="py\site-packages\pkg_resources" comment="py\site-packages\pkg_resources">
+				<file name="__init__.py" path="py\site-packages\pkg_resources\__init__.py" comment="py\site-packages\pkg_resources\__init__.py"/>
+				<folder name="extern" path="py\site-packages\pkg_resources\extern" comment="py\site-packages\pkg_resources\extern">
+					<file name="__init__.py" path="py\site-packages\pkg_resources\extern\__init__.py" comment="py\site-packages\pkg_resources\extern\__init__.py"/>
+					<folder name="__pycache__" path="py\site-packages\pkg_resources\extern\__pycache__" comment="py\site-packages\pkg_resources\extern\__pycache__">
+						<file name="__init__.cpython-38.pyc" path="py\site-packages\pkg_resources\extern\__pycache__\__init__.cpython-38.pyc" comment="py\site-packages\pkg_resources\extern\__pycache__\__init__.cpython-38.pyc"/>
+					</folder>
+				</folder>
+				<folder name="_vendor" path="py\site-packages\pkg_resources\_vendor" comment="py\site-packages\pkg_resources\_vendor">
+					<file name="appdirs.py" path="py\site-packages\pkg_resources\_vendor\appdirs.py" comment="py\site-packages\pkg_resources\_vendor\appdirs.py"/>
+					<file name="zipp.py" path="py\site-packages\pkg_resources\_vendor\zipp.py" comment="py\site-packages\pkg_resources\_vendor\zipp.py"/>
+					<file name="__init__.py" path="py\site-packages\pkg_resources\_vendor\__init__.py" comment="py\site-packages\pkg_resources\_vendor\__init__.py"/>
+					<folder name="importlib_resources" path="py\site-packages\pkg_resources\_vendor\importlib_resources" comment="py\site-packages\pkg_resources\_vendor\importlib_resources">
+						<file name="abc.py" path="py\site-packages\pkg_resources\_vendor\importlib_resources\abc.py" comment="py\site-packages\pkg_resources\_vendor\importlib_resources\abc.py"/>
+						<file name="readers.py" path="py\site-packages\pkg_resources\_vendor\importlib_resources\readers.py" comment="py\site-packages\pkg_resources\_vendor\importlib_resources\readers.py"/>
+						<file name="simple.py" path="py\site-packages\pkg_resources\_vendor\importlib_resources\simple.py" comment="py\site-packages\pkg_resources\_vendor\importlib_resources\simple.py"/>
+						<file name="_adapters.py" path="py\site-packages\pkg_resources\_vendor\importlib_resources\_adapters.py" comment="py\site-packages\pkg_resources\_vendor\importlib_resources\_adapters.py"/>
+						<file name="_common.py" path="py\site-packages\pkg_resources\_vendor\importlib_resources\_common.py" comment="py\site-packages\pkg_resources\_vendor\importlib_resources\_common.py"/>
+						<file name="_compat.py" path="py\site-packages\pkg_resources\_vendor\importlib_resources\_compat.py" comment="py\site-packages\pkg_resources\_vendor\importlib_resources\_compat.py"/>
+						<file name="_itertools.py" path="py\site-packages\pkg_resources\_vendor\importlib_resources\_itertools.py" comment="py\site-packages\pkg_resources\_vendor\importlib_resources\_itertools.py"/>
+						<file name="_legacy.py" path="py\site-packages\pkg_resources\_vendor\importlib_resources\_legacy.py" comment="py\site-packages\pkg_resources\_vendor\importlib_resources\_legacy.py"/>
+						<file name="__init__.py" path="py\site-packages\pkg_resources\_vendor\importlib_resources\__init__.py" comment="py\site-packages\pkg_resources\_vendor\importlib_resources\__init__.py"/>
+						<folder name="__pycache__" path="py\site-packages\pkg_resources\_vendor\importlib_resources\__pycache__" comment="py\site-packages\pkg_resources\_vendor\importlib_resources\__pycache__">
+							<file name="abc.cpython-38.pyc" path="py\site-packages\pkg_resources\_vendor\importlib_resources\__pycache__\abc.cpython-38.pyc" comment="py\site-packages\pkg_resources\_vendor\importlib_resources\__pycache__\abc.cpython-38.pyc"/>
+							<file name="readers.cpython-38.pyc" path="py\site-packages\pkg_resources\_vendor\importlib_resources\__pycache__\readers.cpython-38.pyc" comment="py\site-packages\pkg_resources\_vendor\importlib_resources\__pycache__\readers.cpython-38.pyc"/>
+							<file name="simple.cpython-38.pyc" path="py\site-packages\pkg_resources\_vendor\importlib_resources\__pycache__\simple.cpython-38.pyc" comment="py\site-packages\pkg_resources\_vendor\importlib_resources\__pycache__\simple.cpython-38.pyc"/>
+							<file name="_adapters.cpython-38.pyc" path="py\site-packages\pkg_resources\_vendor\importlib_resources\__pycache__\_adapters.cpython-38.pyc" comment="py\site-packages\pkg_resources\_vendor\importlib_resources\__pycache__\_adapters.cpython-38.pyc"/>
+							<file name="_common.cpython-38.pyc" path="py\site-packages\pkg_resources\_vendor\importlib_resources\__pycache__\_common.cpython-38.pyc" comment="py\site-packages\pkg_resources\_vendor\importlib_resources\__pycache__\_common.cpython-38.pyc"/>
+							<file name="_compat.cpython-38.pyc" path="py\site-packages\pkg_resources\_vendor\importlib_resources\__pycache__\_compat.cpython-38.pyc" comment="py\site-packages\pkg_resources\_vendor\importlib_resources\__pycache__\_compat.cpython-38.pyc"/>
+							<file name="_itertools.cpython-38.pyc" path="py\site-packages\pkg_resources\_vendor\importlib_resources\__pycache__\_itertools.cpython-38.pyc" comment="py\site-packages\pkg_resources\_vendor\importlib_resources\__pycache__\_itertools.cpython-38.pyc"/>
+							<file name="_legacy.cpython-38.pyc" path="py\site-packages\pkg_resources\_vendor\importlib_resources\__pycache__\_legacy.cpython-38.pyc" comment="py\site-packages\pkg_resources\_vendor\importlib_resources\__pycache__\_legacy.cpython-38.pyc"/>
+							<file name="__init__.cpython-38.pyc" path="py\site-packages\pkg_resources\_vendor\importlib_resources\__pycache__\__init__.cpython-38.pyc" comment="py\site-packages\pkg_resources\_vendor\importlib_resources\__pycache__\__init__.cpython-38.pyc"/>
+						</folder>
+					</folder>
+					<folder name="jaraco" path="py\site-packages\pkg_resources\_vendor\jaraco" comment="py\site-packages\pkg_resources\_vendor\jaraco">
+						<file name="context.py" path="py\site-packages\pkg_resources\_vendor\jaraco\context.py" comment="py\site-packages\pkg_resources\_vendor\jaraco\context.py"/>
+						<file name="functools.py" path="py\site-packages\pkg_resources\_vendor\jaraco\functools.py" comment="py\site-packages\pkg_resources\_vendor\jaraco\functools.py"/>
+						<file name="__init__.py" path="py\site-packages\pkg_resources\_vendor\jaraco\__init__.py" comment="py\site-packages\pkg_resources\_vendor\jaraco\__init__.py"/>
+						<folder name="text" path="py\site-packages\pkg_resources\_vendor\jaraco\text" comment="py\site-packages\pkg_resources\_vendor\jaraco\text">
+							<file name="__init__.py" path="py\site-packages\pkg_resources\_vendor\jaraco\text\__init__.py" comment="py\site-packages\pkg_resources\_vendor\jaraco\text\__init__.py"/>
+							<folder name="__pycache__" path="py\site-packages\pkg_resources\_vendor\jaraco\text\__pycache__" comment="py\site-packages\pkg_resources\_vendor\jaraco\text\__pycache__">
+								<file name="__init__.cpython-38.pyc" path="py\site-packages\pkg_resources\_vendor\jaraco\text\__pycache__\__init__.cpython-38.pyc" comment="py\site-packages\pkg_resources\_vendor\jaraco\text\__pycache__\__init__.cpython-38.pyc"/>
+							</folder>
+						</folder>
+						<folder name="__pycache__" path="py\site-packages\pkg_resources\_vendor\jaraco\__pycache__" comment="py\site-packages\pkg_resources\_vendor\jaraco\__pycache__">
+							<file name="context.cpython-38.pyc" path="py\site-packages\pkg_resources\_vendor\jaraco\__pycache__\context.cpython-38.pyc" comment="py\site-packages\pkg_resources\_vendor\jaraco\__pycache__\context.cpython-38.pyc"/>
+							<file name="functools.cpython-38.pyc" path="py\site-packages\pkg_resources\_vendor\jaraco\__pycache__\functools.cpython-38.pyc" comment="py\site-packages\pkg_resources\_vendor\jaraco\__pycache__\functools.cpython-38.pyc"/>
+							<file name="__init__.cpython-38.pyc" path="py\site-packages\pkg_resources\_vendor\jaraco\__pycache__\__init__.cpython-38.pyc" comment="py\site-packages\pkg_resources\_vendor\jaraco\__pycache__\__init__.cpython-38.pyc"/>
+						</folder>
+					</folder>
+					<folder name="more_itertools" path="py\site-packages\pkg_resources\_vendor\more_itertools" comment="py\site-packages\pkg_resources\_vendor\more_itertools">
+						<file name="more.py" path="py\site-packages\pkg_resources\_vendor\more_itertools\more.py" comment="py\site-packages\pkg_resources\_vendor\more_itertools\more.py"/>
+						<file name="recipes.py" path="py\site-packages\pkg_resources\_vendor\more_itertools\recipes.py" comment="py\site-packages\pkg_resources\_vendor\more_itertools\recipes.py"/>
+						<file name="__init__.py" path="py\site-packages\pkg_resources\_vendor\more_itertools\__init__.py" comment="py\site-packages\pkg_resources\_vendor\more_itertools\__init__.py"/>
+						<folder name="__pycache__" path="py\site-packages\pkg_resources\_vendor\more_itertools\__pycache__" comment="py\site-packages\pkg_resources\_vendor\more_itertools\__pycache__">
+							<file name="more.cpython-38.pyc" path="py\site-packages\pkg_resources\_vendor\more_itertools\__pycache__\more.cpython-38.pyc" comment="py\site-packages\pkg_resources\_vendor\more_itertools\__pycache__\more.cpython-38.pyc"/>
+							<file name="recipes.cpython-38.pyc" path="py\site-packages\pkg_resources\_vendor\more_itertools\__pycache__\recipes.cpython-38.pyc" comment="py\site-packages\pkg_resources\_vendor\more_itertools\__pycache__\recipes.cpython-38.pyc"/>
+							<file name="__init__.cpython-38.pyc" path="py\site-packages\pkg_resources\_vendor\more_itertools\__pycache__\__init__.cpython-38.pyc" comment="py\site-packages\pkg_resources\_vendor\more_itertools\__pycache__\__init__.cpython-38.pyc"/>
+						</folder>
+					</folder>
+					<folder name="packaging" path="py\site-packages\pkg_resources\_vendor\packaging" comment="py\site-packages\pkg_resources\_vendor\packaging">
+						<file name="markers.py" path="py\site-packages\pkg_resources\_vendor\packaging\markers.py" comment="py\site-packages\pkg_resources\_vendor\packaging\markers.py"/>
+						<file name="requirements.py" path="py\site-packages\pkg_resources\_vendor\packaging\requirements.py" comment="py\site-packages\pkg_resources\_vendor\packaging\requirements.py"/>
+						<file name="specifiers.py" path="py\site-packages\pkg_resources\_vendor\packaging\specifiers.py" comment="py\site-packages\pkg_resources\_vendor\packaging\specifiers.py"/>
+						<file name="tags.py" path="py\site-packages\pkg_resources\_vendor\packaging\tags.py" comment="py\site-packages\pkg_resources\_vendor\packaging\tags.py"/>
+						<file name="utils.py" path="py\site-packages\pkg_resources\_vendor\packaging\utils.py" comment="py\site-packages\pkg_resources\_vendor\packaging\utils.py"/>
+						<file name="version.py" path="py\site-packages\pkg_resources\_vendor\packaging\version.py" comment="py\site-packages\pkg_resources\_vendor\packaging\version.py"/>
+						<file name="_manylinux.py" path="py\site-packages\pkg_resources\_vendor\packaging\_manylinux.py" comment="py\site-packages\pkg_resources\_vendor\packaging\_manylinux.py"/>
+						<file name="_musllinux.py" path="py\site-packages\pkg_resources\_vendor\packaging\_musllinux.py" comment="py\site-packages\pkg_resources\_vendor\packaging\_musllinux.py"/>
+						<file name="_structures.py" path="py\site-packages\pkg_resources\_vendor\packaging\_structures.py" comment="py\site-packages\pkg_resources\_vendor\packaging\_structures.py"/>
+						<file name="__about__.py" path="py\site-packages\pkg_resources\_vendor\packaging\__about__.py" comment="py\site-packages\pkg_resources\_vendor\packaging\__about__.py"/>
+						<file name="__init__.py" path="py\site-packages\pkg_resources\_vendor\packaging\__init__.py" comment="py\site-packages\pkg_resources\_vendor\packaging\__init__.py"/>
+						<folder name="__pycache__" path="py\site-packages\pkg_resources\_vendor\packaging\__pycache__" comment="py\site-packages\pkg_resources\_vendor\packaging\__pycache__">
+							<file name="markers.cpython-38.pyc" path="py\site-packages\pkg_resources\_vendor\packaging\__pycache__\markers.cpython-38.pyc" comment="py\site-packages\pkg_resources\_vendor\packaging\__pycache__\markers.cpython-38.pyc"/>
+							<file name="requirements.cpython-38.pyc" path="py\site-packages\pkg_resources\_vendor\packaging\__pycache__\requirements.cpython-38.pyc" comment="py\site-packages\pkg_resources\_vendor\packaging\__pycache__\requirements.cpython-38.pyc"/>
+							<file name="specifiers.cpython-38.pyc" path="py\site-packages\pkg_resources\_vendor\packaging\__pycache__\specifiers.cpython-38.pyc" comment="py\site-packages\pkg_resources\_vendor\packaging\__pycache__\specifiers.cpython-38.pyc"/>
+							<file name="tags.cpython-38.pyc" path="py\site-packages\pkg_resources\_vendor\packaging\__pycache__\tags.cpython-38.pyc" comment="py\site-packages\pkg_resources\_vendor\packaging\__pycache__\tags.cpython-38.pyc"/>
+							<file name="utils.cpython-38.pyc" path="py\site-packages\pkg_resources\_vendor\packaging\__pycache__\utils.cpython-38.pyc" comment="py\site-packages\pkg_resources\_vendor\packaging\__pycache__\utils.cpython-38.pyc"/>
+							<file name="version.cpython-38.pyc" path="py\site-packages\pkg_resources\_vendor\packaging\__pycache__\version.cpython-38.pyc" comment="py\site-packages\pkg_resources\_vendor\packaging\__pycache__\version.cpython-38.pyc"/>
+							<file name="_manylinux.cpython-38.pyc" path="py\site-packages\pkg_resources\_vendor\packaging\__pycache__\_manylinux.cpython-38.pyc" comment="py\site-packages\pkg_resources\_vendor\packaging\__pycache__\_manylinux.cpython-38.pyc"/>
+							<file name="_musllinux.cpython-38.pyc" path="py\site-packages\pkg_resources\_vendor\packaging\__pycache__\_musllinux.cpython-38.pyc" comment="py\site-packages\pkg_resources\_vendor\packaging\__pycache__\_musllinux.cpython-38.pyc"/>
+							<file name="_structures.cpython-38.pyc" path="py\site-packages\pkg_resources\_vendor\packaging\__pycache__\_structures.cpython-38.pyc" comment="py\site-packages\pkg_resources\_vendor\packaging\__pycache__\_structures.cpython-38.pyc"/>
+							<file name="__about__.cpython-38.pyc" path="py\site-packages\pkg_resources\_vendor\packaging\__pycache__\__about__.cpython-38.pyc" comment="py\site-packages\pkg_resources\_vendor\packaging\__pycache__\__about__.cpython-38.pyc"/>
+							<file name="__init__.cpython-38.pyc" path="py\site-packages\pkg_resources\_vendor\packaging\__pycache__\__init__.cpython-38.pyc" comment="py\site-packages\pkg_resources\_vendor\packaging\__pycache__\__init__.cpython-38.pyc"/>
+						</folder>
+					</folder>
+					<folder name="pyparsing" path="py\site-packages\pkg_resources\_vendor\pyparsing" comment="py\site-packages\pkg_resources\_vendor\pyparsing">
+						<file name="actions.py" path="py\site-packages\pkg_resources\_vendor\pyparsing\actions.py" comment="py\site-packages\pkg_resources\_vendor\pyparsing\actions.py"/>
+						<file name="common.py" path="py\site-packages\pkg_resources\_vendor\pyparsing\common.py" comment="py\site-packages\pkg_resources\_vendor\pyparsing\common.py"/>
+						<file name="core.py" path="py\site-packages\pkg_resources\_vendor\pyparsing\core.py" comment="py\site-packages\pkg_resources\_vendor\pyparsing\core.py"/>
+						<file name="exceptions.py" path="py\site-packages\pkg_resources\_vendor\pyparsing\exceptions.py" comment="py\site-packages\pkg_resources\_vendor\pyparsing\exceptions.py"/>
+						<file name="helpers.py" path="py\site-packages\pkg_resources\_vendor\pyparsing\helpers.py" comment="py\site-packages\pkg_resources\_vendor\pyparsing\helpers.py"/>
+						<file name="results.py" path="py\site-packages\pkg_resources\_vendor\pyparsing\results.py" comment="py\site-packages\pkg_resources\_vendor\pyparsing\results.py"/>
+						<file name="testing.py" path="py\site-packages\pkg_resources\_vendor\pyparsing\testing.py" comment="py\site-packages\pkg_resources\_vendor\pyparsing\testing.py"/>
+						<file name="unicode.py" path="py\site-packages\pkg_resources\_vendor\pyparsing\unicode.py" comment="py\site-packages\pkg_resources\_vendor\pyparsing\unicode.py"/>
+						<file name="util.py" path="py\site-packages\pkg_resources\_vendor\pyparsing\util.py" comment="py\site-packages\pkg_resources\_vendor\pyparsing\util.py"/>
+						<file name="__init__.py" path="py\site-packages\pkg_resources\_vendor\pyparsing\__init__.py" comment="py\site-packages\pkg_resources\_vendor\pyparsing\__init__.py"/>
+						<folder name="diagram" path="py\site-packages\pkg_resources\_vendor\pyparsing\diagram" comment="py\site-packages\pkg_resources\_vendor\pyparsing\diagram">
+							<file name="__init__.py" path="py\site-packages\pkg_resources\_vendor\pyparsing\diagram\__init__.py" comment="py\site-packages\pkg_resources\_vendor\pyparsing\diagram\__init__.py"/>
+							<folder name="__pycache__" path="py\site-packages\pkg_resources\_vendor\pyparsing\diagram\__pycache__" comment="py\site-packages\pkg_resources\_vendor\pyparsing\diagram\__pycache__">
+								<file name="__init__.cpython-38.pyc" path="py\site-packages\pkg_resources\_vendor\pyparsing\diagram\__pycache__\__init__.cpython-38.pyc" comment="py\site-packages\pkg_resources\_vendor\pyparsing\diagram\__pycache__\__init__.cpython-38.pyc"/>
+							</folder>
+						</folder>
+						<folder name="__pycache__" path="py\site-packages\pkg_resources\_vendor\pyparsing\__pycache__" comment="py\site-packages\pkg_resources\_vendor\pyparsing\__pycache__">
+							<file name="actions.cpython-38.pyc" path="py\site-packages\pkg_resources\_vendor\pyparsing\__pycache__\actions.cpython-38.pyc" comment="py\site-packages\pkg_resources\_vendor\pyparsing\__pycache__\actions.cpython-38.pyc"/>
+							<file name="common.cpython-38.pyc" path="py\site-packages\pkg_resources\_vendor\pyparsing\__pycache__\common.cpython-38.pyc" comment="py\site-packages\pkg_resources\_vendor\pyparsing\__pycache__\common.cpython-38.pyc"/>
+							<file name="core.cpython-38.pyc" path="py\site-packages\pkg_resources\_vendor\pyparsing\__pycache__\core.cpython-38.pyc" comment="py\site-packages\pkg_resources\_vendor\pyparsing\__pycache__\core.cpython-38.pyc"/>
+							<file name="exceptions.cpython-38.pyc" path="py\site-packages\pkg_resources\_vendor\pyparsing\__pycache__\exceptions.cpython-38.pyc" comment="py\site-packages\pkg_resources\_vendor\pyparsing\__pycache__\exceptions.cpython-38.pyc"/>
+							<file name="helpers.cpython-38.pyc" path="py\site-packages\pkg_resources\_vendor\pyparsing\__pycache__\helpers.cpython-38.pyc" comment="py\site-packages\pkg_resources\_vendor\pyparsing\__pycache__\helpers.cpython-38.pyc"/>
+							<file name="results.cpython-38.pyc" path="py\site-packages\pkg_resources\_vendor\pyparsing\__pycache__\results.cpython-38.pyc" comment="py\site-packages\pkg_resources\_vendor\pyparsing\__pycache__\results.cpython-38.pyc"/>
+							<file name="testing.cpython-38.pyc" path="py\site-packages\pkg_resources\_vendor\pyparsing\__pycache__\testing.cpython-38.pyc" comment="py\site-packages\pkg_resources\_vendor\pyparsing\__pycache__\testing.cpython-38.pyc"/>
+							<file name="unicode.cpython-38.pyc" path="py\site-packages\pkg_resources\_vendor\pyparsing\__pycache__\unicode.cpython-38.pyc" comment="py\site-packages\pkg_resources\_vendor\pyparsing\__pycache__\unicode.cpython-38.pyc"/>
+							<file name="util.cpython-38.pyc" path="py\site-packages\pkg_resources\_vendor\pyparsing\__pycache__\util.cpython-38.pyc" comment="py\site-packages\pkg_resources\_vendor\pyparsing\__pycache__\util.cpython-38.pyc"/>
+							<file name="__init__.cpython-38.pyc" path="py\site-packages\pkg_resources\_vendor\pyparsing\__pycache__\__init__.cpython-38.pyc" comment="py\site-packages\pkg_resources\_vendor\pyparsing\__pycache__\__init__.cpython-38.pyc"/>
+						</folder>
+					</folder>
+					<folder name="__pycache__" path="py\site-packages\pkg_resources\_vendor\__pycache__" comment="py\site-packages\pkg_resources\_vendor\__pycache__">
+						<file name="appdirs.cpython-38.pyc" path="py\site-packages\pkg_resources\_vendor\__pycache__\appdirs.cpython-38.pyc" comment="py\site-packages\pkg_resources\_vendor\__pycache__\appdirs.cpython-38.pyc"/>
+						<file name="zipp.cpython-38.pyc" path="py\site-packages\pkg_resources\_vendor\__pycache__\zipp.cpython-38.pyc" comment="py\site-packages\pkg_resources\_vendor\__pycache__\zipp.cpython-38.pyc"/>
+						<file name="__init__.cpython-38.pyc" path="py\site-packages\pkg_resources\_vendor\__pycache__\__init__.cpython-38.pyc" comment="py\site-packages\pkg_resources\_vendor\__pycache__\__init__.cpython-38.pyc"/>
+					</folder>
+				</folder>
+				<folder name="__pycache__" path="py\site-packages\pkg_resources\__pycache__" comment="py\site-packages\pkg_resources\__pycache__">
+					<file name="__init__.cpython-38.pyc" path="py\site-packages\pkg_resources\__pycache__\__init__.cpython-38.pyc" comment="py\site-packages\pkg_resources\__pycache__\__init__.cpython-38.pyc"/>
+				</folder>
+			</folder>
+			<folder name="python_docx-0.8.11-py3.8.egg-info" path="py\site-packages\python_docx-0.8.11-py3.8.egg-info" comment="py\site-packages\python_docx-0.8.11-py3.8.egg-info">
+				<file name="dependency_links.txt" path="py\site-packages\python_docx-0.8.11-py3.8.egg-info\dependency_links.txt" comment="py\site-packages\python_docx-0.8.11-py3.8.egg-info\dependency_links.txt"/>
+				<file name="installed-files.txt" path="py\site-packages\python_docx-0.8.11-py3.8.egg-info\installed-files.txt" comment="py\site-packages\python_docx-0.8.11-py3.8.egg-info\installed-files.txt"/>
+				<file name="not-zip-safe" path="py\site-packages\python_docx-0.8.11-py3.8.egg-info\not-zip-safe" comment="py\site-packages\python_docx-0.8.11-py3.8.egg-info\not-zip-safe"/>
+				<file name="PKG-INFO" path="py\site-packages\python_docx-0.8.11-py3.8.egg-info\PKG-INFO" comment="py\site-packages\python_docx-0.8.11-py3.8.egg-info\PKG-INFO"/>
+				<file name="requires.txt" path="py\site-packages\python_docx-0.8.11-py3.8.egg-info\requires.txt" comment="py\site-packages\python_docx-0.8.11-py3.8.egg-info\requires.txt"/>
+				<file name="SOURCES.txt" path="py\site-packages\python_docx-0.8.11-py3.8.egg-info\SOURCES.txt" comment="py\site-packages\python_docx-0.8.11-py3.8.egg-info\SOURCES.txt"/>
+				<file name="top_level.txt" path="py\site-packages\python_docx-0.8.11-py3.8.egg-info\top_level.txt" comment="py\site-packages\python_docx-0.8.11-py3.8.egg-info\top_level.txt"/>
+			</folder>
+			<folder name="six-1.16.0.dist-info" path="py\site-packages\six-1.16.0.dist-info" comment="py\site-packages\six-1.16.0.dist-info">
+				<file name="INSTALLER" path="py\site-packages\six-1.16.0.dist-info\INSTALLER" comment="py\site-packages\six-1.16.0.dist-info\INSTALLER"/>
+				<file name="LICENSE" path="py\site-packages\six-1.16.0.dist-info\LICENSE" comment="py\site-packages\six-1.16.0.dist-info\LICENSE"/>
+				<file name="METADATA" path="py\site-packages\six-1.16.0.dist-info\METADATA" comment="py\site-packages\six-1.16.0.dist-info\METADATA"/>
+				<file name="RECORD" path="py\site-packages\six-1.16.0.dist-info\RECORD" comment="py\site-packages\six-1.16.0.dist-info\RECORD"/>
+				<file name="top_level.txt" path="py\site-packages\six-1.16.0.dist-info\top_level.txt" comment="py\site-packages\six-1.16.0.dist-info\top_level.txt"/>
+				<file name="WHEEL" path="py\site-packages\six-1.16.0.dist-info\WHEEL" comment="py\site-packages\six-1.16.0.dist-info\WHEEL"/>
+			</folder>
+			<folder name="_distutils_hack" path="py\site-packages\_distutils_hack" comment="py\site-packages\_distutils_hack">
+				<file name="override.py" path="py\site-packages\_distutils_hack\override.py" comment="py\site-packages\_distutils_hack\override.py"/>
+				<file name="__init__.py" path="py\site-packages\_distutils_hack\__init__.py" comment="py\site-packages\_distutils_hack\__init__.py"/>
+				<folder name="__pycache__" path="py\site-packages\_distutils_hack\__pycache__" comment="py\site-packages\_distutils_hack\__pycache__">
+					<file name="override.cpython-38.pyc" path="py\site-packages\_distutils_hack\__pycache__\override.cpython-38.pyc" comment="py\site-packages\_distutils_hack\__pycache__\override.cpython-38.pyc"/>
+					<file name="__init__.cpython-38.pyc" path="py\site-packages\_distutils_hack\__pycache__\__init__.cpython-38.pyc" comment="py\site-packages\_distutils_hack\__pycache__\__init__.cpython-38.pyc"/>
+				</folder>
+			</folder>
+			<folder name="__pycache__" path="py\site-packages\__pycache__" comment="py\site-packages\__pycache__">
+				<file name="reportAardio.cpython-38.pyc" path="py\site-packages\__pycache__\reportAardio.cpython-38.pyc" comment="py\site-packages\__pycache__\reportAardio.cpython-38.pyc"/>
+				<file name="reportLiug.cpython-38.pyc" path="py\site-packages\__pycache__\reportLiug.cpython-38.pyc" comment="py\site-packages\__pycache__\reportLiug.cpython-38.pyc"/>
+				<file name="six.cpython-38.pyc" path="py\site-packages\__pycache__\six.cpython-38.pyc" comment="py\site-packages\__pycache__\six.cpython-38.pyc"/>
+			</folder>
+		</folder>
+	</folder>
+</project>

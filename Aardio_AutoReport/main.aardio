@@ -1,0 +1,269 @@
+import win.ui;
+import fsys.dlg;
+import process;
+import py3;
+/*DSG{{*/
+mainForm = win.form(text="报告自动化生成工具   by liugang@caict.ac.cn";right=561;bottom=533;acceptfiles=1;border="thin";edge=1;frame=1)
+mainForm.add(
+edit={cls="edit";left=86;top=502;right=113;bottom=522;autohscroll=false;autovscroll=false;disabled=1;hide=1;readonly=1;transparent=1;z=1};
+edit_log={cls="richedit";left=23;top=100;right=542;bottom=500;autohscroll=false;bgcolor=15793151;db=1;dl=1;dr=1;dt=1;edge=1;hidesel=false;multiline=1;readonly=1;vscroll=1;wrap=1;z=11};
+edit_record={cls="edit";left=23;top=20;right=410;bottom=45;autovscroll=false;dt=1;edge=1;readonly=1;z=2};
+plus={cls="plus";left=23;top=508;right=276;bottom=526;background="\res\potin.png";notify=1;z=10};
+plus_open={cls="plus";text="打开原始记录";left=437;top=19;right=541;bottom=43;bgcolor=16777215;notify=1;z=8};
+plus_run={cls="plus";text="开始生成";left=436;top=63;right=540;bottom=87;bgcolor=15780518;color=16777215;notify=1;z=9};
+rename={cls="checkbox";text=" 规范化命名";left=319;top=63;right=410;bottom=87;z=3};
+report_type={cls="combobox";left=117;top=64;right=287;bottom=88;edge=1;items={};mode="dropdown";z=5};
+richedit={cls="richedit";text="RichEdit";left=378;top=189;right=379;bottom=190;edge=1;z=7};
+static={cls="static";text="Word 文件类型：";left=9;top=63;right=133;bottom=87;align="center";center=1;transparent=1;z=4};
+static2={cls="static";text=" Copyright © 2022，刘刚, All rights reserved.";left=289;top=504;right=543;bottom=530;center=1;color=32768;notify=1;transparent=1;z=6}
+)
+/*}}*/
+
+..onError= function( e ){
+    //自定义错误处理
+    errInfo = ..lasterr(fsys.opError)
+	log_show('程序运行发生错误：' + errInfo, 'red');
+    return true;
+}
+
+var plus_style ={
+	background={
+		default=0xFF4874D3;
+		hover=0xFFD4A748;
+		disabled=0xFFD4D4D4;
+	};
+	color = {
+		default=0xFFFFFFFF
+	}
+}
+
+mainForm.plus_open.skin(plus_style);
+mainForm.plus_run.skin(plus_style);
+
+
+
+mainForm.report_type.add("检验报告");
+mainForm.report_type.add("原始记录(Word版)");
+/*
+mainForm.report_type.add("原始记录(Word全项版)");
+*/
+mainForm.report_type.selIndex = 1;
+mainForm.rename.checked  = true;
+mainForm.plus_run.disabledText = "开始生成"
+
+report_dir = io.fullpath("\res");
+record = "";
+oldPath = "";
+for_report = true;
+auto_rename = true;
+
+log_show = function(data,color,bkcolor){
+	if(!data) return ;
+    var lineStart = mainForm.edit_log.lineCount;
+    //"fuchsia"=>array( 0xFF00FF), 紫红
+    //var color_tab={red=0xff;green=0x008000;blue=0xf00000;white=0xffffff;raw=0xf0fbff;warning=0xff00ff;yellow=0xffff};
+    // 将yellow颜色修改为紫红，方便显示：
+    var color_tab={red=0xff;green=0x008000;blue=0xf00000;white=0xffffff;raw=0xf0fbff;warning=0xff00ff;yellow=0xff00ff};
+    // 设置color,默认green
+    colorNum=color_tab['green'];
+    if(type(color)==type.string) {
+    	if(color_tab[color]){
+    		colorNum=color_tab[color];
+    	}
+    }
+    
+    // 设置bkcolor，默认raw
+    bkcolorNum=color_tab['raw'];
+    if(type(bkcolor)==type.string) {
+    	if(color_tab[bkcolor]){
+    		bkcolorNum=color_tab[bkcolor];
+    	}
+    }
+   
+    mainForm.edit_log.appendText(data,'\r\n');
+    //获取添加文本前最后一行的字符位置：
+    var start = mainForm.edit_log.lineToChar(lineStart);
+    mainForm.edit_log.setsel(start,-1);
+    mainForm.edit_log.setSelCharformat(textColor = colorNum;backColor = bkcolorNum);
+    mainForm.edit_log.deselect();
+}
+
+
+
+var copyright = /*
+*****************************************************************************************      
+                       本工具仅限 博鼎实华（北京）技术有限公司 内部员工使用
+                             Copyright © 2022，刘刚, All rights reserved.      
+*****************************************************************************************
+	*/
+	
+//mainForm.edit_log.color  = 0xf00000; 
+//mainForm.edit_log.color  = 0xf00000; 
+//mainForm.edit_log.log( copyright,'\r\n' );
+log_show(copyright,'green');
+readme = /*
+使用说明：
+1、点击 “打开原始记录” 按钮 或 直接拖放文件到本窗口中
+      需要选择填写完整的原始记录表格文件；
+     
+2、选择生成的Word文件类型
+      默认为“检验报告”，还可以生成Word版本的“原始记录”，方便备查；
+     
+3、勾选是否“规范化命名”
+      即按照"报告编号_厂家_设备类型_设备型号"的形式重新命名原始记录和上级目录；
+	
+4、点击 “开始生成” 按钮
+*/
+//mainForm.edit_log.log(readme,'\r\n' );
+log_show(readme,'blue');
+
+generateReport = function(mainForm){
+	py3.export.aardio = {
+		print = log_show;
+	}	
+	var pyMain = py3.import("reportAardio");
+	var ret = pyMain.aardio_report(report_dir,record, tostring(for_report), tostring(auto_rename));	
+	return tostring(ret); 
+}
+	
+
+mainForm.rename.oncommand = function(id,event){
+	if (mainForm.rename.checked){
+		auto_rename = true;
+	}
+	else{
+		auto_rename = false;
+	}
+		
+}
+
+
+mainForm.report_type.oncommand = function(id,event){
+	if (mainForm.report_type.selIndex == 1){
+		for_report = true;
+	}
+	else if (mainForm.report_type.selIndex == 2){
+		for_report = false;
+		record_del_null= true;
+	}
+	else {
+		for_report = false;
+		record_del_null= false;
+	}
+}
+
+
+
+mainForm.plus_open.oncommand = function(id,event){
+	var recordFile = fsys.dlg.open('Excel文件|*.xls*|所有文件|*.*|',,oldPath,winform);
+	if(recordFile){
+		typeofFile = fsys.getExtensionName(recordFile)
+		if typeofFile == "xlsm" or  typeofFile == "xlsx" or typeofFile == "xls" {
+			//log_show(typeofFile);
+			mainForm.edit_record.text = recordFile;
+			record = recordFile;
+			oldPath = fsys.getParentDir(record);
+			mainForm.plus_run.disabledText = null
+		}
+		else {
+			mainForm.msgbox('您选择的原始记录文件类型不对! \r\n必须为Excel表格文件，请重新选择！');
+		}		
+	}
+}
+
+mainForm.plus_run.oncommand = function(id,event){
+	mainForm.plus_run.disabled = true;
+	if not io.exist(record){
+		mainForm.msgbox("您选择的原始记录表格文件不存在！");
+		return false; 
+	}
+	mainForm.edit_log.text = ""
+	log_show( copyright,'blue');
+	log_show('正在准备数据，请耐心等待.... ...\r\n','blue');
+	var new_name = generateReport(mainForm);
+	/*
+    try{
+		var new_record = generateReport(mainForm);
+	}
+	catch(e){
+		log_show('生成报告时发生错误，请检查原始记录内容是否正确！！', 'red')
+		return ; 
+	}
+    */
+	if auto_rename == true {
+		// 重命名原始记录：
+		log_show('\r\n开始重命名Excel版本的原始记录...');	
+		new_record = new_name + '.' + fsys.getExtensionName(record);
+		new_record = io.joinpath(fsys.getParentDir(record),new_record);
+		if new_record != record {
+			if fsys.rename(record,new_record){
+				log_show('重命名原始记录成功！！');
+				record = new_record;
+				mainForm.edit_record.text = new_record;	
+			}
+			else{
+				errInfo = ..lasterr(fsys.opError)
+				log_show('重命名原始记录失败！！错误为：' + errInfo, 'warning');
+			}
+		}
+		else{
+			log_show('原始记录名称已规范化，无需重命名！');
+		}	
+	}
+	log_show('\r\n生成的Word文档保存在：','blue');
+	log_show(oldPath,'blue');
+	log_show('请双击左下角博鼎Logo 快速打开目录查看。','blue');
+	//mainForm.msgbox('\r\nWord文档已顺利生成！!\r\n\r\n**请双击左下角博鼎Logo 快速打开目录查看**');
+	mainForm.edit.showInfoTip("Word文档已顺利生成！","**双击此Logo可以快速打开目录**");
+    mainForm.plus_run.disabled = false;
+	
+	//mainForm.plus_run.disabledText = null
+	//mainForm.edit_log.showInfoTip("Word文档已顺利生成！","      **双击博鼎Logo可以快速打开目录**");
+}
+
+mainForm.plus.onMouseDoubleClick = function(wParam,lParam){
+	if fsys.isDir(oldPath){
+		process.explore(oldPath);
+	}
+}
+
+mainForm.plus.skin(
+	background = { 
+		hover = "/res/images/btn-hover.png";
+		focus = "/res/images/btn-focus.jpg";
+		active = "/res/images/btn-active.png";
+		disabled = "/res/images/btn-disabled.png"; 
+	}
+)
+
+mainForm.wndproc = function(hwnd,message,wParam,lParam){
+	select( message ) { 
+		case 0x233/*_WM_DROPFILES*/{
+			//文件拖放消息
+			var recordFile = win.getDropFile(wParam)[1];
+			if(recordFile){
+			typeofFile = fsys.getExtensionName(recordFile);
+			if typeofFile == "xlsm" or  typeofFile == "xlsx" or typeofFile == "xls" {
+				//log_show(typeofFile);
+				mainForm.edit_record.text = recordFile;
+				record = recordFile;
+				oldPath = fsys.getParentDir(record);
+				mainForm.plus_run.disabledText = null
+			}
+			else {
+				mainForm.msgbox('您选择的原始记录文件类型不对! \r\n必须为Excel表格文件，请重新选择！');
+			}		
+	}
+			
+		}
+	}
+	//无返回值则继续调用默认回调函数
+}
+
+mainForm.edit_log.oncommand = function(id,event){
+	
+}
+
+mainForm.show();
+
+return win.loopMessage();

@@ -1,0 +1,20 @@
+
+//如果程序中用的是 py3.10，这里也要改为 py3.10.pip
+import py3.10.pip;
+
+//切换国内镜像源
+py3.pip.setIndexUrl("aliyun");
+//py3.pip.setIndexUrl("tsinghua");
+//py3.pip.setIndexUrl("douban");
+
+/*
+安装模块，默认安装到 /py/site-packages 目录，
+为了生成尽可能小的 EXE，应当总是将模块安装在工程中，不要装到扩展库自带 Python 目录。
+*/
+//py3.pip("install","openpyxl");
+//py3.pip("install","pathlib2");
+py3.pip("install","docxtpl");
+
+/*
+不要将 Python 模块装到 /res/ 这种内嵌资源目录
+*/
