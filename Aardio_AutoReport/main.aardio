@@ -3,7 +3,7 @@ import fsys.dlg;
 import process;
 import py3;
 /*DSG{{*/
-mainForm = win.form(text="报告自动化生成工具   by liugang@caict.ac.cn";right=561;bottom=533;acceptfiles=1;border="thin";edge=1;frame=1)
+mainForm = win.form(text="报告自动化生成工具V20250109   by liugang@caict.ac.cn";right=561;bottom=533;acceptfiles=1;border="thin";edge=1;frame=1)
 mainForm.add(
 edit={cls="edit";left=86;top=502;right=113;bottom=522;autohscroll=false;autovscroll=false;disabled=1;hide=1;readonly=1;transparent=1;z=1};
 edit_log={cls="richedit";left=23;top=100;right=542;bottom=500;autohscroll=false;bgcolor=15793151;db=1;dl=1;dr=1;dt=1;edge=1;hidesel=false;multiline=1;readonly=1;vscroll=1;wrap=1;z=11};
@@ -41,7 +41,7 @@ mainForm.plus_open.skin(plus_style);
 mainForm.plus_run.skin(plus_style);
 
 
-
+mainForm.report_type.add("报告+记录(word版)");
 mainForm.report_type.add("检验报告");
 mainForm.report_type.add("原始记录(Word版)");
 /*
@@ -54,8 +54,11 @@ mainForm.plus_run.disabledText = "开始生成"
 report_dir = io.fullpath("\res");
 record = "";
 oldPath = "";
-for_report = true;
 auto_rename = true;
+for_report = true;
+// 报告+记录：
+for_both = true;
+
 
 log_show = function(data,color,bkcolor){
 	if(!data) return ;
@@ -110,7 +113,7 @@ readme = /*
       默认为“检验报告”，还可以生成Word版本的“原始记录”，方便备查；
      
 3、勾选是否“规范化命名”
-      即按照"报告编号_厂家_设备类型_设备型号"的形式重新命名原始记录和上级目录；
+      即按照"报告编号_厂家_设备类型_设备型号"的形式重新命名Excel版的原始记录；
 	
 4、点击 “开始生成” 按钮
 */
@@ -139,16 +142,21 @@ mainForm.rename.oncommand = function(id,event){
 
 
 mainForm.report_type.oncommand = function(id,event){
+	// 报告+记录：
 	if (mainForm.report_type.selIndex == 1){
+		for_both = true;
 		for_report = true;
 	}
+	// 报告：
 	else if (mainForm.report_type.selIndex == 2){
-		for_report = false;
-		record_del_null= true;
+		for_both = false;
+		for_report = true;
 	}
+	// 记录：
 	else {
+		for_both = false;
 		for_report = false;
-		record_del_null= false;
+		//record_del_null= false;
 	}
 }
 
@@ -180,16 +188,20 @@ mainForm.plus_run.oncommand = function(id,event){
 	mainForm.edit_log.text = ""
 	log_show( copyright,'blue');
 	log_show('正在准备数据，请耐心等待.... ...\r\n','blue');
-	var new_name = generateReport(mainForm);
-	/*
-    try{
-		var new_record = generateReport(mainForm);
+	var new_name = '';
+	if for_both {
+		// 生成报告：
+		for_report = true;
+		new_name = generateReport(mainForm);
+		// 生成记录：
+		for_report = false;
+		new_name = generateReport(mainForm);		
 	}
-	catch(e){
-		log_show('生成报告时发生错误，请检查原始记录内容是否正确！！', 'red')
-		return ; 
+	else{
+		new_name = generateReport(mainForm);
 	}
-    */
+	
+	
 	if auto_rename == true {
 		// 重命名原始记录：
 		log_show('\r\n开始重命名Excel版本的原始记录...');	
